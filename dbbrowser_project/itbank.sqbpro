@@ -1,1 +1,1247 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1728"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:maincliente"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1"></sql><current_tab id="0"/></tab_sql></sqlb_project>
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3343"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainsucursal"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">ALTER TABLE cliente ADD COLUMN customer_type TEXT;
+ALTER TABLE cuenta ADD COLUMN account_type TEXT;
+ALTER TABLE cuenta ADD COLUMN card_brand TEXT;
+ALTER TABLE cuenta ADD COLUMN card_brand_id TEXT;
+
+DROP TABLE tarjeta;
+DROP TABLE  card_brand;
+
+CREATE TABLE card_brand(
+	customer_id INTEGER NOT NULL,
+	card_brand_description TEXT NOT NULL,
+	card_brand_id INTEGER NOT NULL PRIMARY KEY,
+	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
+)
+
+CREATE TABLE tarjeta(
+	card_id INTEGER NOT NULL,
+	customer_id INTEGER NOT NULL,
+	card_number INTEGER NOT NULL UNIQUE CHECK(length(card_number)&lt;=20),
+	card_cvv INTEGER NOT NULL,
+	card_granted_date INTEGER NOT NULL,
+	card_expiration_date INTEGER NOT NULL,
+	card_brand_id INTEGER NOT NULL,
+	PRIMARY KEY(card_id, customer_id),
+	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY(card_brand_id) REFERENCES card_brand(card_brand_id) ON DELETE CASCADE ON UPDATE CASCADE
+)
+
+
+CREATE TABLE direcciones(
+	adress_id INTEGER NOT NULL PRIMARY KEY,
+	adress_street TEXT NOT NULL,
+	adress_city TEXT NOT NULL,
+	adress_country TEXT NOT NULL,
+	customer_id INTEGER NOT NULL,
+	employee_id INTEGER NOT NULL,
+	branch_id INTEGER NOT NULL,
+	FOREIGN KEY customer_id REFERENCES cliente(customer_id)
+	FOREIGN KEY employee_id REFERENCES empleado(employee_id)
+	FOREIGN KEY branch_id REFERENCES sucursal(branch_id)
+
+)
+
+
+	
+	
+	</sql><sql name="card_brand.sql">INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,1,1),
+  (&quot;Mastercard&quot;,2,2),
+  (&quot;American Express&quot;,3,3),
+  (&quot;Visa&quot;,4,4),
+  (&quot;Mastercard&quot;,5,5),
+  (&quot;American Express&quot;,6,6),
+  (&quot;Visa&quot;,7,7),
+  (&quot;Mastercard&quot;,8,8),
+  (&quot;American Express&quot;,9,9),
+  (&quot;Visa&quot;,10,10);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,11,11),
+  (&quot;American Express&quot;,12,12),
+  (&quot;Visa&quot;,13,13),
+  (&quot;Mastercard&quot;,14,14),
+  (&quot;American Express&quot;,15,15),
+  (&quot;Visa&quot;,16,16),
+  (&quot;Mastercard&quot;,17,17),
+  (&quot;American Express&quot;,18,18),
+  (&quot;Visa&quot;,19,19),
+  (&quot;Mastercard&quot;,20,20);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,21,21),
+  (&quot;Visa&quot;,22,22),
+  (&quot;Mastercard&quot;,23,23),
+  (&quot;American Express&quot;,24,24),
+  (&quot;Visa&quot;,25,25),
+  (&quot;Mastercard&quot;,26,26),
+  (&quot;American Express&quot;,27,27),
+  (&quot;Visa&quot;,28,28),
+  (&quot;Mastercard&quot;,29,29),
+  (&quot;American Express&quot;,30,30);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,31,31),
+  (&quot;Mastercard&quot;,32,32),
+  (&quot;American Express&quot;,33,33),
+  (&quot;Visa&quot;,34,34),
+  (&quot;Mastercard&quot;,35,35),
+  (&quot;American Express&quot;,36,36),
+  (&quot;Visa&quot;,37,37),
+  (&quot;Mastercard&quot;,38,38),
+  (&quot;American Express&quot;,39,39),
+  (&quot;Visa&quot;,40,40);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,41,41),
+  (&quot;American Express&quot;,42,42),
+  (&quot;Visa&quot;,43,43),
+  (&quot;Mastercard&quot;,44,44),
+  (&quot;American Express&quot;,45,45),
+  (&quot;Visa&quot;,46,46),
+  (&quot;Mastercard&quot;,47,47),
+  (&quot;American Express&quot;,48,48),
+  (&quot;Visa&quot;,49,49),
+  (&quot;Mastercard&quot;,50,50);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,51,51),
+  (&quot;Visa&quot;,52,52),
+  (&quot;Mastercard&quot;,53,53),
+  (&quot;American Express&quot;,54,54),
+  (&quot;Visa&quot;,55,55),
+  (&quot;Mastercard&quot;,56,56),
+  (&quot;American Express&quot;,57,57),
+  (&quot;Visa&quot;,58,58),
+  (&quot;Mastercard&quot;,59,59),
+  (&quot;American Express&quot;,60,60);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,61,61),
+  (&quot;Mastercard&quot;,62,62),
+  (&quot;American Express&quot;,63,63),
+  (&quot;Visa&quot;,64,64),
+  (&quot;Mastercard&quot;,65,65),
+  (&quot;American Express&quot;,66,66),
+  (&quot;Visa&quot;,67,67),
+  (&quot;Mastercard&quot;,68,68),
+  (&quot;American Express&quot;,69,69),
+  (&quot;Visa&quot;,70,70);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,71,71),
+  (&quot;American Express&quot;,72,72),
+  (&quot;Visa&quot;,73,73),
+  (&quot;Mastercard&quot;,74,74),
+  (&quot;American Express&quot;,75,75),
+  (&quot;Visa&quot;,76,76),
+  (&quot;Mastercard&quot;,77,77),
+  (&quot;American Express&quot;,78,78),
+  (&quot;Visa&quot;,79,79),
+  (&quot;Mastercard&quot;,80,80);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,81,81),
+  (&quot;Visa&quot;,82,82),
+  (&quot;Mastercard&quot;,83,83),
+  (&quot;American Express&quot;,84,84),
+  (&quot;Visa&quot;,85,85),
+  (&quot;Mastercard&quot;,86,86),
+  (&quot;American Express&quot;,87,87),
+  (&quot;Visa&quot;,88,88),
+  (&quot;Mastercard&quot;,89,89),
+  (&quot;American Express&quot;,90,90);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,91,91),
+  (&quot;Mastercard&quot;,92,92),
+  (&quot;American Express&quot;,93,93),
+  (&quot;Visa&quot;,94,94),
+  (&quot;Mastercard&quot;,95,95),
+  (&quot;American Express&quot;,96,96),
+  (&quot;Visa&quot;,97,97),
+  (&quot;Mastercard&quot;,98,98),
+  (&quot;American Express&quot;,99,99),
+  (&quot;Visa&quot;,100,100);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,101,101),
+  (&quot;American Express&quot;,102,102),
+  (&quot;Visa&quot;,103,103),
+  (&quot;Mastercard&quot;,104,104),
+  (&quot;American Express&quot;,105,105),
+  (&quot;Visa&quot;,106,106),
+  (&quot;Mastercard&quot;,107,107),
+  (&quot;American Express&quot;,108,108),
+  (&quot;Visa&quot;,109,109),
+  (&quot;Mastercard&quot;,110,110);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,111,111),
+  (&quot;Visa&quot;,112,112),
+  (&quot;Mastercard&quot;,113,113),
+  (&quot;American Express&quot;,114,114),
+  (&quot;Visa&quot;,115,115),
+  (&quot;Mastercard&quot;,116,116),
+  (&quot;American Express&quot;,117,117),
+  (&quot;Visa&quot;,118,118),
+  (&quot;Mastercard&quot;,119,119),
+  (&quot;American Express&quot;,120,120);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,121,121),
+  (&quot;Mastercard&quot;,122,122),
+  (&quot;American Express&quot;,123,123),
+  (&quot;Visa&quot;,124,124),
+  (&quot;Mastercard&quot;,125,125),
+  (&quot;American Express&quot;,126,126),
+  (&quot;Visa&quot;,127,127),
+  (&quot;Mastercard&quot;,128,128),
+  (&quot;American Express&quot;,129,129),
+  (&quot;Visa&quot;,130,130);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,131,131),
+  (&quot;American Express&quot;,132,132),
+  (&quot;Visa&quot;,133,133),
+  (&quot;Mastercard&quot;,134,134),
+  (&quot;American Express&quot;,135,135),
+  (&quot;Visa&quot;,136,136),
+  (&quot;Mastercard&quot;,137,137),
+  (&quot;American Express&quot;,138,138),
+  (&quot;Visa&quot;,139,139),
+  (&quot;Mastercard&quot;,140,140);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,141,141),
+  (&quot;Visa&quot;,142,142),
+  (&quot;Mastercard&quot;,143,143),
+  (&quot;American Express&quot;,144,144),
+  (&quot;Visa&quot;,145,145),
+  (&quot;Mastercard&quot;,146,146),
+  (&quot;American Express&quot;,147,147),
+  (&quot;Visa&quot;,148,148),
+  (&quot;Mastercard&quot;,149,149),
+  (&quot;American Express&quot;,150,150);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,151,151),
+  (&quot;Mastercard&quot;,152,152),
+  (&quot;American Express&quot;,153,153),
+  (&quot;Visa&quot;,154,154),
+  (&quot;Mastercard&quot;,155,155),
+  (&quot;American Express&quot;,156,156),
+  (&quot;Visa&quot;,157,157),
+  (&quot;Mastercard&quot;,158,158),
+  (&quot;American Express&quot;,159,159),
+  (&quot;Visa&quot;,160,160);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,161,161),
+  (&quot;American Express&quot;,162,162),
+  (&quot;Visa&quot;,163,163),
+  (&quot;Mastercard&quot;,164,164),
+  (&quot;American Express&quot;,165,165),
+  (&quot;Visa&quot;,166,166),
+  (&quot;Mastercard&quot;,167,167),
+  (&quot;American Express&quot;,168,168),
+  (&quot;Visa&quot;,169,169),
+  (&quot;Mastercard&quot;,170,170);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,171,171),
+  (&quot;Visa&quot;,172,172),
+  (&quot;Mastercard&quot;,173,173),
+  (&quot;American Express&quot;,174,174),
+  (&quot;Visa&quot;,175,175),
+  (&quot;Mastercard&quot;,176,176),
+  (&quot;American Express&quot;,177,177),
+  (&quot;Visa&quot;,178,178),
+  (&quot;Mastercard&quot;,179,179),
+  (&quot;American Express&quot;,180,180);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,181,181),
+  (&quot;Mastercard&quot;,182,182),
+  (&quot;American Express&quot;,183,183),
+  (&quot;Visa&quot;,184,184),
+  (&quot;Mastercard&quot;,185,185),
+  (&quot;American Express&quot;,186,186),
+  (&quot;Visa&quot;,187,187),
+  (&quot;Mastercard&quot;,188,188),
+  (&quot;American Express&quot;,189,189),
+  (&quot;Visa&quot;,190,190);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,191,191),
+  (&quot;American Express&quot;,192,192),
+  (&quot;Visa&quot;,193,193),
+  (&quot;Mastercard&quot;,194,194),
+  (&quot;American Express&quot;,195,195),
+  (&quot;Visa&quot;,196,196),
+  (&quot;Mastercard&quot;,197,197),
+  (&quot;American Express&quot;,198,198),
+  (&quot;Visa&quot;,199,199),
+  (&quot;Mastercard&quot;,200,200);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,201,201),
+  (&quot;Visa&quot;,202,202),
+  (&quot;Mastercard&quot;,203,203),
+  (&quot;American Express&quot;,204,204),
+  (&quot;Visa&quot;,205,205),
+  (&quot;Mastercard&quot;,206,206),
+  (&quot;American Express&quot;,207,207),
+  (&quot;Visa&quot;,208,208),
+  (&quot;Mastercard&quot;,209,209),
+  (&quot;American Express&quot;,210,210);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,211,211),
+  (&quot;Mastercard&quot;,212,212),
+  (&quot;American Express&quot;,213,213),
+  (&quot;Visa&quot;,214,214),
+  (&quot;Mastercard&quot;,215,215),
+  (&quot;American Express&quot;,216,216),
+  (&quot;Visa&quot;,217,217),
+  (&quot;Mastercard&quot;,218,218),
+  (&quot;American Express&quot;,219,219),
+  (&quot;Visa&quot;,220,220);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,221,221),
+  (&quot;American Express&quot;,222,222),
+  (&quot;Visa&quot;,223,223),
+  (&quot;Mastercard&quot;,224,224),
+  (&quot;American Express&quot;,225,225),
+  (&quot;Visa&quot;,226,226),
+  (&quot;Mastercard&quot;,227,227),
+  (&quot;American Express&quot;,228,228),
+  (&quot;Visa&quot;,229,229),
+  (&quot;Mastercard&quot;,230,230);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,231,231),
+  (&quot;Visa&quot;,232,232),
+  (&quot;Mastercard&quot;,233,233),
+  (&quot;American Express&quot;,234,234),
+  (&quot;Visa&quot;,235,235),
+  (&quot;Mastercard&quot;,236,236),
+  (&quot;American Express&quot;,237,237),
+  (&quot;Visa&quot;,238,238),
+  (&quot;Mastercard&quot;,239,239),
+  (&quot;American Express&quot;,240,240);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,241,241),
+  (&quot;Mastercard&quot;,242,242),
+  (&quot;American Express&quot;,243,243),
+  (&quot;Visa&quot;,244,244),
+  (&quot;Mastercard&quot;,245,245),
+  (&quot;American Express&quot;,246,246),
+  (&quot;Visa&quot;,247,247),
+  (&quot;Mastercard&quot;,248,248),
+  (&quot;American Express&quot;,249,249),
+  (&quot;Visa&quot;,250,250);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,251,251),
+  (&quot;American Express&quot;,252,252),
+  (&quot;Visa&quot;,253,253),
+  (&quot;Mastercard&quot;,254,254),
+  (&quot;American Express&quot;,255,255),
+  (&quot;Visa&quot;,256,256),
+  (&quot;Mastercard&quot;,257,257),
+  (&quot;American Express&quot;,258,258),
+  (&quot;Visa&quot;,259,259),
+  (&quot;Mastercard&quot;,260,260);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,261,261),
+  (&quot;Visa&quot;,262,262),
+  (&quot;Mastercard&quot;,263,263),
+  (&quot;American Express&quot;,264,264),
+  (&quot;Visa&quot;,265,265),
+  (&quot;Mastercard&quot;,266,266),
+  (&quot;American Express&quot;,267,267),
+  (&quot;Visa&quot;,268,268),
+  (&quot;Mastercard&quot;,269,269),
+  (&quot;American Express&quot;,270,270);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,271,271),
+  (&quot;Mastercard&quot;,272,272),
+  (&quot;American Express&quot;,273,273),
+  (&quot;Visa&quot;,274,274),
+  (&quot;Mastercard&quot;,275,275),
+  (&quot;American Express&quot;,276,276),
+  (&quot;Visa&quot;,277,277),
+  (&quot;Mastercard&quot;,278,278),
+  (&quot;American Express&quot;,279,279),
+  (&quot;Visa&quot;,280,280);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,281,281),
+  (&quot;American Express&quot;,282,282),
+  (&quot;Visa&quot;,283,283),
+  (&quot;Mastercard&quot;,284,284),
+  (&quot;American Express&quot;,285,285),
+  (&quot;Visa&quot;,286,286),
+  (&quot;Mastercard&quot;,287,287),
+  (&quot;American Express&quot;,288,288),
+  (&quot;Visa&quot;,289,289),
+  (&quot;Mastercard&quot;,290,290);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,291,291),
+  (&quot;Visa&quot;,292,292),
+  (&quot;Mastercard&quot;,293,293),
+  (&quot;American Express&quot;,294,294),
+  (&quot;Visa&quot;,295,295),
+  (&quot;Mastercard&quot;,296,296),
+  (&quot;American Express&quot;,297,297),
+  (&quot;Visa&quot;,298,298),
+  (&quot;Mastercard&quot;,299,299),
+  (&quot;American Express&quot;,300,300);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,301,301),
+  (&quot;Mastercard&quot;,302,302),
+  (&quot;American Express&quot;,303,303),
+  (&quot;Visa&quot;,304,304),
+  (&quot;Mastercard&quot;,305,305),
+  (&quot;American Express&quot;,306,306),
+  (&quot;Visa&quot;,307,307),
+  (&quot;Mastercard&quot;,308,308),
+  (&quot;American Express&quot;,309,309),
+  (&quot;Visa&quot;,310,310);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,311,311),
+  (&quot;American Express&quot;,312,312),
+  (&quot;Visa&quot;,313,313),
+  (&quot;Mastercard&quot;,314,314),
+  (&quot;American Express&quot;,315,315),
+  (&quot;Visa&quot;,316,316),
+  (&quot;Mastercard&quot;,317,317),
+  (&quot;American Express&quot;,318,318),
+  (&quot;Visa&quot;,319,319),
+  (&quot;Mastercard&quot;,320,320);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,321,321),
+  (&quot;Visa&quot;,322,322),
+  (&quot;Mastercard&quot;,323,323),
+  (&quot;American Express&quot;,324,324),
+  (&quot;Visa&quot;,325,325),
+  (&quot;Mastercard&quot;,326,326),
+  (&quot;American Express&quot;,327,327),
+  (&quot;Visa&quot;,328,328),
+  (&quot;Mastercard&quot;,329,329),
+  (&quot;American Express&quot;,330,330);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,331,331),
+  (&quot;Mastercard&quot;,332,332),
+  (&quot;American Express&quot;,333,333),
+  (&quot;Visa&quot;,334,334),
+  (&quot;Mastercard&quot;,335,335),
+  (&quot;American Express&quot;,336,336),
+  (&quot;Visa&quot;,337,337),
+  (&quot;Mastercard&quot;,338,338),
+  (&quot;American Express&quot;,339,339),
+  (&quot;Visa&quot;,340,340);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,341,341),
+  (&quot;American Express&quot;,342,342),
+  (&quot;Visa&quot;,343,343),
+  (&quot;Mastercard&quot;,344,344),
+  (&quot;American Express&quot;,345,345),
+  (&quot;Visa&quot;,346,346),
+  (&quot;Mastercard&quot;,347,347),
+  (&quot;American Express&quot;,348,348),
+  (&quot;Visa&quot;,349,349),
+  (&quot;Mastercard&quot;,350,350);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,351,351),
+  (&quot;Visa&quot;,352,352),
+  (&quot;Mastercard&quot;,353,353),
+  (&quot;American Express&quot;,354,354),
+  (&quot;Visa&quot;,355,355),
+  (&quot;Mastercard&quot;,356,356),
+  (&quot;American Express&quot;,357,357),
+  (&quot;Visa&quot;,358,358),
+  (&quot;Mastercard&quot;,359,359),
+  (&quot;American Express&quot;,360,360);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,361,361),
+  (&quot;Mastercard&quot;,362,362),
+  (&quot;American Express&quot;,363,363),
+  (&quot;Visa&quot;,364,364),
+  (&quot;Mastercard&quot;,365,365),
+  (&quot;American Express&quot;,366,366),
+  (&quot;Visa&quot;,367,367),
+  (&quot;Mastercard&quot;,368,368),
+  (&quot;American Express&quot;,369,369),
+  (&quot;Visa&quot;,370,370);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,371,371),
+  (&quot;American Express&quot;,372,372),
+  (&quot;Visa&quot;,373,373),
+  (&quot;Mastercard&quot;,374,374),
+  (&quot;American Express&quot;,375,375),
+  (&quot;Visa&quot;,376,376),
+  (&quot;Mastercard&quot;,377,377),
+  (&quot;American Express&quot;,378,378),
+  (&quot;Visa&quot;,379,379),
+  (&quot;Mastercard&quot;,380,380);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,381,381),
+  (&quot;Visa&quot;,382,382),
+  (&quot;Mastercard&quot;,383,383),
+  (&quot;American Express&quot;,384,384),
+  (&quot;Visa&quot;,385,385),
+  (&quot;Mastercard&quot;,386,386),
+  (&quot;American Express&quot;,387,387),
+  (&quot;Visa&quot;,388,388),
+  (&quot;Mastercard&quot;,389,389),
+  (&quot;American Express&quot;,390,390);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,391,391),
+  (&quot;Mastercard&quot;,392,392),
+  (&quot;American Express&quot;,393,393),
+  (&quot;Visa&quot;,394,394),
+  (&quot;Mastercard&quot;,395,395),
+  (&quot;American Express&quot;,396,396),
+  (&quot;Visa&quot;,397,397),
+  (&quot;Mastercard&quot;,398,398),
+  (&quot;American Express&quot;,399,399),
+  (&quot;Visa&quot;,400,400);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,401,401),
+  (&quot;American Express&quot;,402,402),
+  (&quot;Visa&quot;,403,403),
+  (&quot;Mastercard&quot;,404,404),
+  (&quot;American Express&quot;,405,405),
+  (&quot;Visa&quot;,406,406),
+  (&quot;Mastercard&quot;,407,407),
+  (&quot;American Express&quot;,408,408),
+  (&quot;Visa&quot;,409,409),
+  (&quot;Mastercard&quot;,410,410);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,411,411),
+  (&quot;Visa&quot;,412,412),
+  (&quot;Mastercard&quot;,413,413),
+  (&quot;American Express&quot;,414,414),
+  (&quot;Visa&quot;,415,415),
+  (&quot;Mastercard&quot;,416,416),
+  (&quot;American Express&quot;,417,417),
+  (&quot;Visa&quot;,418,418),
+  (&quot;Mastercard&quot;,419,419),
+  (&quot;American Express&quot;,420,420);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,421,421),
+  (&quot;Mastercard&quot;,422,422),
+  (&quot;American Express&quot;,423,423),
+  (&quot;Visa&quot;,424,424),
+  (&quot;Mastercard&quot;,425,425),
+  (&quot;American Express&quot;,426,426),
+  (&quot;Visa&quot;,427,427),
+  (&quot;Mastercard&quot;,428,428),
+  (&quot;American Express&quot;,429,429),
+  (&quot;Visa&quot;,430,430);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,431,431),
+  (&quot;American Express&quot;,432,432),
+  (&quot;Visa&quot;,433,433),
+  (&quot;Mastercard&quot;,434,434),
+  (&quot;American Express&quot;,435,435),
+  (&quot;Visa&quot;,436,436),
+  (&quot;Mastercard&quot;,437,437),
+  (&quot;American Express&quot;,438,438),
+  (&quot;Visa&quot;,439,439),
+  (&quot;Mastercard&quot;,440,440);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,441,441),
+  (&quot;Visa&quot;,442,442),
+  (&quot;Mastercard&quot;,443,443),
+  (&quot;American Express&quot;,444,444),
+  (&quot;Visa&quot;,445,445),
+  (&quot;Mastercard&quot;,446,446),
+  (&quot;American Express&quot;,447,447),
+  (&quot;Visa&quot;,448,448),
+  (&quot;Mastercard&quot;,449,449),
+  (&quot;American Express&quot;,450,450);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,451,451),
+  (&quot;Mastercard&quot;,452,452),
+  (&quot;American Express&quot;,453,453),
+  (&quot;Visa&quot;,454,454),
+  (&quot;Mastercard&quot;,455,455),
+  (&quot;American Express&quot;,456,456),
+  (&quot;Visa&quot;,457,457),
+  (&quot;Mastercard&quot;,458,458),
+  (&quot;American Express&quot;,459,459),
+  (&quot;Visa&quot;,460,460);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,461,461),
+  (&quot;American Express&quot;,462,462),
+  (&quot;Visa&quot;,463,463),
+  (&quot;Mastercard&quot;,464,464),
+  (&quot;American Express&quot;,465,465),
+  (&quot;Visa&quot;,466,466),
+  (&quot;Mastercard&quot;,467,467),
+  (&quot;American Express&quot;,468,468),
+  (&quot;Visa&quot;,469,469),
+  (&quot;Mastercard&quot;,470,470);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;American Express&quot;,471,471),
+  (&quot;Visa&quot;,472,472),
+  (&quot;Mastercard&quot;,473,473),
+  (&quot;American Express&quot;,474,474),
+  (&quot;Visa&quot;,475,475),
+  (&quot;Mastercard&quot;,476,476),
+  (&quot;American Express&quot;,477,477),
+  (&quot;Visa&quot;,478,478),
+  (&quot;Mastercard&quot;,479,479),
+  (&quot;American Express&quot;,480,480);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,481,481),
+  (&quot;Mastercard&quot;,482,482),
+  (&quot;American Express&quot;,483,483),
+  (&quot;Visa&quot;,484,484),
+  (&quot;Mastercard&quot;,485,485),
+  (&quot;American Express&quot;,486,486),
+  (&quot;Visa&quot;,487,487),
+  (&quot;Mastercard&quot;,488,488),
+  (&quot;American Express&quot;,489,489),
+  (&quot;Visa&quot;,490,490);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,491,491),
+  (&quot;American Express&quot;,492,492),
+  (&quot;Visa&quot;,493,493),
+  (&quot;Mastercard&quot;,494,494),
+  (&quot;American Express&quot;,495,495),
+  (&quot;Visa&quot;,496,496),
+  (&quot;Mastercard&quot;,497,497),
+  (&quot;American Express&quot;,498,498),
+  (&quot;Visa&quot;,499,499),
+  (&quot;Mastercard&quot;,500,500);
+</sql><sql name="tarjeta">INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,1,1),
+  (&quot;Mastercard&quot;,2,2),
+  (&quot;Visa&quot;,3,3),
+  (&quot;Amex&quot;,4,4),
+  (&quot;Mastercard&quot;,5,5),
+  (&quot;Amex&quot;,6,6),
+  (&quot;Mastercard&quot;,7,7),
+  (&quot;Visa&quot;,8,8),
+  (&quot;Amex&quot;,9,9),
+  (&quot;Visa&quot;,10,10);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,11,11),
+  (&quot;Mastercard&quot;,12,12),
+  (&quot;Mastercard&quot;,13,13),
+  (&quot;Mastercard&quot;,14,14),
+  (&quot;Amex&quot;,15,15),
+  (&quot;Mastercard&quot;,16,16),
+  (&quot;Mastercard&quot;,17,17),
+  (&quot;Amex&quot;,18,18),
+  (&quot;Amex&quot;,19,19),
+  (&quot;Mastercard&quot;,20,20);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,21,21),
+  (&quot;Mastercard&quot;,22,22),
+  (&quot;Amex&quot;,23,23),
+  (&quot;Mastercard&quot;,24,24),
+  (&quot;Mastercard&quot;,25,25),
+  (&quot;Amex&quot;,26,26),
+  (&quot;Visa&quot;,27,27),
+  (&quot;Amex&quot;,28,28),
+  (&quot;Visa&quot;,29,29),
+  (&quot;Mastercard&quot;,30,30);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,31,31),
+  (&quot;Amex&quot;,32,32),
+  (&quot;Mastercard&quot;,33,33),
+  (&quot;Mastercard&quot;,34,34),
+  (&quot;Mastercard&quot;,35,35),
+  (&quot;Amex&quot;,36,36),
+  (&quot;Mastercard&quot;,37,37),
+  (&quot;Amex&quot;,38,38),
+  (&quot;Amex&quot;,39,39),
+  (&quot;Amex&quot;,40,40);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,41,41),
+  (&quot;Visa&quot;,42,42),
+  (&quot;Amex&quot;,43,43),
+  (&quot;Amex&quot;,44,44),
+  (&quot;Amex&quot;,45,45),
+  (&quot;Visa&quot;,46,46),
+  (&quot;Visa&quot;,47,47),
+  (&quot;Mastercard&quot;,48,48),
+  (&quot;Amex&quot;,49,49),
+  (&quot;Visa&quot;,50,50);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,51,51),
+  (&quot;Mastercard&quot;,52,52),
+  (&quot;Mastercard&quot;,53,53),
+  (&quot;Visa&quot;,54,54),
+  (&quot;Amex&quot;,55,55),
+  (&quot;Amex&quot;,56,56),
+  (&quot;Mastercard&quot;,57,57),
+  (&quot;Visa&quot;,58,58),
+  (&quot;Mastercard&quot;,59,59),
+  (&quot;Visa&quot;,60,60);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,61,61),
+  (&quot;Amex&quot;,62,62),
+  (&quot;Visa&quot;,63,63),
+  (&quot;Mastercard&quot;,64,64),
+  (&quot;Amex&quot;,65,65),
+  (&quot;Amex&quot;,66,66),
+  (&quot;Amex&quot;,67,67),
+  (&quot;Visa&quot;,68,68),
+  (&quot;Visa&quot;,69,69),
+  (&quot;Visa&quot;,70,70);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,71,71),
+  (&quot;Amex&quot;,72,72),
+  (&quot;Mastercard&quot;,73,73),
+  (&quot;Mastercard&quot;,74,74),
+  (&quot;Visa&quot;,75,75),
+  (&quot;Amex&quot;,76,76),
+  (&quot;Amex&quot;,77,77),
+  (&quot;Mastercard&quot;,78,78),
+  (&quot;Mastercard&quot;,79,79),
+  (&quot;Amex&quot;,80,80);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,81,81),
+  (&quot;Mastercard&quot;,82,82),
+  (&quot;Mastercard&quot;,83,83),
+  (&quot;Visa&quot;,84,84),
+  (&quot;Amex&quot;,85,85),
+  (&quot;Mastercard&quot;,86,86),
+  (&quot;Visa&quot;,87,87),
+  (&quot;Amex&quot;,88,88),
+  (&quot;Mastercard&quot;,89,89),
+  (&quot;Mastercard&quot;,90,90);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,91,91),
+  (&quot;Visa&quot;,92,92),
+  (&quot;Visa&quot;,93,93),
+  (&quot;Mastercard&quot;,94,94),
+  (&quot;Amex&quot;,95,95),
+  (&quot;Visa&quot;,96,96),
+  (&quot;Amex&quot;,97,97),
+  (&quot;Mastercard&quot;,98,98),
+  (&quot;Visa&quot;,99,99),
+  (&quot;Mastercard&quot;,100,100);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,101,101),
+  (&quot;Mastercard&quot;,102,102),
+  (&quot;Visa&quot;,103,103),
+  (&quot;Mastercard&quot;,104,104),
+  (&quot;Amex&quot;,105,105),
+  (&quot;Amex&quot;,106,106),
+  (&quot;Mastercard&quot;,107,107),
+  (&quot;Amex&quot;,108,108),
+  (&quot;Mastercard&quot;,109,109),
+  (&quot;Mastercard&quot;,110,110);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,111,111),
+  (&quot;Mastercard&quot;,112,112),
+  (&quot;Visa&quot;,113,113),
+  (&quot;Visa&quot;,114,114),
+  (&quot;Visa&quot;,115,115),
+  (&quot;Amex&quot;,116,116),
+  (&quot;Mastercard&quot;,117,117),
+  (&quot;Mastercard&quot;,118,118),
+  (&quot;Visa&quot;,119,119),
+  (&quot;Amex&quot;,120,120);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,121,121),
+  (&quot;Visa&quot;,122,122),
+  (&quot;Mastercard&quot;,123,123),
+  (&quot;Amex&quot;,124,124),
+  (&quot;Visa&quot;,125,125),
+  (&quot;Mastercard&quot;,126,126),
+  (&quot;Visa&quot;,127,127),
+  (&quot;Visa&quot;,128,128),
+  (&quot;Amex&quot;,129,129),
+  (&quot;Amex&quot;,130,130);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,131,131),
+  (&quot;Mastercard&quot;,132,132),
+  (&quot;Mastercard&quot;,133,133),
+  (&quot;Mastercard&quot;,134,134),
+  (&quot;Mastercard&quot;,135,135),
+  (&quot;Amex&quot;,136,136),
+  (&quot;Amex&quot;,137,137),
+  (&quot;Visa&quot;,138,138),
+  (&quot;Mastercard&quot;,139,139),
+  (&quot;Visa&quot;,140,140);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,141,141),
+  (&quot;Mastercard&quot;,142,142),
+  (&quot;Visa&quot;,143,143),
+  (&quot;Visa&quot;,144,144),
+  (&quot;Mastercard&quot;,145,145),
+  (&quot;Amex&quot;,146,146),
+  (&quot;Amex&quot;,147,147),
+  (&quot;Visa&quot;,148,148),
+  (&quot;Amex&quot;,149,149),
+  (&quot;Amex&quot;,150,150);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,151,151),
+  (&quot;Amex&quot;,152,152),
+  (&quot;Visa&quot;,153,153),
+  (&quot;Visa&quot;,154,154),
+  (&quot;Visa&quot;,155,155),
+  (&quot;Visa&quot;,156,156),
+  (&quot;Amex&quot;,157,157),
+  (&quot;Mastercard&quot;,158,158),
+  (&quot;Visa&quot;,159,159),
+  (&quot;Mastercard&quot;,160,160);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,161,161),
+  (&quot;Visa&quot;,162,162),
+  (&quot;Mastercard&quot;,163,163),
+  (&quot;Amex&quot;,164,164),
+  (&quot;Mastercard&quot;,165,165),
+  (&quot;Visa&quot;,166,166),
+  (&quot;Mastercard&quot;,167,167),
+  (&quot;Amex&quot;,168,168),
+  (&quot;Amex&quot;,169,169),
+  (&quot;Visa&quot;,170,170);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,171,171),
+  (&quot;Amex&quot;,172,172),
+  (&quot;Mastercard&quot;,173,173),
+  (&quot;Mastercard&quot;,174,174),
+  (&quot;Visa&quot;,175,175),
+  (&quot;Amex&quot;,176,176),
+  (&quot;Mastercard&quot;,177,177),
+  (&quot;Visa&quot;,178,178),
+  (&quot;Mastercard&quot;,179,179),
+  (&quot;Amex&quot;,180,180);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,181,181),
+  (&quot;Visa&quot;,182,182),
+  (&quot;Visa&quot;,183,183),
+  (&quot;Visa&quot;,184,184),
+  (&quot;Visa&quot;,185,185),
+  (&quot;Amex&quot;,186,186),
+  (&quot;Mastercard&quot;,187,187),
+  (&quot;Mastercard&quot;,188,188),
+  (&quot;Amex&quot;,189,189),
+  (&quot;Mastercard&quot;,190,190);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,191,191),
+  (&quot;Mastercard&quot;,192,192),
+  (&quot;Visa&quot;,193,193),
+  (&quot;Mastercard&quot;,194,194),
+  (&quot;Visa&quot;,195,195),
+  (&quot;Amex&quot;,196,196),
+  (&quot;Mastercard&quot;,197,197),
+  (&quot;Visa&quot;,198,198),
+  (&quot;Amex&quot;,199,199),
+  (&quot;Visa&quot;,200,200);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,201,201),
+  (&quot;Visa&quot;,202,202),
+  (&quot;Mastercard&quot;,203,203),
+  (&quot;Mastercard&quot;,204,204),
+  (&quot;Mastercard&quot;,205,205),
+  (&quot;Visa&quot;,206,206),
+  (&quot;Mastercard&quot;,207,207),
+  (&quot;Amex&quot;,208,208),
+  (&quot;Amex&quot;,209,209),
+  (&quot;Amex&quot;,210,210);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,211,211),
+  (&quot;Mastercard&quot;,212,212),
+  (&quot;Mastercard&quot;,213,213),
+  (&quot;Amex&quot;,214,214),
+  (&quot;Amex&quot;,215,215),
+  (&quot;Visa&quot;,216,216),
+  (&quot;Visa&quot;,217,217),
+  (&quot;Visa&quot;,218,218),
+  (&quot;Mastercard&quot;,219,219),
+  (&quot;Mastercard&quot;,220,220);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,221,221),
+  (&quot;Visa&quot;,222,222),
+  (&quot;Amex&quot;,223,223),
+  (&quot;Mastercard&quot;,224,224),
+  (&quot;Visa&quot;,225,225),
+  (&quot;Amex&quot;,226,226),
+  (&quot;Amex&quot;,227,227),
+  (&quot;Visa&quot;,228,228),
+  (&quot;Amex&quot;,229,229),
+  (&quot;Mastercard&quot;,230,230);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,231,231),
+  (&quot;Mastercard&quot;,232,232),
+  (&quot;Mastercard&quot;,233,233),
+  (&quot;Mastercard&quot;,234,234),
+  (&quot;Amex&quot;,235,235),
+  (&quot;Amex&quot;,236,236),
+  (&quot;Visa&quot;,237,237),
+  (&quot;Mastercard&quot;,238,238),
+  (&quot;Amex&quot;,239,239),
+  (&quot;Visa&quot;,240,240);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,241,241),
+  (&quot;Mastercard&quot;,242,242),
+  (&quot;Mastercard&quot;,243,243),
+  (&quot;Mastercard&quot;,244,244),
+  (&quot;Amex&quot;,245,245),
+  (&quot;Mastercard&quot;,246,246),
+  (&quot;Mastercard&quot;,247,247),
+  (&quot;Amex&quot;,248,248),
+  (&quot;Visa&quot;,249,249),
+  (&quot;Visa&quot;,250,250);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,251,251),
+  (&quot;Mastercard&quot;,252,252),
+  (&quot;Mastercard&quot;,253,253),
+  (&quot;Amex&quot;,254,254),
+  (&quot;Amex&quot;,255,255),
+  (&quot;Visa&quot;,256,256),
+  (&quot;Visa&quot;,257,257),
+  (&quot;Amex&quot;,258,258),
+  (&quot;Visa&quot;,259,259),
+  (&quot;Visa&quot;,260,260);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,261,261),
+  (&quot;Amex&quot;,262,262),
+  (&quot;Amex&quot;,263,263),
+  (&quot;Visa&quot;,264,264),
+  (&quot;Amex&quot;,265,265),
+  (&quot;Visa&quot;,266,266),
+  (&quot;Visa&quot;,267,267),
+  (&quot;Mastercard&quot;,268,268),
+  (&quot;Visa&quot;,269,269),
+  (&quot;Mastercard&quot;,270,270);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,271,271),
+  (&quot;Amex&quot;,272,272),
+  (&quot;Mastercard&quot;,273,273),
+  (&quot;Mastercard&quot;,274,274),
+  (&quot;Visa&quot;,275,275),
+  (&quot;Amex&quot;,276,276),
+  (&quot;Visa&quot;,277,277),
+  (&quot;Visa&quot;,278,278),
+  (&quot;Amex&quot;,279,279),
+  (&quot;Visa&quot;,280,280);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,281,281),
+  (&quot;Mastercard&quot;,282,282),
+  (&quot;Mastercard&quot;,283,283),
+  (&quot;Mastercard&quot;,284,284),
+  (&quot;Visa&quot;,285,285),
+  (&quot;Mastercard&quot;,286,286),
+  (&quot;Visa&quot;,287,287),
+  (&quot;Amex&quot;,288,288),
+  (&quot;Mastercard&quot;,289,289),
+  (&quot;Visa&quot;,290,290);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,291,291),
+  (&quot;Amex&quot;,292,292),
+  (&quot;Amex&quot;,293,293),
+  (&quot;Amex&quot;,294,294),
+  (&quot;Visa&quot;,295,295),
+  (&quot;Amex&quot;,296,296),
+  (&quot;Mastercard&quot;,297,297),
+  (&quot;Amex&quot;,298,298),
+  (&quot;Mastercard&quot;,299,299),
+  (&quot;Visa&quot;,300,300);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,301,301),
+  (&quot;Mastercard&quot;,302,302),
+  (&quot;Visa&quot;,303,303),
+  (&quot;Amex&quot;,304,304),
+  (&quot;Visa&quot;,305,305),
+  (&quot;Mastercard&quot;,306,306),
+  (&quot;Visa&quot;,307,307),
+  (&quot;Mastercard&quot;,308,308),
+  (&quot;Mastercard&quot;,309,309),
+  (&quot;Mastercard&quot;,310,310);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,311,311),
+  (&quot;Amex&quot;,312,312),
+  (&quot;Mastercard&quot;,313,313),
+  (&quot;Visa&quot;,314,314),
+  (&quot;Amex&quot;,315,315),
+  (&quot;Mastercard&quot;,316,316),
+  (&quot;Mastercard&quot;,317,317),
+  (&quot;Visa&quot;,318,318),
+  (&quot;Mastercard&quot;,319,319),
+  (&quot;Mastercard&quot;,320,320);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,321,321),
+  (&quot;Mastercard&quot;,322,322),
+  (&quot;Amex&quot;,323,323),
+  (&quot;Visa&quot;,324,324),
+  (&quot;Mastercard&quot;,325,325),
+  (&quot;Amex&quot;,326,326),
+  (&quot;Amex&quot;,327,327),
+  (&quot;Mastercard&quot;,328,328),
+  (&quot;Amex&quot;,329,329),
+  (&quot;Amex&quot;,330,330);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,331,331),
+  (&quot;Visa&quot;,332,332),
+  (&quot;Visa&quot;,333,333),
+  (&quot;Visa&quot;,334,334),
+  (&quot;Visa&quot;,335,335),
+  (&quot;Visa&quot;,336,336),
+  (&quot;Mastercard&quot;,337,337),
+  (&quot;Amex&quot;,338,338),
+  (&quot;Mastercard&quot;,339,339),
+  (&quot;Mastercard&quot;,340,340);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,341,341),
+  (&quot;Amex&quot;,342,342),
+  (&quot;Mastercard&quot;,343,343),
+  (&quot;Amex&quot;,344,344),
+  (&quot;Mastercard&quot;,345,345),
+  (&quot;Amex&quot;,346,346),
+  (&quot;Visa&quot;,347,347),
+  (&quot;Mastercard&quot;,348,348),
+  (&quot;Mastercard&quot;,349,349),
+  (&quot;Amex&quot;,350,350);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,351,351),
+  (&quot;Visa&quot;,352,352),
+  (&quot;Visa&quot;,353,353),
+  (&quot;Visa&quot;,354,354),
+  (&quot;Mastercard&quot;,355,355),
+  (&quot;Mastercard&quot;,356,356),
+  (&quot;Visa&quot;,357,357),
+  (&quot;Amex&quot;,358,358),
+  (&quot;Amex&quot;,359,359),
+  (&quot;Mastercard&quot;,360,360);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,361,361),
+  (&quot;Mastercard&quot;,362,362),
+  (&quot;Amex&quot;,363,363),
+  (&quot;Amex&quot;,364,364),
+  (&quot;Mastercard&quot;,365,365),
+  (&quot;Visa&quot;,366,366),
+  (&quot;Amex&quot;,367,367),
+  (&quot;Mastercard&quot;,368,368),
+  (&quot;Amex&quot;,369,369),
+  (&quot;Amex&quot;,370,370);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,371,371),
+  (&quot;Amex&quot;,372,372),
+  (&quot;Amex&quot;,373,373),
+  (&quot;Amex&quot;,374,374),
+  (&quot;Visa&quot;,375,375),
+  (&quot;Amex&quot;,376,376),
+  (&quot;Visa&quot;,377,377),
+  (&quot;Visa&quot;,378,378),
+  (&quot;Visa&quot;,379,379),
+  (&quot;Mastercard&quot;,380,380);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,381,381),
+  (&quot;Amex&quot;,382,382),
+  (&quot;Amex&quot;,383,383),
+  (&quot;Visa&quot;,384,384),
+  (&quot;Mastercard&quot;,385,385),
+  (&quot;Amex&quot;,386,386),
+  (&quot;Visa&quot;,387,387),
+  (&quot;Mastercard&quot;,388,388),
+  (&quot;Amex&quot;,389,389),
+  (&quot;Amex&quot;,390,390);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,391,391),
+  (&quot;Amex&quot;,392,392),
+  (&quot;Mastercard&quot;,393,393),
+  (&quot;Mastercard&quot;,394,394),
+  (&quot;Amex&quot;,395,395),
+  (&quot;Mastercard&quot;,396,396),
+  (&quot;Visa&quot;,397,397),
+  (&quot;Visa&quot;,398,398),
+  (&quot;Amex&quot;,399,399),
+  (&quot;Visa&quot;,400,400);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,401,401),
+  (&quot;Mastercard&quot;,402,402),
+  (&quot;Mastercard&quot;,403,403),
+  (&quot;Visa&quot;,404,404),
+  (&quot;Visa&quot;,405,405),
+  (&quot;Mastercard&quot;,406,406),
+  (&quot;Visa&quot;,407,407),
+  (&quot;Visa&quot;,408,408),
+  (&quot;Amex&quot;,409,409),
+  (&quot;Mastercard&quot;,410,410);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,411,411),
+  (&quot;Visa&quot;,412,412),
+  (&quot;Amex&quot;,413,413),
+  (&quot;Visa&quot;,414,414),
+  (&quot;Visa&quot;,415,415),
+  (&quot;Visa&quot;,416,416),
+  (&quot;Visa&quot;,417,417),
+  (&quot;Amex&quot;,418,418),
+  (&quot;Amex&quot;,419,419),
+  (&quot;Mastercard&quot;,420,420);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Amex&quot;,421,421),
+  (&quot;Amex&quot;,422,422),
+  (&quot;Amex&quot;,423,423),
+  (&quot;Mastercard&quot;,424,424),
+  (&quot;Amex&quot;,425,425),
+  (&quot;Mastercard&quot;,426,426),
+  (&quot;Mastercard&quot;,427,427),
+  (&quot;Visa&quot;,428,428),
+  (&quot;Mastercard&quot;,429,429),
+  (&quot;Amex&quot;,430,430);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,431,431),
+  (&quot;Mastercard&quot;,432,432),
+  (&quot;Amex&quot;,433,433),
+  (&quot;Visa&quot;,434,434),
+  (&quot;Amex&quot;,435,435),
+  (&quot;Mastercard&quot;,436,436),
+  (&quot;Amex&quot;,437,437),
+  (&quot;Mastercard&quot;,438,438),
+  (&quot;Visa&quot;,439,439),
+  (&quot;Visa&quot;,440,440);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Mastercard&quot;,441,441),
+  (&quot;Visa&quot;,442,442),
+  (&quot;Visa&quot;,443,443),
+  (&quot;Visa&quot;,444,444),
+  (&quot;Visa&quot;,445,445),
+  (&quot;Mastercard&quot;,446,446),
+  (&quot;Visa&quot;,447,447),
+  (&quot;Amex&quot;,448,448),
+  (&quot;Amex&quot;,449,449),
+  (&quot;Visa&quot;,450,450);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,451,451),
+  (&quot;Amex&quot;,452,452),
+  (&quot;Visa&quot;,453,453),
+  (&quot;Amex&quot;,454,454),
+  (&quot;Amex&quot;,455,455),
+  (&quot;Visa&quot;,456,456),
+  (&quot;Visa&quot;,457,457),
+  (&quot;Amex&quot;,458,458),
+  (&quot;Amex&quot;,459,459),
+  (&quot;Visa&quot;,460,460);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,461,461),
+  (&quot;Mastercard&quot;,462,462),
+  (&quot;Visa&quot;,463,463),
+  (&quot;Visa&quot;,464,464),
+  (&quot;Mastercard&quot;,465,465),
+  (&quot;Mastercard&quot;,466,466),
+  (&quot;Visa&quot;,467,467),
+  (&quot;Visa&quot;,468,468),
+  (&quot;Mastercard&quot;,469,469),
+  (&quot;Amex&quot;,470,470);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,471,471),
+  (&quot;Amex&quot;,472,472),
+  (&quot;Visa&quot;,473,473),
+  (&quot;Amex&quot;,474,474),
+  (&quot;Visa&quot;,475,475),
+  (&quot;Amex&quot;,476,476),
+  (&quot;Amex&quot;,477,477),
+  (&quot;Amex&quot;,478,478),
+  (&quot;Mastercard&quot;,479,479),
+  (&quot;Visa&quot;,480,480);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,481,481),
+  (&quot;Visa&quot;,482,482),
+  (&quot;Visa&quot;,483,483),
+  (&quot;Amex&quot;,484,484),
+  (&quot;Visa&quot;,485,485),
+  (&quot;Amex&quot;,486,486),
+  (&quot;Mastercard&quot;,487,487),
+  (&quot;Visa&quot;,488,488),
+  (&quot;Amex&quot;,489,489),
+  (&quot;Mastercard&quot;,490,490);
+INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+VALUES
+  (&quot;Visa&quot;,491,491),
+  (&quot;Mastercard&quot;,492,492),
+  (&quot;Visa&quot;,493,493),
+  (&quot;Visa&quot;,494,494),
+  (&quot;Amex&quot;,495,495),
+  (&quot;Amex&quot;,496,496),
+  (&quot;Mastercard&quot;,497,497),
+  (&quot;Mastercard&quot;,498,498),
+  (&quot;Amex&quot;,499,499),
+  (&quot;Mastercard&quot;,500,500);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
