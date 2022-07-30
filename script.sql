@@ -3,9 +3,6 @@
 ALTER TABLE cliente ADD COLUMN customer_type TEXT;
 ALTER TABLE cuenta ADD COLUMN account_type TEXT;
 
-DROP TABLE tarjeta;
-DROP TABLE card_brand;
-DROP TABLE direcciones;
 
 /* Tabla de marcas de tarjetas */
 CREATE TABLE card_brand(

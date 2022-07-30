@@ -1,29 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3343"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainsucursal"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="110"/><column index="3" value="93"/><column index="4" value="120"/><column index="5" value="97"/><column index="6" value="98"/><column index="7" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Primera prob">/* Se crean las columnas nuevas */
-ALTER TABLE cliente ADD COLUMN customer_type TEXT;
-ALTER TABLE cuenta ADD COLUMN account_type TEXT;
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3213"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:maintarjeta"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="account_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="126"/><column index="2" value="157"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="client_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="0"/></sort><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="110"/><column index="3" value="93"/><column index="4" value="120"/><column index="5" value="97"/><column index="6" value="98"/><column index="7" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones_ref" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="1"/></sort><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="p4" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Primera prob">/* Se crean las columnas nuevas */
 
 DROP TABLE tarjeta;
 DROP TABLE card_brand;
-DROP TABLE direcciones;
+DROP TABLE direcciones;
 
+/*Crear tabla tipo de cliente, tipo de cuenta, marcas de tarjeta*/
+CREATE TABLE client_type(
+	client_tier TEXT NOT NULL,
+	client_tier_id INT NOT NULL PRIMARY KEY
+)
+INSERT INTO client_type(client_tier, client_tier_id) VALUES('Classic', 1);
+INSERT INTO client_type(client_tier, client_tier_id) VALUES('Gold', 2);
+INSERT INTO client_type(client_tier, client_tier_id) VALUES('Black', 3);+
+
+CREATE TABLE account_type(
+	account_type_id INT NOT NULL PRIMARY KEY,
+	account_tipo TEXT NOT NULL
+)
+INSERT INTO account_type(account_tipo, account_type_id) VALUES('Caja de ahorro en pesos', 1);
+INSERT INTO account_type(account_tipo, account_type_id) VALUES('Caja de ahorro en dolares', 2);
+INSERT INTO account_type(account_tipo, account_type_id) VALUES('Cuenta corriente', 3);
+	
+
 /* Tabla de marcas de tarjetas */
 CREATE TABLE card_brand(
-	customer_id INTEGER NOT NULL,
 	card_brand_description TEXT NOT NULL,
-	card_brand_id INTEGER NOT NULL PRIMARY KEY,
-	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
-)
+	card_brand_id INTEGER NOT NULL PRIMARY KEY
+)
+INSERT INTO card_brand(card_brand_description, card_brand_id) VALUES('Visa', 1);
+INSERT INTO card_brand(card_brand_description, card_brand_id) VALUES('Mastercard', 2);
+INSERT INTO card_brand(card_brand_description, card_brand_id) VALUES('American Express', 3);
 
 /* Tablas de tarjetas */
 CREATE TABLE tarjeta(
-	card_id INTEGER NOT NULL,
+	card_id INTEGER NOT NULL PRIMARY KEY,
 	customer_id INTEGER NOT NULL,
 	card_number INTEGER NOT NULL UNIQUE CHECK(length(card_number)&lt;=20),
 	card_cvv INTEGER NOT NULL,
 	card_granted_date INTEGER NOT NULL,
 	card_expiration_date INTEGER NOT NULL,
 	card_brand_id INTEGER NOT NULL,
-	PRIMARY KEY(card_id, customer_id),
 	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
 	FOREIGN KEY(card_brand_id) REFERENCES card_brand(card_brand_id) ON DELETE CASCADE ON UPDATE CASCADE
 )
@@ -33,17 +49,14 @@ CREATE TABLE direcciones(
 	adress_id INTEGER NOT NULL PRIMARY KEY,
 	adress_street TEXT NOT NULL,
 	adress_city TEXT NOT NULL,
-	adress_country TEXT NOT NULL,
-	customer_id INTEGER,
-	employee_id INTEGER,
-	branch_id INTEGER,
-	adress_type_of_user TEXT,
-	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
-	FOREIGN KEY(employee_id) REFERENCES empleado(employee_id)
-	FOREIGN KEY(branch_id) REFERENCES sucursal(branch_id)
-
+	adress_country TEXT NOT NULL,	
+	customer_id INT,
+	employee_id INT,
+	branch_id INT,
+	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY(employee_id) REFERENCES empleado(employee_id) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY(branch_id) REFERENCES sucursal(branch_id) ON DELETE CASCADE ON UPDATE CASCADE
 )
-
 
 
 	
@@ -52,7 +65,7 @@ CREATE TABLE direcciones(
 AS
 SELECT customer_id, branch_id, customer_name, customer_surname, customer_DNI, dob
 FROM cliente
-ORDER BY(date() - dob) ASC,
+ORDER BY customer_DNI ASC,
 CASE
 	WHEN customer_name = 'Anne' OR 'Tyler' THEN (date() - dob)
 END DESC;
@@ -81,1217 +94,627 @@ WHERE
 loan_total = (SELECT MAX(loan_total) FROM prestamo);
 
 
-</sql><sql name="Cuarta prob">/* 1 Listar la cantidad de clientes por nombre de sucursal ordenando de mayora menor */
-SELECT * FROM sucursal WHERE cliente ORDER BY branch_name
-
-/*2 Obtener la cantidad de empleados por cliente por sucursal en un número real */
-SELECT * FROM sucursal WHERE empleado LIMIT 5 *
-FROM sucursal
-
-/*3 Obtener la cantidad de tarjetas de crédito por tipo por sucursal */ 
-SELECT * FROM TIPODESUCURSAL WHERE TARJETADECREDITO TOP 5
-FROM TIPODESUCURSAL
-
-/*4 Obtener el promedio de créditos otorgado por sucursal */
-SELECT avg(CREDITOSOTORGADOS) AS PROMEDIO 
-FROM [SUCURSALES].[CREDITOS]</sql><sql name="card_brand.sql">INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
+</sql><sql name="Cuarta prob">/* 1 Listar la cantidad de clientes por nombre de sucursal ordenando de mayora menor */
+
+SELECT cliente.branch_id, sucursal.branch_name , count(all cliente.branch_id) as Cantidad_clientes 
+FROM cliente INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id
+group by sucursal.branch_id ORDER BY Cantidad_clientes DESC;
+
+/*2 Obtener la cantidad de empleados por cliente por sucursal en un número real */
+
+SELECT cliente.branch_id, sucursal.branch_name , empleado.branch_id, count(all empleado.branch_id as Cantidad_empleados), count(all cliente.branch_id) as Cantidad_clientes 
+FROM cliente, empleado INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id
+group by sucursal.branch_id ORDER BY Cantidad_clientes DESC;
+
+SELECT cliente.branch_id, sucursal.branch_name , count(all cliente.branch_id) as Cantidad_clientes , count(all empleado.branch_id) as Cantidad_empleados
+FROM cliente , empleado INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id  and sucursal.branch_id = empleado.branch_id
+group by sucursal.branch_id ORDER BY Cantidad_clientes DESC;
+
+/*3 Obtener la cantidad de tarjetas de crédito por tipo por sucursal */ 
+
+SELECT branch_id, count(all cliente.customer_name) as Cantidad_Tarjetas  FROM cliente
+group by branch_id;
+
+/*4 Obtener el promedio de créditos otorgado por sucursal */
+SELECT avg(CREDITOSOTORGADOS) AS PROMEDIO 
+FROM [SUCURSALES].[CREDITOS]</sql><sql name="tarjeta.sql">INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (&quot;Visa&quot;,1,1),
-  (&quot;Mastercard&quot;,2,2),
-  (&quot;American Express&quot;,3,3),
-  (&quot;Visa&quot;,4,4),
-  (&quot;Mastercard&quot;,5,5),
-  (&quot;American Express&quot;,6,6),
-  (&quot;Visa&quot;,7,7),
-  (&quot;Mastercard&quot;,8,8),
-  (&quot;American Express&quot;,9,9),
-  (&quot;Visa&quot;,10,10);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,11,11),
-  (&quot;American Express&quot;,12,12),
-  (&quot;Visa&quot;,13,13),
-  (&quot;Mastercard&quot;,14,14),
-  (&quot;American Express&quot;,15,15),
-  (&quot;Visa&quot;,16,16),
-  (&quot;Mastercard&quot;,17,17),
-  (&quot;American Express&quot;,18,18),
-  (&quot;Visa&quot;,19,19),
-  (&quot;Mastercard&quot;,20,20);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,21,21),
-  (&quot;Visa&quot;,22,22),
-  (&quot;Mastercard&quot;,23,23),
-  (&quot;American Express&quot;,24,24),
-  (&quot;Visa&quot;,25,25),
-  (&quot;Mastercard&quot;,26,26),
-  (&quot;American Express&quot;,27,27),
-  (&quot;Visa&quot;,28,28),
-  (&quot;Mastercard&quot;,29,29),
-  (&quot;American Express&quot;,30,30);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,31,31),
-  (&quot;Mastercard&quot;,32,32),
-  (&quot;American Express&quot;,33,33),
-  (&quot;Visa&quot;,34,34),
-  (&quot;Mastercard&quot;,35,35),
-  (&quot;American Express&quot;,36,36),
-  (&quot;Visa&quot;,37,37),
-  (&quot;Mastercard&quot;,38,38),
-  (&quot;American Express&quot;,39,39),
-  (&quot;Visa&quot;,40,40);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,41,41),
-  (&quot;American Express&quot;,42,42),
-  (&quot;Visa&quot;,43,43),
-  (&quot;Mastercard&quot;,44,44),
-  (&quot;American Express&quot;,45,45),
-  (&quot;Visa&quot;,46,46),
-  (&quot;Mastercard&quot;,47,47),
-  (&quot;American Express&quot;,48,48),
-  (&quot;Visa&quot;,49,49),
-  (&quot;Mastercard&quot;,50,50);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,51,51),
-  (&quot;Visa&quot;,52,52),
-  (&quot;Mastercard&quot;,53,53),
-  (&quot;American Express&quot;,54,54),
-  (&quot;Visa&quot;,55,55),
-  (&quot;Mastercard&quot;,56,56),
-  (&quot;American Express&quot;,57,57),
-  (&quot;Visa&quot;,58,58),
-  (&quot;Mastercard&quot;,59,59),
-  (&quot;American Express&quot;,60,60);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,61,61),
-  (&quot;Mastercard&quot;,62,62),
-  (&quot;American Express&quot;,63,63),
-  (&quot;Visa&quot;,64,64),
-  (&quot;Mastercard&quot;,65,65),
-  (&quot;American Express&quot;,66,66),
-  (&quot;Visa&quot;,67,67),
-  (&quot;Mastercard&quot;,68,68),
-  (&quot;American Express&quot;,69,69),
-  (&quot;Visa&quot;,70,70);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,71,71),
-  (&quot;American Express&quot;,72,72),
-  (&quot;Visa&quot;,73,73),
-  (&quot;Mastercard&quot;,74,74),
-  (&quot;American Express&quot;,75,75),
-  (&quot;Visa&quot;,76,76),
-  (&quot;Mastercard&quot;,77,77),
-  (&quot;American Express&quot;,78,78),
-  (&quot;Visa&quot;,79,79),
-  (&quot;Mastercard&quot;,80,80);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,81,81),
-  (&quot;Visa&quot;,82,82),
-  (&quot;Mastercard&quot;,83,83),
-  (&quot;American Express&quot;,84,84),
-  (&quot;Visa&quot;,85,85),
-  (&quot;Mastercard&quot;,86,86),
-  (&quot;American Express&quot;,87,87),
-  (&quot;Visa&quot;,88,88),
-  (&quot;Mastercard&quot;,89,89),
-  (&quot;American Express&quot;,90,90);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,91,91),
-  (&quot;Mastercard&quot;,92,92),
-  (&quot;American Express&quot;,93,93),
-  (&quot;Visa&quot;,94,94),
-  (&quot;Mastercard&quot;,95,95),
-  (&quot;American Express&quot;,96,96),
-  (&quot;Visa&quot;,97,97),
-  (&quot;Mastercard&quot;,98,98),
-  (&quot;American Express&quot;,99,99),
-  (&quot;Visa&quot;,100,100);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,101,101),
-  (&quot;American Express&quot;,102,102),
-  (&quot;Visa&quot;,103,103),
-  (&quot;Mastercard&quot;,104,104),
-  (&quot;American Express&quot;,105,105),
-  (&quot;Visa&quot;,106,106),
-  (&quot;Mastercard&quot;,107,107),
-  (&quot;American Express&quot;,108,108),
-  (&quot;Visa&quot;,109,109),
-  (&quot;Mastercard&quot;,110,110);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,111,111),
-  (&quot;Visa&quot;,112,112),
-  (&quot;Mastercard&quot;,113,113),
-  (&quot;American Express&quot;,114,114),
-  (&quot;Visa&quot;,115,115),
-  (&quot;Mastercard&quot;,116,116),
-  (&quot;American Express&quot;,117,117),
-  (&quot;Visa&quot;,118,118),
-  (&quot;Mastercard&quot;,119,119),
-  (&quot;American Express&quot;,120,120);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,121,121),
-  (&quot;Mastercard&quot;,122,122),
-  (&quot;American Express&quot;,123,123),
-  (&quot;Visa&quot;,124,124),
-  (&quot;Mastercard&quot;,125,125),
-  (&quot;American Express&quot;,126,126),
-  (&quot;Visa&quot;,127,127),
-  (&quot;Mastercard&quot;,128,128),
-  (&quot;American Express&quot;,129,129),
-  (&quot;Visa&quot;,130,130);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,131,131),
-  (&quot;American Express&quot;,132,132),
-  (&quot;Visa&quot;,133,133),
-  (&quot;Mastercard&quot;,134,134),
-  (&quot;American Express&quot;,135,135),
-  (&quot;Visa&quot;,136,136),
-  (&quot;Mastercard&quot;,137,137),
-  (&quot;American Express&quot;,138,138),
-  (&quot;Visa&quot;,139,139),
-  (&quot;Mastercard&quot;,140,140);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,141,141),
-  (&quot;Visa&quot;,142,142),
-  (&quot;Mastercard&quot;,143,143),
-  (&quot;American Express&quot;,144,144),
-  (&quot;Visa&quot;,145,145),
-  (&quot;Mastercard&quot;,146,146),
-  (&quot;American Express&quot;,147,147),
-  (&quot;Visa&quot;,148,148),
-  (&quot;Mastercard&quot;,149,149),
-  (&quot;American Express&quot;,150,150);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,151,151),
-  (&quot;Mastercard&quot;,152,152),
-  (&quot;American Express&quot;,153,153),
-  (&quot;Visa&quot;,154,154),
-  (&quot;Mastercard&quot;,155,155),
-  (&quot;American Express&quot;,156,156),
-  (&quot;Visa&quot;,157,157),
-  (&quot;Mastercard&quot;,158,158),
-  (&quot;American Express&quot;,159,159),
-  (&quot;Visa&quot;,160,160);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,161,161),
-  (&quot;American Express&quot;,162,162),
-  (&quot;Visa&quot;,163,163),
-  (&quot;Mastercard&quot;,164,164),
-  (&quot;American Express&quot;,165,165),
-  (&quot;Visa&quot;,166,166),
-  (&quot;Mastercard&quot;,167,167),
-  (&quot;American Express&quot;,168,168),
-  (&quot;Visa&quot;,169,169),
-  (&quot;Mastercard&quot;,170,170);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,171,171),
-  (&quot;Visa&quot;,172,172),
-  (&quot;Mastercard&quot;,173,173),
-  (&quot;American Express&quot;,174,174),
-  (&quot;Visa&quot;,175,175),
-  (&quot;Mastercard&quot;,176,176),
-  (&quot;American Express&quot;,177,177),
-  (&quot;Visa&quot;,178,178),
-  (&quot;Mastercard&quot;,179,179),
-  (&quot;American Express&quot;,180,180);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,181,181),
-  (&quot;Mastercard&quot;,182,182),
-  (&quot;American Express&quot;,183,183),
-  (&quot;Visa&quot;,184,184),
-  (&quot;Mastercard&quot;,185,185),
-  (&quot;American Express&quot;,186,186),
-  (&quot;Visa&quot;,187,187),
-  (&quot;Mastercard&quot;,188,188),
-  (&quot;American Express&quot;,189,189),
-  (&quot;Visa&quot;,190,190);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,191,191),
-  (&quot;American Express&quot;,192,192),
-  (&quot;Visa&quot;,193,193),
-  (&quot;Mastercard&quot;,194,194),
-  (&quot;American Express&quot;,195,195),
-  (&quot;Visa&quot;,196,196),
-  (&quot;Mastercard&quot;,197,197),
-  (&quot;American Express&quot;,198,198),
-  (&quot;Visa&quot;,199,199),
-  (&quot;Mastercard&quot;,200,200);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,201,201),
-  (&quot;Visa&quot;,202,202),
-  (&quot;Mastercard&quot;,203,203),
-  (&quot;American Express&quot;,204,204),
-  (&quot;Visa&quot;,205,205),
-  (&quot;Mastercard&quot;,206,206),
-  (&quot;American Express&quot;,207,207),
-  (&quot;Visa&quot;,208,208),
-  (&quot;Mastercard&quot;,209,209),
-  (&quot;American Express&quot;,210,210);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,211,211),
-  (&quot;Mastercard&quot;,212,212),
-  (&quot;American Express&quot;,213,213),
-  (&quot;Visa&quot;,214,214),
-  (&quot;Mastercard&quot;,215,215),
-  (&quot;American Express&quot;,216,216),
-  (&quot;Visa&quot;,217,217),
-  (&quot;Mastercard&quot;,218,218),
-  (&quot;American Express&quot;,219,219),
-  (&quot;Visa&quot;,220,220);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,221,221),
-  (&quot;American Express&quot;,222,222),
-  (&quot;Visa&quot;,223,223),
-  (&quot;Mastercard&quot;,224,224),
-  (&quot;American Express&quot;,225,225),
-  (&quot;Visa&quot;,226,226),
-  (&quot;Mastercard&quot;,227,227),
-  (&quot;American Express&quot;,228,228),
-  (&quot;Visa&quot;,229,229),
-  (&quot;Mastercard&quot;,230,230);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,231,231),
-  (&quot;Visa&quot;,232,232),
-  (&quot;Mastercard&quot;,233,233),
-  (&quot;American Express&quot;,234,234),
-  (&quot;Visa&quot;,235,235),
-  (&quot;Mastercard&quot;,236,236),
-  (&quot;American Express&quot;,237,237),
-  (&quot;Visa&quot;,238,238),
-  (&quot;Mastercard&quot;,239,239),
-  (&quot;American Express&quot;,240,240);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,241,241),
-  (&quot;Mastercard&quot;,242,242),
-  (&quot;American Express&quot;,243,243),
-  (&quot;Visa&quot;,244,244),
-  (&quot;Mastercard&quot;,245,245),
-  (&quot;American Express&quot;,246,246),
-  (&quot;Visa&quot;,247,247),
-  (&quot;Mastercard&quot;,248,248),
-  (&quot;American Express&quot;,249,249),
-  (&quot;Visa&quot;,250,250);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,251,251),
-  (&quot;American Express&quot;,252,252),
-  (&quot;Visa&quot;,253,253),
-  (&quot;Mastercard&quot;,254,254),
-  (&quot;American Express&quot;,255,255),
-  (&quot;Visa&quot;,256,256),
-  (&quot;Mastercard&quot;,257,257),
-  (&quot;American Express&quot;,258,258),
-  (&quot;Visa&quot;,259,259),
-  (&quot;Mastercard&quot;,260,260);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,261,261),
-  (&quot;Visa&quot;,262,262),
-  (&quot;Mastercard&quot;,263,263),
-  (&quot;American Express&quot;,264,264),
-  (&quot;Visa&quot;,265,265),
-  (&quot;Mastercard&quot;,266,266),
-  (&quot;American Express&quot;,267,267),
-  (&quot;Visa&quot;,268,268),
-  (&quot;Mastercard&quot;,269,269),
-  (&quot;American Express&quot;,270,270);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,271,271),
-  (&quot;Mastercard&quot;,272,272),
-  (&quot;American Express&quot;,273,273),
-  (&quot;Visa&quot;,274,274),
-  (&quot;Mastercard&quot;,275,275),
-  (&quot;American Express&quot;,276,276),
-  (&quot;Visa&quot;,277,277),
-  (&quot;Mastercard&quot;,278,278),
-  (&quot;American Express&quot;,279,279),
-  (&quot;Visa&quot;,280,280);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,281,281),
-  (&quot;American Express&quot;,282,282),
-  (&quot;Visa&quot;,283,283),
-  (&quot;Mastercard&quot;,284,284),
-  (&quot;American Express&quot;,285,285),
-  (&quot;Visa&quot;,286,286),
-  (&quot;Mastercard&quot;,287,287),
-  (&quot;American Express&quot;,288,288),
-  (&quot;Visa&quot;,289,289),
-  (&quot;Mastercard&quot;,290,290);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,291,291),
-  (&quot;Visa&quot;,292,292),
-  (&quot;Mastercard&quot;,293,293),
-  (&quot;American Express&quot;,294,294),
-  (&quot;Visa&quot;,295,295),
-  (&quot;Mastercard&quot;,296,296),
-  (&quot;American Express&quot;,297,297),
-  (&quot;Visa&quot;,298,298),
-  (&quot;Mastercard&quot;,299,299),
-  (&quot;American Express&quot;,300,300);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,301,301),
-  (&quot;Mastercard&quot;,302,302),
-  (&quot;American Express&quot;,303,303),
-  (&quot;Visa&quot;,304,304),
-  (&quot;Mastercard&quot;,305,305),
-  (&quot;American Express&quot;,306,306),
-  (&quot;Visa&quot;,307,307),
-  (&quot;Mastercard&quot;,308,308),
-  (&quot;American Express&quot;,309,309),
-  (&quot;Visa&quot;,310,310);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,311,311),
-  (&quot;American Express&quot;,312,312),
-  (&quot;Visa&quot;,313,313),
-  (&quot;Mastercard&quot;,314,314),
-  (&quot;American Express&quot;,315,315),
-  (&quot;Visa&quot;,316,316),
-  (&quot;Mastercard&quot;,317,317),
-  (&quot;American Express&quot;,318,318),
-  (&quot;Visa&quot;,319,319),
-  (&quot;Mastercard&quot;,320,320);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,321,321),
-  (&quot;Visa&quot;,322,322),
-  (&quot;Mastercard&quot;,323,323),
-  (&quot;American Express&quot;,324,324),
-  (&quot;Visa&quot;,325,325),
-  (&quot;Mastercard&quot;,326,326),
-  (&quot;American Express&quot;,327,327),
-  (&quot;Visa&quot;,328,328),
-  (&quot;Mastercard&quot;,329,329),
-  (&quot;American Express&quot;,330,330);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,331,331),
-  (&quot;Mastercard&quot;,332,332),
-  (&quot;American Express&quot;,333,333),
-  (&quot;Visa&quot;,334,334),
-  (&quot;Mastercard&quot;,335,335),
-  (&quot;American Express&quot;,336,336),
-  (&quot;Visa&quot;,337,337),
-  (&quot;Mastercard&quot;,338,338),
-  (&quot;American Express&quot;,339,339),
-  (&quot;Visa&quot;,340,340);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,341,341),
-  (&quot;American Express&quot;,342,342),
-  (&quot;Visa&quot;,343,343),
-  (&quot;Mastercard&quot;,344,344),
-  (&quot;American Express&quot;,345,345),
-  (&quot;Visa&quot;,346,346),
-  (&quot;Mastercard&quot;,347,347),
-  (&quot;American Express&quot;,348,348),
-  (&quot;Visa&quot;,349,349),
-  (&quot;Mastercard&quot;,350,350);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,351,351),
-  (&quot;Visa&quot;,352,352),
-  (&quot;Mastercard&quot;,353,353),
-  (&quot;American Express&quot;,354,354),
-  (&quot;Visa&quot;,355,355),
-  (&quot;Mastercard&quot;,356,356),
-  (&quot;American Express&quot;,357,357),
-  (&quot;Visa&quot;,358,358),
-  (&quot;Mastercard&quot;,359,359),
-  (&quot;American Express&quot;,360,360);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,361,361),
-  (&quot;Mastercard&quot;,362,362),
-  (&quot;American Express&quot;,363,363),
-  (&quot;Visa&quot;,364,364),
-  (&quot;Mastercard&quot;,365,365),
-  (&quot;American Express&quot;,366,366),
-  (&quot;Visa&quot;,367,367),
-  (&quot;Mastercard&quot;,368,368),
-  (&quot;American Express&quot;,369,369),
-  (&quot;Visa&quot;,370,370);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,371,371),
-  (&quot;American Express&quot;,372,372),
-  (&quot;Visa&quot;,373,373),
-  (&quot;Mastercard&quot;,374,374),
-  (&quot;American Express&quot;,375,375),
-  (&quot;Visa&quot;,376,376),
-  (&quot;Mastercard&quot;,377,377),
-  (&quot;American Express&quot;,378,378),
-  (&quot;Visa&quot;,379,379),
-  (&quot;Mastercard&quot;,380,380);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,381,381),
-  (&quot;Visa&quot;,382,382),
-  (&quot;Mastercard&quot;,383,383),
-  (&quot;American Express&quot;,384,384),
-  (&quot;Visa&quot;,385,385),
-  (&quot;Mastercard&quot;,386,386),
-  (&quot;American Express&quot;,387,387),
-  (&quot;Visa&quot;,388,388),
-  (&quot;Mastercard&quot;,389,389),
-  (&quot;American Express&quot;,390,390);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,391,391),
-  (&quot;Mastercard&quot;,392,392),
-  (&quot;American Express&quot;,393,393),
-  (&quot;Visa&quot;,394,394),
-  (&quot;Mastercard&quot;,395,395),
-  (&quot;American Express&quot;,396,396),
-  (&quot;Visa&quot;,397,397),
-  (&quot;Mastercard&quot;,398,398),
-  (&quot;American Express&quot;,399,399),
-  (&quot;Visa&quot;,400,400);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,401,401),
-  (&quot;American Express&quot;,402,402),
-  (&quot;Visa&quot;,403,403),
-  (&quot;Mastercard&quot;,404,404),
-  (&quot;American Express&quot;,405,405),
-  (&quot;Visa&quot;,406,406),
-  (&quot;Mastercard&quot;,407,407),
-  (&quot;American Express&quot;,408,408),
-  (&quot;Visa&quot;,409,409),
-  (&quot;Mastercard&quot;,410,410);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,411,411),
-  (&quot;Visa&quot;,412,412),
-  (&quot;Mastercard&quot;,413,413),
-  (&quot;American Express&quot;,414,414),
-  (&quot;Visa&quot;,415,415),
-  (&quot;Mastercard&quot;,416,416),
-  (&quot;American Express&quot;,417,417),
-  (&quot;Visa&quot;,418,418),
-  (&quot;Mastercard&quot;,419,419),
-  (&quot;American Express&quot;,420,420);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,421,421),
-  (&quot;Mastercard&quot;,422,422),
-  (&quot;American Express&quot;,423,423),
-  (&quot;Visa&quot;,424,424),
-  (&quot;Mastercard&quot;,425,425),
-  (&quot;American Express&quot;,426,426),
-  (&quot;Visa&quot;,427,427),
-  (&quot;Mastercard&quot;,428,428),
-  (&quot;American Express&quot;,429,429),
-  (&quot;Visa&quot;,430,430);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,431,431),
-  (&quot;American Express&quot;,432,432),
-  (&quot;Visa&quot;,433,433),
-  (&quot;Mastercard&quot;,434,434),
-  (&quot;American Express&quot;,435,435),
-  (&quot;Visa&quot;,436,436),
-  (&quot;Mastercard&quot;,437,437),
-  (&quot;American Express&quot;,438,438),
-  (&quot;Visa&quot;,439,439),
-  (&quot;Mastercard&quot;,440,440);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,441,441),
-  (&quot;Visa&quot;,442,442),
-  (&quot;Mastercard&quot;,443,443),
-  (&quot;American Express&quot;,444,444),
-  (&quot;Visa&quot;,445,445),
-  (&quot;Mastercard&quot;,446,446),
-  (&quot;American Express&quot;,447,447),
-  (&quot;Visa&quot;,448,448),
-  (&quot;Mastercard&quot;,449,449),
-  (&quot;American Express&quot;,450,450);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,451,451),
-  (&quot;Mastercard&quot;,452,452),
-  (&quot;American Express&quot;,453,453),
-  (&quot;Visa&quot;,454,454),
-  (&quot;Mastercard&quot;,455,455),
-  (&quot;American Express&quot;,456,456),
-  (&quot;Visa&quot;,457,457),
-  (&quot;Mastercard&quot;,458,458),
-  (&quot;American Express&quot;,459,459),
-  (&quot;Visa&quot;,460,460);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,461,461),
-  (&quot;American Express&quot;,462,462),
-  (&quot;Visa&quot;,463,463),
-  (&quot;Mastercard&quot;,464,464),
-  (&quot;American Express&quot;,465,465),
-  (&quot;Visa&quot;,466,466),
-  (&quot;Mastercard&quot;,467,467),
-  (&quot;American Express&quot;,468,468),
-  (&quot;Visa&quot;,469,469),
-  (&quot;Mastercard&quot;,470,470);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;American Express&quot;,471,471),
-  (&quot;Visa&quot;,472,472),
-  (&quot;Mastercard&quot;,473,473),
-  (&quot;American Express&quot;,474,474),
-  (&quot;Visa&quot;,475,475),
-  (&quot;Mastercard&quot;,476,476),
-  (&quot;American Express&quot;,477,477),
-  (&quot;Visa&quot;,478,478),
-  (&quot;Mastercard&quot;,479,479),
-  (&quot;American Express&quot;,480,480);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Visa&quot;,481,481),
-  (&quot;Mastercard&quot;,482,482),
-  (&quot;American Express&quot;,483,483),
-  (&quot;Visa&quot;,484,484),
-  (&quot;Mastercard&quot;,485,485),
-  (&quot;American Express&quot;,486,486),
-  (&quot;Visa&quot;,487,487),
-  (&quot;Mastercard&quot;,488,488),
-  (&quot;American Express&quot;,489,489),
-  (&quot;Visa&quot;,490,490);
-INSERT INTO `card_brand` (`card_brand_description`,`card_brand_id`,`customer_id`)
-VALUES
-  (&quot;Mastercard&quot;,491,491),
-  (&quot;American Express&quot;,492,492),
-  (&quot;Visa&quot;,493,493),
-  (&quot;Mastercard&quot;,494,494),
-  (&quot;American Express&quot;,495,495),
-  (&quot;Visa&quot;,496,496),
-  (&quot;Mastercard&quot;,497,497),
-  (&quot;American Express&quot;,498,498),
-  (&quot;Visa&quot;,499,499),
-  (&quot;Mastercard&quot;,500,500);
-</sql><sql name="tarjeta.sql">INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
-VALUES
-  (1,1,&quot;448565 8928672467&quot;,&quot;887&quot;,&quot;03-06-14&quot;,&quot;04-05-26&quot;,1),
-  (2,2,&quot;4532 743 26 9427&quot;,&quot;442&quot;,&quot;05-11-14&quot;,&quot;17-05-29&quot;,2),
-  (3,3,&quot;4656 443 82 8727&quot;,&quot;420&quot;,&quot;20-09-13&quot;,&quot;10-06-22&quot;,3),
-  (4,4,&quot;524956 964468 5427&quot;,&quot;135&quot;,&quot;17-07-14&quot;,&quot;08-01-25&quot;,4),
-  (5,5,&quot;555 31835 22644 439&quot;,&quot;310&quot;,&quot;16-03-16&quot;,&quot;01-12-27&quot;,5),
-  (6,6,&quot;544 82677 97687 345&quot;,&quot;958&quot;,&quot;27-03-15&quot;,&quot;21-11-25&quot;,6),
-  (7,7,&quot;5164 8935 6377 7580&quot;,&quot;710&quot;,&quot;03-08-22&quot;,&quot;27-07-27&quot;,7),
-  (8,8,&quot;3754 651538 44381&quot;,&quot;876&quot;,&quot;24-11-21&quot;,&quot;25-04-24&quot;,8),
-  (9,9,&quot;5233 9921 2822 6872&quot;,&quot;829&quot;,&quot;21-11-18&quot;,&quot;26-05-22&quot;,9),
-  (10,10,&quot;448 57676 58832 934&quot;,&quot;995&quot;,&quot;18-10-17&quot;,&quot;21-02-22&quot;,10);
+  (1,1,&quot;3776 962423 46933&quot;,&quot;383&quot;,&quot;14-08-21&quot;,&quot;21-11-26&quot;,2),
+  (2,2,&quot;402400 719722 2356&quot;,&quot;457&quot;,&quot;03-02-22&quot;,&quot;08-11-28&quot;,3),
+  (3,3,&quot;536254 592753 7379&quot;,&quot;126&quot;,&quot;05-09-18&quot;,&quot;10-05-24&quot;,2),
+  (4,4,&quot;347521383765286&quot;,&quot;896&quot;,&quot;05-03-21&quot;,&quot;04-08-25&quot;,2),
+  (5,5,&quot;4346 271 75 8515&quot;,&quot;831&quot;,&quot;10-03-22&quot;,&quot;30-05-24&quot;,1),
+  (6,6,&quot;4929 2928 1612 3252&quot;,&quot;220&quot;,&quot;03-09-18&quot;,&quot;11-10-22&quot;,2),
+  (7,7,&quot;347889643735781&quot;,&quot;953&quot;,&quot;01-02-21&quot;,&quot;27-10-25&quot;,2),
+  (8,8,&quot;3458 341825 42687&quot;,&quot;891&quot;,&quot;03-01-20&quot;,&quot;24-01-29&quot;,1),
+  (9,9,&quot;471 61245 94373 337&quot;,&quot;528&quot;,&quot;03-03-19&quot;,&quot;14-03-23&quot;,2),
+  (10,10,&quot;3431 589412 87422&quot;,&quot;417&quot;,&quot;28-04-19&quot;,&quot;30-07-27&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (11,11,&quot;525 38714 95216 531&quot;,&quot;506&quot;,&quot;20-09-11&quot;,&quot;29-07-22&quot;,11),
-  (12,12,&quot;5298265235644481&quot;,&quot;950&quot;,&quot;26-02-17&quot;,&quot;27-07-28&quot;,12),
-  (13,13,&quot;3436 658421 51671&quot;,&quot;674&quot;,&quot;08-08-18&quot;,&quot;13-10-26&quot;,13),
-  (14,14,&quot;379966379927468&quot;,&quot;608&quot;,&quot;19-01-20&quot;,&quot;30-12-22&quot;,14),
-  (15,15,&quot;5333 7681 5135 3943&quot;,&quot;340&quot;,&quot;29-03-19&quot;,&quot;10-04-25&quot;,15),
-  (16,16,&quot;453296 2283735288&quot;,&quot;188&quot;,&quot;26-09-11&quot;,&quot;14-06-27&quot;,16),
-  (17,17,&quot;3434 159337 63343&quot;,&quot;478&quot;,&quot;29-05-18&quot;,&quot;25-02-28&quot;,17),
-  (18,18,&quot;345229484546520&quot;,&quot;449&quot;,&quot;12-05-19&quot;,&quot;04-06-23&quot;,18),
-  (19,19,&quot;3715 193554 45357&quot;,&quot;150&quot;,&quot;15-08-11&quot;,&quot;05-07-25&quot;,19),
-  (20,20,&quot;557 25711 51423 827&quot;,&quot;709&quot;,&quot;08-05-18&quot;,&quot;18-10-24&quot;,20);
+  (11,11,&quot;3429 938326 66644&quot;,&quot;289&quot;,&quot;09-07-20&quot;,&quot;04-04-25&quot;,3),
+  (12,12,&quot;4929658235783&quot;,&quot;885&quot;,&quot;16-11-18&quot;,&quot;15-09-24&quot;,1),
+  (13,13,&quot;3468 837369 19254&quot;,&quot;265&quot;,&quot;19-10-18&quot;,&quot;12-09-25&quot;,2),
+  (14,14,&quot;3782 865376 75581&quot;,&quot;717&quot;,&quot;10-11-21&quot;,&quot;15-11-22&quot;,2),
+  (15,15,&quot;5356 6163 8868 7843&quot;,&quot;623&quot;,&quot;18-06-20&quot;,&quot;25-12-25&quot;,1),
+  (16,16,&quot;3479 571378 69133&quot;,&quot;895&quot;,&quot;17-12-20&quot;,&quot;14-12-25&quot;,2),
+  (17,17,&quot;4916892636561&quot;,&quot;848&quot;,&quot;16-03-19&quot;,&quot;22-11-25&quot;,3),
+  (18,18,&quot;491686 742715 2298&quot;,&quot;623&quot;,&quot;22-09-19&quot;,&quot;28-10-25&quot;,1),
+  (19,19,&quot;346823849858387&quot;,&quot;210&quot;,&quot;06-09-20&quot;,&quot;08-05-25&quot;,3),
+  (20,20,&quot;379834487325332&quot;,&quot;468&quot;,&quot;05-12-21&quot;,&quot;28-06-26&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (21,21,&quot;4485626472995279&quot;,&quot;411&quot;,&quot;24-03-15&quot;,&quot;31-12-24&quot;,21),
-  (22,22,&quot;535227 3262235754&quot;,&quot;441&quot;,&quot;30-11-19&quot;,&quot;02-01-27&quot;,22),
-  (23,23,&quot;378937457691442&quot;,&quot;660&quot;,&quot;14-10-15&quot;,&quot;25-12-21&quot;,23),
-  (24,24,&quot;492959 5462868867&quot;,&quot;376&quot;,&quot;21-06-23&quot;,&quot;02-06-29&quot;,24),
-  (25,25,&quot;3429 538289 41575&quot;,&quot;696&quot;,&quot;25-09-19&quot;,&quot;19-08-23&quot;,25),
-  (26,26,&quot;378813679881576&quot;,&quot;266&quot;,&quot;02-02-22&quot;,&quot;19-01-28&quot;,26),
-  (27,27,&quot;372131897663486&quot;,&quot;166&quot;,&quot;27-10-14&quot;,&quot;20-02-23&quot;,27),
-  (28,28,&quot;4024 007 17 8841&quot;,&quot;125&quot;,&quot;07-01-20&quot;,&quot;08-05-27&quot;,28),
-  (29,29,&quot;346285567423689&quot;,&quot;139&quot;,&quot;04-08-22&quot;,&quot;30-06-23&quot;,29),
-  (30,30,&quot;3725 353742 99368&quot;,&quot;582&quot;,&quot;29-05-18&quot;,&quot;15-10-27&quot;,30);
+  (21,21,&quot;535737 3456282730&quot;,&quot;129&quot;,&quot;22-08-18&quot;,&quot;09-11-22&quot;,2),
+  (22,22,&quot;3715 174816 84246&quot;,&quot;391&quot;,&quot;30-05-19&quot;,&quot;25-03-25&quot;,1),
+  (23,23,&quot;4929 173 65 8550&quot;,&quot;775&quot;,&quot;28-06-20&quot;,&quot;31-07-26&quot;,2),
+  (24,24,&quot;3748 474472 85730&quot;,&quot;809&quot;,&quot;25-12-20&quot;,&quot;11-04-23&quot;,1),
+  (25,25,&quot;3734 237278 91836&quot;,&quot;285&quot;,&quot;28-12-21&quot;,&quot;22-02-24&quot;,3),
+  (26,26,&quot;4555 7348 7645 3336&quot;,&quot;440&quot;,&quot;07-03-20&quot;,&quot;18-02-25&quot;,1),
+  (27,27,&quot;554321 677681 2998&quot;,&quot;580&quot;,&quot;30-07-22&quot;,&quot;14-05-23&quot;,2),
+  (28,28,&quot;373544456547255&quot;,&quot;859&quot;,&quot;16-02-21&quot;,&quot;16-11-28&quot;,3),
+  (29,29,&quot;448 54547 45252 349&quot;,&quot;704&quot;,&quot;12-07-19&quot;,&quot;18-11-27&quot;,2),
+  (30,30,&quot;551325 8274862857&quot;,&quot;462&quot;,&quot;19-12-19&quot;,&quot;13-11-27&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (31,31,&quot;536728 9184311567&quot;,&quot;608&quot;,&quot;04-05-21&quot;,&quot;29-03-28&quot;,31),
-  (32,32,&quot;4916882483297&quot;,&quot;143&quot;,&quot;06-04-23&quot;,&quot;22-05-28&quot;,32),
-  (33,33,&quot;453 97686 65971 281&quot;,&quot;729&quot;,&quot;14-12-10&quot;,&quot;27-06-24&quot;,33),
-  (34,34,&quot;4556 6653 6434 6138&quot;,&quot;115&quot;,&quot;06-05-11&quot;,&quot;09-03-23&quot;,34),
-  (35,35,&quot;4916786243342&quot;,&quot;490&quot;,&quot;03-03-12&quot;,&quot;18-06-25&quot;,35),
-  (36,36,&quot;5436682362667239&quot;,&quot;534&quot;,&quot;01-02-13&quot;,&quot;11-01-23&quot;,36),
-  (37,37,&quot;3738 675885 64181&quot;,&quot;199&quot;,&quot;12-03-21&quot;,&quot;25-05-25&quot;,37),
-  (38,38,&quot;3769 766557 25265&quot;,&quot;734&quot;,&quot;14-06-18&quot;,&quot;26-01-23&quot;,38),
-  (39,39,&quot;5365 2224 2355 9185&quot;,&quot;716&quot;,&quot;05-09-10&quot;,&quot;21-09-26&quot;,39),
-  (40,40,&quot;544 56862 53426 380&quot;,&quot;939&quot;,&quot;25-04-22&quot;,&quot;22-04-24&quot;,40);
+  (31,31,&quot;4716319968252&quot;,&quot;153&quot;,&quot;17-04-20&quot;,&quot;24-02-24&quot;,2),
+  (32,32,&quot;402 40071 25665 759&quot;,&quot;121&quot;,&quot;27-03-21&quot;,&quot;29-09-24&quot;,2),
+  (33,33,&quot;528936 117794 5365&quot;,&quot;337&quot;,&quot;05-01-20&quot;,&quot;30-12-27&quot;,2),
+  (34,34,&quot;448579 467245 5336&quot;,&quot;573&quot;,&quot;06-04-22&quot;,&quot;20-09-24&quot;,3),
+  (35,35,&quot;4696346879286&quot;,&quot;648&quot;,&quot;02-10-21&quot;,&quot;27-07-26&quot;,2),
+  (36,36,&quot;533 27422 16317 442&quot;,&quot;654&quot;,&quot;18-10-21&quot;,&quot;06-01-26&quot;,2),
+  (37,37,&quot;5483 3152 2996 4414&quot;,&quot;133&quot;,&quot;09-12-19&quot;,&quot;09-07-23&quot;,2),
+  (38,38,&quot;514676 556825 5643&quot;,&quot;262&quot;,&quot;02-05-19&quot;,&quot;01-03-29&quot;,2),
+  (39,39,&quot;523647 1837828796&quot;,&quot;758&quot;,&quot;27-10-19&quot;,&quot;17-12-27&quot;,1),
+  (40,40,&quot;5221468581337567&quot;,&quot;217&quot;,&quot;02-08-19&quot;,&quot;06-02-28&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (41,41,&quot;5356 9837 2333 2257&quot;,&quot;418&quot;,&quot;01-07-14&quot;,&quot;20-03-25&quot;,41),
-  (42,42,&quot;3443 666831 46826&quot;,&quot;486&quot;,&quot;16-11-19&quot;,&quot;03-10-28&quot;,42),
-  (43,43,&quot;4024007146676942&quot;,&quot;458&quot;,&quot;13-08-18&quot;,&quot;24-09-21&quot;,43),
-  (44,44,&quot;5378845523473470&quot;,&quot;413&quot;,&quot;14-02-21&quot;,&quot;27-09-21&quot;,44),
-  (45,45,&quot;455643 435723 8558&quot;,&quot;228&quot;,&quot;15-07-17&quot;,&quot;18-01-23&quot;,45),
-  (46,46,&quot;344338257886178&quot;,&quot;794&quot;,&quot;18-02-14&quot;,&quot;31-05-23&quot;,46),
-  (47,47,&quot;538885 2535337451&quot;,&quot;300&quot;,&quot;03-05-17&quot;,&quot;19-10-25&quot;,47),
-  (48,48,&quot;512 84764 64663 623&quot;,&quot;674&quot;,&quot;08-06-16&quot;,&quot;21-07-29&quot;,48),
-  (49,49,&quot;558456 175473 3355&quot;,&quot;484&quot;,&quot;04-03-22&quot;,&quot;05-11-28&quot;,49),
-  (50,50,&quot;3452 974746 18757&quot;,&quot;876&quot;,&quot;22-06-12&quot;,&quot;25-08-21&quot;,50);
+  (41,41,&quot;5386 4183 5369 3276&quot;,&quot;857&quot;,&quot;14-10-18&quot;,&quot;04-11-22&quot;,3),
+  (42,42,&quot;3758 875486 36810&quot;,&quot;158&quot;,&quot;10-03-19&quot;,&quot;06-11-26&quot;,2),
+  (43,43,&quot;4929567432646&quot;,&quot;533&quot;,&quot;05-01-22&quot;,&quot;24-04-23&quot;,3),
+  (44,44,&quot;348585359385758&quot;,&quot;893&quot;,&quot;07-12-20&quot;,&quot;14-08-28&quot;,3),
+  (45,45,&quot;552797 8513634452&quot;,&quot;219&quot;,&quot;21-02-19&quot;,&quot;20-07-29&quot;,2),
+  (46,46,&quot;512 77384 87717 723&quot;,&quot;995&quot;,&quot;10-10-21&quot;,&quot;01-09-26&quot;,3),
+  (47,47,&quot;4485552882465382&quot;,&quot;757&quot;,&quot;05-02-20&quot;,&quot;18-03-25&quot;,1),
+  (48,48,&quot;373453527541158&quot;,&quot;541&quot;,&quot;04-01-20&quot;,&quot;31-01-28&quot;,1),
+  (49,49,&quot;3773 736282 87327&quot;,&quot;915&quot;,&quot;02-11-19&quot;,&quot;14-02-24&quot;,2),
+  (50,50,&quot;3789 872297 75478&quot;,&quot;338&quot;,&quot;31-10-21&quot;,&quot;18-12-24&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (51,51,&quot;4532 364 88 4553&quot;,&quot;526&quot;,&quot;01-07-12&quot;,&quot;04-12-27&quot;,51),
-  (52,52,&quot;4485 7484 7831 9542&quot;,&quot;537&quot;,&quot;20-04-12&quot;,&quot;23-12-25&quot;,52),
-  (53,53,&quot;4842 423 78 2676&quot;,&quot;653&quot;,&quot;07-08-13&quot;,&quot;08-05-29&quot;,53),
-  (54,54,&quot;551 45293 36656 597&quot;,&quot;290&quot;,&quot;01-01-13&quot;,&quot;16-09-25&quot;,54),
-  (55,55,&quot;3472 728647 47357&quot;,&quot;755&quot;,&quot;22-05-21&quot;,&quot;26-01-29&quot;,55),
-  (56,56,&quot;5294851973885628&quot;,&quot;277&quot;,&quot;10-02-16&quot;,&quot;13-06-24&quot;,56),
-  (57,57,&quot;448565 589737 8431&quot;,&quot;799&quot;,&quot;19-10-14&quot;,&quot;28-12-24&quot;,57),
-  (58,58,&quot;453266 375446 2861&quot;,&quot;961&quot;,&quot;14-07-21&quot;,&quot;21-06-24&quot;,58),
-  (59,59,&quot;4636778488842231&quot;,&quot;344&quot;,&quot;09-12-10&quot;,&quot;02-01-27&quot;,59),
-  (60,60,&quot;4916335756917699&quot;,&quot;894&quot;,&quot;07-05-22&quot;,&quot;08-05-22&quot;,60);
+  (51,51,&quot;5521 4256 3311 5158&quot;,&quot;646&quot;,&quot;15-11-19&quot;,&quot;10-04-27&quot;,1),
+  (52,52,&quot;4275555784279&quot;,&quot;574&quot;,&quot;16-07-21&quot;,&quot;23-11-28&quot;,2),
+  (53,53,&quot;448 55649 48786 974&quot;,&quot;220&quot;,&quot;14-12-18&quot;,&quot;14-12-27&quot;,1),
+  (54,54,&quot;348344615717317&quot;,&quot;868&quot;,&quot;30-05-19&quot;,&quot;03-01-28&quot;,2),
+  (55,55,&quot;4556877468471&quot;,&quot;914&quot;,&quot;21-05-20&quot;,&quot;19-10-26&quot;,3),
+  (56,56,&quot;557881 856767 5480&quot;,&quot;828&quot;,&quot;19-10-19&quot;,&quot;03-03-29&quot;,2),
+  (57,57,&quot;546512 8473448865&quot;,&quot;354&quot;,&quot;01-05-19&quot;,&quot;16-11-24&quot;,3),
+  (58,58,&quot;491 63468 74982 689&quot;,&quot;484&quot;,&quot;04-04-20&quot;,&quot;18-09-27&quot;,2),
+  (59,59,&quot;554 64626 64761 254&quot;,&quot;343&quot;,&quot;17-01-19&quot;,&quot;24-08-25&quot;,3),
+  (60,60,&quot;3774 356492 73287&quot;,&quot;701&quot;,&quot;11-12-20&quot;,&quot;12-08-27&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (61,61,&quot;524567 587952 4670&quot;,&quot;299&quot;,&quot;17-09-21&quot;,&quot;13-01-25&quot;,61),
-  (62,62,&quot;5494764653594691&quot;,&quot;825&quot;,&quot;11-07-21&quot;,&quot;21-05-28&quot;,62),
-  (63,63,&quot;544322 714152 7543&quot;,&quot;414&quot;,&quot;26-07-15&quot;,&quot;12-12-26&quot;,63),
-  (64,64,&quot;545216 7764583761&quot;,&quot;578&quot;,&quot;23-11-11&quot;,&quot;15-05-22&quot;,64),
-  (65,65,&quot;3738 743547 22746&quot;,&quot;219&quot;,&quot;12-10-17&quot;,&quot;23-06-22&quot;,65),
-  (66,66,&quot;402400 716488 2695&quot;,&quot;435&quot;,&quot;01-09-13&quot;,&quot;05-04-28&quot;,66),
-  (67,67,&quot;471664 5779398236&quot;,&quot;501&quot;,&quot;18-06-20&quot;,&quot;09-07-25&quot;,67),
-  (68,68,&quot;4462 1969 7657 4670&quot;,&quot;906&quot;,&quot;11-12-15&quot;,&quot;11-06-29&quot;,68),
-  (69,69,&quot;346443886787561&quot;,&quot;623&quot;,&quot;20-03-15&quot;,&quot;23-05-27&quot;,69),
-  (70,70,&quot;4916 4873 6566 3253&quot;,&quot;471&quot;,&quot;23-03-17&quot;,&quot;06-04-24&quot;,70);
+  (61,61,&quot;558642 359495 5839&quot;,&quot;366&quot;,&quot;02-05-22&quot;,&quot;03-12-25&quot;,1),
+  (62,62,&quot;4024 0071 3421 3948&quot;,&quot;480&quot;,&quot;27-11-21&quot;,&quot;05-07-24&quot;,1),
+  (63,63,&quot;4532 933 27 5465&quot;,&quot;583&quot;,&quot;12-09-20&quot;,&quot;22-08-24&quot;,3),
+  (64,64,&quot;4569 276 73 7941&quot;,&quot;504&quot;,&quot;25-08-18&quot;,&quot;17-06-27&quot;,2),
+  (65,65,&quot;374713333261872&quot;,&quot;712&quot;,&quot;01-06-22&quot;,&quot;12-04-27&quot;,1),
+  (66,66,&quot;375238251217440&quot;,&quot;461&quot;,&quot;13-05-19&quot;,&quot;15-02-26&quot;,2),
+  (67,67,&quot;4556 8742 3136 9873&quot;,&quot;619&quot;,&quot;29-04-20&quot;,&quot;03-08-28&quot;,2),
+  (68,68,&quot;537756 7333258831&quot;,&quot;536&quot;,&quot;18-11-20&quot;,&quot;31-12-27&quot;,3),
+  (69,69,&quot;4556722856748&quot;,&quot;957&quot;,&quot;10-12-19&quot;,&quot;06-02-25&quot;,2),
+  (70,70,&quot;5576 7312 9578 6564&quot;,&quot;791&quot;,&quot;31-10-19&quot;,&quot;27-12-25&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (71,71,&quot;3782 357768 42360&quot;,&quot;988&quot;,&quot;04-07-14&quot;,&quot;18-06-26&quot;,71),
-  (72,72,&quot;542 56584 26743 227&quot;,&quot;199&quot;,&quot;17-09-21&quot;,&quot;28-05-27&quot;,72),
-  (73,73,&quot;5578765543444368&quot;,&quot;829&quot;,&quot;18-09-13&quot;,&quot;18-09-28&quot;,73),
-  (74,74,&quot;547865 3517537675&quot;,&quot;447&quot;,&quot;08-11-15&quot;,&quot;17-05-25&quot;,74),
-  (75,75,&quot;557982 4864251867&quot;,&quot;529&quot;,&quot;30-06-15&quot;,&quot;27-02-28&quot;,75),
-  (76,76,&quot;536 71637 14678 458&quot;,&quot;249&quot;,&quot;17-11-12&quot;,&quot;11-09-28&quot;,76),
-  (77,77,&quot;3748 416688 52674&quot;,&quot;189&quot;,&quot;16-05-13&quot;,&quot;31-08-28&quot;,77),
-  (78,78,&quot;347684244417750&quot;,&quot;226&quot;,&quot;30-03-16&quot;,&quot;31-08-23&quot;,78),
-  (79,79,&quot;4485 1472 4771 8565&quot;,&quot;675&quot;,&quot;02-10-12&quot;,&quot;11-05-26&quot;,79),
-  (80,80,&quot;448546 542353 1549&quot;,&quot;714&quot;,&quot;10-11-14&quot;,&quot;02-03-28&quot;,80);
+  (71,71,&quot;344765423475140&quot;,&quot;449&quot;,&quot;17-02-20&quot;,&quot;20-04-23&quot;,1),
+  (72,72,&quot;526782 4276817161&quot;,&quot;267&quot;,&quot;12-05-22&quot;,&quot;13-07-28&quot;,1),
+  (73,73,&quot;515 37514 29433 546&quot;,&quot;391&quot;,&quot;02-12-19&quot;,&quot;04-09-28&quot;,1),
+  (74,74,&quot;549 96222 36997 234&quot;,&quot;112&quot;,&quot;24-11-19&quot;,&quot;16-08-23&quot;,1),
+  (75,75,&quot;554957 2933783322&quot;,&quot;979&quot;,&quot;10-06-20&quot;,&quot;01-04-28&quot;,3),
+  (76,76,&quot;376422575875575&quot;,&quot;991&quot;,&quot;09-04-22&quot;,&quot;27-05-23&quot;,1),
+  (77,77,&quot;4929 643 25 8965&quot;,&quot;655&quot;,&quot;16-06-20&quot;,&quot;20-01-25&quot;,2),
+  (78,78,&quot;453993 3486297841&quot;,&quot;910&quot;,&quot;28-09-21&quot;,&quot;18-04-25&quot;,2),
+  (79,79,&quot;556743 583437 2271&quot;,&quot;932&quot;,&quot;07-12-19&quot;,&quot;05-09-24&quot;,3),
+  (80,80,&quot;448521 262356 4932&quot;,&quot;342&quot;,&quot;27-09-20&quot;,&quot;22-09-24&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (81,81,&quot;4793653749275&quot;,&quot;607&quot;,&quot;28-03-20&quot;,&quot;09-03-25&quot;,81),
-  (82,82,&quot;5147687922742570&quot;,&quot;610&quot;,&quot;07-01-17&quot;,&quot;24-12-22&quot;,82),
-  (83,83,&quot;377755497756434&quot;,&quot;411&quot;,&quot;26-12-17&quot;,&quot;28-04-27&quot;,83),
-  (84,84,&quot;422 75251 31336 466&quot;,&quot;636&quot;,&quot;29-09-12&quot;,&quot;07-07-27&quot;,84),
-  (85,85,&quot;4024 007 13 8191&quot;,&quot;623&quot;,&quot;26-01-23&quot;,&quot;24-11-27&quot;,85),
-  (86,86,&quot;4929 677 76 8632&quot;,&quot;243&quot;,&quot;27-03-18&quot;,&quot;17-02-27&quot;,86),
-  (87,87,&quot;373384376636379&quot;,&quot;528&quot;,&quot;09-07-21&quot;,&quot;17-03-28&quot;,87),
-  (88,88,&quot;538 75144 59433 648&quot;,&quot;915&quot;,&quot;23-07-12&quot;,&quot;27-09-23&quot;,88),
-  (89,89,&quot;4539 241 42 3687&quot;,&quot;618&quot;,&quot;10-04-18&quot;,&quot;21-10-27&quot;,89),
-  (90,90,&quot;3794 688483 52170&quot;,&quot;749&quot;,&quot;22-07-19&quot;,&quot;13-09-24&quot;,90);
+  (81,81,&quot;402400 7144565527&quot;,&quot;604&quot;,&quot;01-02-22&quot;,&quot;24-04-28&quot;,1),
+  (82,82,&quot;471679 2653235678&quot;,&quot;577&quot;,&quot;12-11-20&quot;,&quot;16-02-28&quot;,2),
+  (83,83,&quot;4485 4763 8169 5697&quot;,&quot;819&quot;,&quot;28-01-22&quot;,&quot;23-07-23&quot;,3),
+  (84,84,&quot;518 26759 73365 165&quot;,&quot;281&quot;,&quot;12-10-20&quot;,&quot;04-09-25&quot;,2),
+  (85,85,&quot;4532481383380&quot;,&quot;914&quot;,&quot;07-03-19&quot;,&quot;16-12-23&quot;,1),
+  (86,86,&quot;343234232332332&quot;,&quot;506&quot;,&quot;25-06-20&quot;,&quot;29-07-29&quot;,2),
+  (87,87,&quot;529144 514562 4818&quot;,&quot;468&quot;,&quot;19-12-18&quot;,&quot;28-03-29&quot;,1),
+  (88,88,&quot;544234 8762982626&quot;,&quot;840&quot;,&quot;20-11-20&quot;,&quot;18-11-24&quot;,1),
+  (89,89,&quot;343537872964242&quot;,&quot;166&quot;,&quot;07-05-22&quot;,&quot;03-11-24&quot;,1),
+  (90,90,&quot;5124743392452476&quot;,&quot;977&quot;,&quot;02-09-18&quot;,&quot;04-03-25&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (91,91,&quot;4532 4925 7442 7221&quot;,&quot;909&quot;,&quot;06-05-14&quot;,&quot;09-07-25&quot;,91),
-  (92,92,&quot;542329 4289669291&quot;,&quot;224&quot;,&quot;25-12-22&quot;,&quot;21-08-21&quot;,92),
-  (93,93,&quot;529298 7335332438&quot;,&quot;961&quot;,&quot;24-03-15&quot;,&quot;04-06-29&quot;,93),
-  (94,94,&quot;3732 728347 66559&quot;,&quot;541&quot;,&quot;20-03-11&quot;,&quot;08-06-27&quot;,94),
-  (95,95,&quot;3781 745452 38255&quot;,&quot;952&quot;,&quot;22-01-17&quot;,&quot;07-08-28&quot;,95),
-  (96,96,&quot;4916358942452678&quot;,&quot;916&quot;,&quot;11-04-18&quot;,&quot;02-05-24&quot;,96),
-  (97,97,&quot;3493 343635 79794&quot;,&quot;610&quot;,&quot;01-12-22&quot;,&quot;20-11-23&quot;,97),
-  (98,98,&quot;4485 7237 5246 1187&quot;,&quot;655&quot;,&quot;16-11-12&quot;,&quot;23-12-21&quot;,98),
-  (99,99,&quot;4539297265222&quot;,&quot;363&quot;,&quot;15-06-18&quot;,&quot;08-01-24&quot;,99),
-  (100,100,&quot;374528343735883&quot;,&quot;453&quot;,&quot;23-05-12&quot;,&quot;25-10-22&quot;,100);
+  (91,91,&quot;493 46215 57913 872&quot;,&quot;729&quot;,&quot;15-09-19&quot;,&quot;27-10-22&quot;,2),
+  (92,92,&quot;492945 915383 6263&quot;,&quot;716&quot;,&quot;22-04-22&quot;,&quot;24-08-23&quot;,1),
+  (93,93,&quot;3455 831267 96731&quot;,&quot;931&quot;,&quot;21-08-19&quot;,&quot;16-07-25&quot;,1),
+  (94,94,&quot;375287865223427&quot;,&quot;428&quot;,&quot;11-10-21&quot;,&quot;20-09-26&quot;,2),
+  (95,95,&quot;517161 883362 5868&quot;,&quot;215&quot;,&quot;12-09-19&quot;,&quot;28-03-23&quot;,2),
+  (96,96,&quot;555276 256788 4744&quot;,&quot;829&quot;,&quot;07-11-20&quot;,&quot;29-04-28&quot;,2),
+  (97,97,&quot;3458 783439 89543&quot;,&quot;650&quot;,&quot;10-07-20&quot;,&quot;31-03-28&quot;,3),
+  (98,98,&quot;538 53462 75249 417&quot;,&quot;673&quot;,&quot;09-01-21&quot;,&quot;15-01-26&quot;,2),
+  (99,99,&quot;373738586853647&quot;,&quot;815&quot;,&quot;02-02-19&quot;,&quot;17-10-25&quot;,1),
+  (100,100,&quot;3438 136547 27614&quot;,&quot;565&quot;,&quot;27-03-19&quot;,&quot;06-08-23&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (101,101,&quot;5142932374547548&quot;,&quot;478&quot;,&quot;21-07-18&quot;,&quot;31-01-23&quot;,101),
-  (102,102,&quot;5132136544311692&quot;,&quot;469&quot;,&quot;21-05-20&quot;,&quot;22-07-25&quot;,102),
-  (103,103,&quot;3743 587563 22833&quot;,&quot;519&quot;,&quot;27-03-19&quot;,&quot;19-12-22&quot;,103),
-  (104,104,&quot;4235752328635&quot;,&quot;495&quot;,&quot;02-10-22&quot;,&quot;28-09-21&quot;,104),
-  (105,105,&quot;4916 663 78 5340&quot;,&quot;649&quot;,&quot;03-02-23&quot;,&quot;18-07-25&quot;,105),
-  (106,106,&quot;5426 1385 5589 3258&quot;,&quot;976&quot;,&quot;27-12-16&quot;,&quot;25-07-29&quot;,106),
-  (107,107,&quot;4929 4471 3611 4254&quot;,&quot;592&quot;,&quot;25-04-15&quot;,&quot;29-12-26&quot;,107),
-  (108,108,&quot;3415 656553 25861&quot;,&quot;963&quot;,&quot;15-02-22&quot;,&quot;12-07-22&quot;,108),
-  (109,109,&quot;487426 167966 4624&quot;,&quot;670&quot;,&quot;12-09-14&quot;,&quot;31-07-24&quot;,109),
-  (110,110,&quot;525721 335253 4332&quot;,&quot;308&quot;,&quot;13-07-23&quot;,&quot;30-12-22&quot;,110);
+  (101,101,&quot;3417 613841 46450&quot;,&quot;806&quot;,&quot;29-07-22&quot;,&quot;16-01-23&quot;,3),
+  (102,102,&quot;519597 3587345920&quot;,&quot;666&quot;,&quot;02-11-19&quot;,&quot;02-06-26&quot;,2),
+  (103,103,&quot;3792 748375 94826&quot;,&quot;353&quot;,&quot;27-08-19&quot;,&quot;15-02-29&quot;,3),
+  (104,104,&quot;5576 6845 5746 5155&quot;,&quot;787&quot;,&quot;04-12-21&quot;,&quot;27-03-24&quot;,1),
+  (105,105,&quot;455626 9472583896&quot;,&quot;389&quot;,&quot;26-02-21&quot;,&quot;03-04-25&quot;,2),
+  (106,106,&quot;535783 5549674768&quot;,&quot;599&quot;,&quot;28-03-22&quot;,&quot;07-03-26&quot;,2),
+  (107,107,&quot;492 94168 55734 253&quot;,&quot;659&quot;,&quot;04-12-19&quot;,&quot;13-01-27&quot;,3),
+  (108,108,&quot;558 76529 53511 234&quot;,&quot;238&quot;,&quot;29-10-19&quot;,&quot;13-03-25&quot;,2),
+  (109,109,&quot;3791 784255 53815&quot;,&quot;501&quot;,&quot;18-07-22&quot;,&quot;09-08-24&quot;,1),
+  (110,110,&quot;3444 737262 52288&quot;,&quot;732&quot;,&quot;04-09-18&quot;,&quot;23-12-23&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (111,111,&quot;4916 446 87 5749&quot;,&quot;786&quot;,&quot;30-09-14&quot;,&quot;23-02-29&quot;,111),
-  (112,112,&quot;4929 349 39 6176&quot;,&quot;399&quot;,&quot;15-04-17&quot;,&quot;15-08-25&quot;,112),
-  (113,113,&quot;341682858778711&quot;,&quot;735&quot;,&quot;13-08-12&quot;,&quot;12-03-23&quot;,113),
-  (114,114,&quot;377264545277253&quot;,&quot;336&quot;,&quot;05-01-21&quot;,&quot;01-07-28&quot;,114),
-  (115,115,&quot;3721 523557 27381&quot;,&quot;704&quot;,&quot;12-02-18&quot;,&quot;16-07-27&quot;,115),
-  (116,116,&quot;3487 446288 37871&quot;,&quot;762&quot;,&quot;18-01-19&quot;,&quot;03-01-22&quot;,116),
-  (117,117,&quot;556 48582 81456 615&quot;,&quot;511&quot;,&quot;25-07-17&quot;,&quot;27-10-23&quot;,117),
-  (118,118,&quot;557538 4745432412&quot;,&quot;560&quot;,&quot;07-10-11&quot;,&quot;20-12-21&quot;,118),
-  (119,119,&quot;558 76878 58326 437&quot;,&quot;839&quot;,&quot;16-03-12&quot;,&quot;24-08-24&quot;,119),
-  (120,120,&quot;3432 393385 89487&quot;,&quot;294&quot;,&quot;14-05-15&quot;,&quot;09-12-23&quot;,120);
+  (111,111,&quot;3798 756581 73365&quot;,&quot;727&quot;,&quot;31-01-19&quot;,&quot;08-02-24&quot;,2),
+  (112,112,&quot;3482 553674 94519&quot;,&quot;207&quot;,&quot;21-06-22&quot;,&quot;29-09-25&quot;,2),
+  (113,113,&quot;549287 215785 4289&quot;,&quot;485&quot;,&quot;01-12-21&quot;,&quot;26-04-23&quot;,3),
+  (114,114,&quot;5323378336376322&quot;,&quot;960&quot;,&quot;13-09-18&quot;,&quot;25-12-25&quot;,3),
+  (115,115,&quot;491665 5444281863&quot;,&quot;127&quot;,&quot;21-11-20&quot;,&quot;28-02-26&quot;,2),
+  (116,116,&quot;539189 6737175388&quot;,&quot;932&quot;,&quot;15-09-20&quot;,&quot;04-06-29&quot;,2),
+  (117,117,&quot;373478621749696&quot;,&quot;340&quot;,&quot;29-06-22&quot;,&quot;27-04-25&quot;,2),
+  (118,118,&quot;4916582678253&quot;,&quot;337&quot;,&quot;23-10-21&quot;,&quot;22-09-26&quot;,2),
+  (119,119,&quot;534838 455399 3238&quot;,&quot;992&quot;,&quot;01-02-22&quot;,&quot;15-01-29&quot;,2),
+  (120,120,&quot;343482393474456&quot;,&quot;126&quot;,&quot;22-09-20&quot;,&quot;16-06-28&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (121,121,&quot;517753 583528 4284&quot;,&quot;818&quot;,&quot;15-09-20&quot;,&quot;02-02-28&quot;,121),
-  (122,122,&quot;343236773545479&quot;,&quot;558&quot;,&quot;08-07-15&quot;,&quot;26-08-25&quot;,122),
-  (123,123,&quot;4716556228449845&quot;,&quot;406&quot;,&quot;30-12-22&quot;,&quot;07-08-24&quot;,123),
-  (124,124,&quot;344143664786882&quot;,&quot;314&quot;,&quot;06-08-21&quot;,&quot;22-06-25&quot;,124),
-  (125,125,&quot;4539374616487&quot;,&quot;256&quot;,&quot;04-02-13&quot;,&quot;10-10-23&quot;,125),
-  (126,126,&quot;4539767534149&quot;,&quot;427&quot;,&quot;09-07-22&quot;,&quot;28-03-25&quot;,126),
-  (127,127,&quot;378824787186360&quot;,&quot;885&quot;,&quot;30-08-14&quot;,&quot;02-06-27&quot;,127),
-  (128,128,&quot;522554 7464659241&quot;,&quot;705&quot;,&quot;01-10-10&quot;,&quot;26-12-22&quot;,128),
-  (129,129,&quot;3766 273542 25392&quot;,&quot;413&quot;,&quot;19-04-21&quot;,&quot;06-01-25&quot;,129),
-  (130,130,&quot;4532 5295 2119 2299&quot;,&quot;995&quot;,&quot;09-06-23&quot;,&quot;16-02-27&quot;,130);
+  (121,121,&quot;4024007174747862&quot;,&quot;620&quot;,&quot;19-09-21&quot;,&quot;22-08-24&quot;,2),
+  (122,122,&quot;3744 535868 73244&quot;,&quot;186&quot;,&quot;11-09-18&quot;,&quot;28-10-22&quot;,3),
+  (123,123,&quot;347912292253524&quot;,&quot;122&quot;,&quot;03-03-20&quot;,&quot;03-06-28&quot;,3),
+  (124,124,&quot;4372192248832&quot;,&quot;492&quot;,&quot;06-01-20&quot;,&quot;01-10-23&quot;,2),
+  (125,125,&quot;4929542468681761&quot;,&quot;536&quot;,&quot;12-01-19&quot;,&quot;03-11-28&quot;,2),
+  (126,126,&quot;344448656411294&quot;,&quot;274&quot;,&quot;21-10-18&quot;,&quot;27-04-23&quot;,2),
+  (127,127,&quot;5548 7763 2544 6247&quot;,&quot;577&quot;,&quot;01-12-18&quot;,&quot;24-11-25&quot;,2),
+  (128,128,&quot;402400 7143658653&quot;,&quot;548&quot;,&quot;08-12-20&quot;,&quot;16-06-28&quot;,3),
+  (129,129,&quot;5173844913242469&quot;,&quot;265&quot;,&quot;13-07-22&quot;,&quot;23-12-22&quot;,1),
+  (130,130,&quot;377121275779686&quot;,&quot;509&quot;,&quot;06-04-20&quot;,&quot;28-01-25&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (131,131,&quot;5128576442693251&quot;,&quot;153&quot;,&quot;08-12-18&quot;,&quot;18-12-28&quot;,131),
-  (132,132,&quot;523326 931425 5951&quot;,&quot;496&quot;,&quot;05-03-21&quot;,&quot;22-05-25&quot;,132),
-  (133,133,&quot;515 98624 45235 411&quot;,&quot;204&quot;,&quot;27-06-17&quot;,&quot;10-03-28&quot;,133),
-  (134,134,&quot;4716 1753 5446 3692&quot;,&quot;265&quot;,&quot;06-10-22&quot;,&quot;01-10-25&quot;,134),
-  (135,135,&quot;3724 127771 48560&quot;,&quot;932&quot;,&quot;14-10-14&quot;,&quot;12-08-28&quot;,135),
-  (136,136,&quot;4556456382226&quot;,&quot;343&quot;,&quot;13-10-11&quot;,&quot;05-10-24&quot;,136),
-  (137,137,&quot;527597 425441 1683&quot;,&quot;215&quot;,&quot;14-04-18&quot;,&quot;21-05-28&quot;,137),
-  (138,138,&quot;376422828734942&quot;,&quot;239&quot;,&quot;05-01-18&quot;,&quot;25-03-29&quot;,138),
-  (139,139,&quot;527765 4248266280&quot;,&quot;263&quot;,&quot;26-09-14&quot;,&quot;14-03-27&quot;,139),
-  (140,140,&quot;531193 839421 5870&quot;,&quot;586&quot;,&quot;17-07-11&quot;,&quot;04-12-24&quot;,140);
+  (131,131,&quot;4556 3412 5933 1656&quot;,&quot;623&quot;,&quot;13-12-19&quot;,&quot;31-01-27&quot;,3),
+  (132,132,&quot;5471123888457165&quot;,&quot;701&quot;,&quot;13-11-21&quot;,&quot;29-03-29&quot;,2),
+  (133,133,&quot;347561334867583&quot;,&quot;600&quot;,&quot;26-08-19&quot;,&quot;23-09-22&quot;,1),
+  (134,134,&quot;5115 4774 4446 7882&quot;,&quot;889&quot;,&quot;22-02-20&quot;,&quot;08-06-25&quot;,2),
+  (135,135,&quot;348787833588136&quot;,&quot;610&quot;,&quot;12-08-18&quot;,&quot;25-01-27&quot;,2),
+  (136,136,&quot;529298 7758478544&quot;,&quot;146&quot;,&quot;23-11-19&quot;,&quot;04-02-25&quot;,3),
+  (137,137,&quot;453936 7157329775&quot;,&quot;350&quot;,&quot;09-03-20&quot;,&quot;06-02-23&quot;,3),
+  (138,138,&quot;4929387316789261&quot;,&quot;195&quot;,&quot;02-02-22&quot;,&quot;06-03-24&quot;,2),
+  (139,139,&quot;518748 3856784411&quot;,&quot;975&quot;,&quot;01-02-20&quot;,&quot;18-05-25&quot;,1),
+  (140,140,&quot;552585 942952 9691&quot;,&quot;837&quot;,&quot;24-02-19&quot;,&quot;20-06-23&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (141,141,&quot;343134668654284&quot;,&quot;933&quot;,&quot;16-05-19&quot;,&quot;21-12-23&quot;,141),
-  (142,142,&quot;4485 2232 1345 3790&quot;,&quot;443&quot;,&quot;18-03-15&quot;,&quot;20-03-27&quot;,142),
-  (143,143,&quot;3432 567978 76759&quot;,&quot;442&quot;,&quot;13-12-13&quot;,&quot;25-04-27&quot;,143),
-  (144,144,&quot;534143 5382824346&quot;,&quot;645&quot;,&quot;08-07-13&quot;,&quot;15-08-27&quot;,144),
-  (145,145,&quot;4556 872 52 8980&quot;,&quot;345&quot;,&quot;01-10-11&quot;,&quot;28-12-27&quot;,145),
-  (146,146,&quot;453 93298 46784 182&quot;,&quot;787&quot;,&quot;10-11-10&quot;,&quot;05-05-27&quot;,146),
-  (147,147,&quot;377777858133821&quot;,&quot;143&quot;,&quot;10-03-16&quot;,&quot;10-02-27&quot;,147),
-  (148,148,&quot;4294576836356&quot;,&quot;471&quot;,&quot;06-06-16&quot;,&quot;27-06-27&quot;,148),
-  (149,149,&quot;349918283548739&quot;,&quot;831&quot;,&quot;21-03-23&quot;,&quot;02-11-24&quot;,149),
-  (150,150,&quot;4532 754 47 4619&quot;,&quot;178&quot;,&quot;11-05-13&quot;,&quot;22-07-25&quot;,150);
+  (141,141,&quot;453936 445331 4379&quot;,&quot;640&quot;,&quot;11-11-21&quot;,&quot;18-03-28&quot;,1),
+  (142,142,&quot;525 62656 29277 542&quot;,&quot;175&quot;,&quot;26-03-20&quot;,&quot;03-06-24&quot;,2),
+  (143,143,&quot;4539 935 23 7724&quot;,&quot;351&quot;,&quot;07-05-20&quot;,&quot;13-01-27&quot;,2),
+  (144,144,&quot;4556768474587862&quot;,&quot;629&quot;,&quot;27-10-18&quot;,&quot;26-04-23&quot;,2),
+  (145,145,&quot;5166 9817 7548 3234&quot;,&quot;948&quot;,&quot;10-09-18&quot;,&quot;31-03-25&quot;,3),
+  (146,146,&quot;4916 213 67 5223&quot;,&quot;382&quot;,&quot;22-06-19&quot;,&quot;11-08-22&quot;,3),
+  (147,147,&quot;5486 3535 4174 3361&quot;,&quot;906&quot;,&quot;26-01-20&quot;,&quot;11-02-29&quot;,2),
+  (148,148,&quot;346687372783712&quot;,&quot;684&quot;,&quot;16-06-19&quot;,&quot;18-04-23&quot;,1),
+  (149,149,&quot;3766 874186 72468&quot;,&quot;920&quot;,&quot;12-06-21&quot;,&quot;18-10-23&quot;,3),
+  (150,150,&quot;517815 669153 2473&quot;,&quot;170&quot;,&quot;01-06-20&quot;,&quot;30-12-26&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (151,151,&quot;524736 258668 8225&quot;,&quot;881&quot;,&quot;19-01-14&quot;,&quot;02-05-22&quot;,151),
-  (152,152,&quot;4138 325 52 8840&quot;,&quot;910&quot;,&quot;22-02-18&quot;,&quot;22-09-26&quot;,152),
-  (153,153,&quot;4024 0071 9548 2853&quot;,&quot;483&quot;,&quot;14-10-12&quot;,&quot;01-03-27&quot;,153),
-  (154,154,&quot;4916 7535 2749 6662&quot;,&quot;351&quot;,&quot;02-04-17&quot;,&quot;16-01-24&quot;,154),
-  (155,155,&quot;4556932585228&quot;,&quot;167&quot;,&quot;28-04-20&quot;,&quot;11-01-27&quot;,155),
-  (156,156,&quot;342987322684323&quot;,&quot;156&quot;,&quot;20-11-22&quot;,&quot;21-02-29&quot;,156),
-  (157,157,&quot;453946 2498887662&quot;,&quot;922&quot;,&quot;31-12-18&quot;,&quot;14-06-27&quot;,157),
-  (158,158,&quot;545 47789 19868 671&quot;,&quot;588&quot;,&quot;29-01-22&quot;,&quot;13-10-24&quot;,158),
-  (159,159,&quot;448 53246 91533 598&quot;,&quot;590&quot;,&quot;20-02-20&quot;,&quot;18-09-27&quot;,159),
-  (160,160,&quot;371686357973726&quot;,&quot;788&quot;,&quot;17-08-10&quot;,&quot;27-01-22&quot;,160);
+  (151,151,&quot;535894 7334225554&quot;,&quot;415&quot;,&quot;23-02-20&quot;,&quot;23-08-25&quot;,2),
+  (152,152,&quot;534245 824472 5740&quot;,&quot;436&quot;,&quot;06-10-20&quot;,&quot;20-10-26&quot;,2),
+  (153,153,&quot;471 67968 13782 438&quot;,&quot;779&quot;,&quot;15-05-21&quot;,&quot;04-01-28&quot;,3),
+  (154,154,&quot;402400 717864 5849&quot;,&quot;118&quot;,&quot;15-01-22&quot;,&quot;10-12-25&quot;,2),
+  (155,155,&quot;455625 776766 1246&quot;,&quot;448&quot;,&quot;23-05-19&quot;,&quot;13-08-28&quot;,2),
+  (156,156,&quot;4485887222848842&quot;,&quot;136&quot;,&quot;09-04-22&quot;,&quot;09-10-27&quot;,2),
+  (157,157,&quot;3787 338538 81558&quot;,&quot;612&quot;,&quot;04-06-19&quot;,&quot;13-01-26&quot;,2),
+  (158,158,&quot;5227 8971 5168 4566&quot;,&quot;350&quot;,&quot;14-03-22&quot;,&quot;18-10-25&quot;,2),
+  (159,159,&quot;402400 718832 8741&quot;,&quot;359&quot;,&quot;10-04-19&quot;,&quot;07-02-25&quot;,3),
+  (160,160,&quot;453 95578 91226 424&quot;,&quot;273&quot;,&quot;19-08-20&quot;,&quot;19-01-23&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (161,161,&quot;402 40071 58616 588&quot;,&quot;281&quot;,&quot;22-10-21&quot;,&quot;11-11-27&quot;,161),
-  (162,162,&quot;4929588653343774&quot;,&quot;843&quot;,&quot;16-12-11&quot;,&quot;20-06-27&quot;,162),
-  (163,163,&quot;519887 2734378478&quot;,&quot;281&quot;,&quot;04-05-20&quot;,&quot;17-09-23&quot;,163),
-  (164,164,&quot;5357825154245988&quot;,&quot;852&quot;,&quot;17-05-20&quot;,&quot;25-07-25&quot;,164),
-  (165,165,&quot;5478597535754459&quot;,&quot;626&quot;,&quot;08-02-11&quot;,&quot;26-12-26&quot;,165),
-  (166,166,&quot;5141143214237453&quot;,&quot;668&quot;,&quot;08-01-21&quot;,&quot;12-04-27&quot;,166),
-  (167,167,&quot;5184999752516493&quot;,&quot;259&quot;,&quot;05-11-16&quot;,&quot;19-09-26&quot;,167),
-  (168,168,&quot;556 78546 75367 382&quot;,&quot;743&quot;,&quot;19-05-15&quot;,&quot;24-08-21&quot;,168),
-  (169,169,&quot;5562223226259669&quot;,&quot;560&quot;,&quot;16-09-15&quot;,&quot;29-01-26&quot;,169),
-  (170,170,&quot;519 31995 48984 829&quot;,&quot;192&quot;,&quot;04-03-23&quot;,&quot;18-01-22&quot;,170);
+  (161,161,&quot;4539332434544&quot;,&quot;425&quot;,&quot;30-07-21&quot;,&quot;23-03-26&quot;,2),
+  (162,162,&quot;3783 413615 34758&quot;,&quot;271&quot;,&quot;28-06-21&quot;,&quot;01-03-27&quot;,2),
+  (163,163,&quot;347769636772340&quot;,&quot;604&quot;,&quot;06-08-18&quot;,&quot;17-07-23&quot;,2),
+  (164,164,&quot;5494 6328 9228 1364&quot;,&quot;638&quot;,&quot;12-05-22&quot;,&quot;04-12-26&quot;,1),
+  (165,165,&quot;453929 7661233660&quot;,&quot;958&quot;,&quot;13-02-20&quot;,&quot;05-03-26&quot;,2),
+  (166,166,&quot;519152 634684 7521&quot;,&quot;146&quot;,&quot;13-07-19&quot;,&quot;01-07-29&quot;,2),
+  (167,167,&quot;559 37614 38389 447&quot;,&quot;507&quot;,&quot;25-04-21&quot;,&quot;03-08-27&quot;,3),
+  (168,168,&quot;4485235492850&quot;,&quot;741&quot;,&quot;26-05-22&quot;,&quot;24-03-28&quot;,1),
+  (169,169,&quot;558342 277739 6764&quot;,&quot;882&quot;,&quot;24-05-20&quot;,&quot;19-10-25&quot;,2),
+  (170,170,&quot;4485 548 76 2460&quot;,&quot;746&quot;,&quot;25-02-20&quot;,&quot;17-06-28&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (171,171,&quot;538 76495 53698 868&quot;,&quot;902&quot;,&quot;12-05-19&quot;,&quot;03-08-26&quot;,171),
-  (172,172,&quot;453252 6642646153&quot;,&quot;498&quot;,&quot;10-07-19&quot;,&quot;28-09-23&quot;,172),
-  (173,173,&quot;542 32653 22782 440&quot;,&quot;333&quot;,&quot;09-04-11&quot;,&quot;26-04-24&quot;,173),
-  (174,174,&quot;4266647889648&quot;,&quot;585&quot;,&quot;15-02-20&quot;,&quot;20-10-24&quot;,174),
-  (175,175,&quot;5275232355386472&quot;,&quot;390&quot;,&quot;24-08-16&quot;,&quot;11-01-27&quot;,175),
-  (176,176,&quot;4024 0071 3641 5459&quot;,&quot;391&quot;,&quot;27-03-22&quot;,&quot;28-09-27&quot;,176),
-  (177,177,&quot;5262924644323366&quot;,&quot;858&quot;,&quot;28-06-22&quot;,&quot;03-04-27&quot;,177),
-  (178,178,&quot;455672 2175539185&quot;,&quot;508&quot;,&quot;02-11-11&quot;,&quot;16-09-25&quot;,178),
-  (179,179,&quot;4539787558623&quot;,&quot;938&quot;,&quot;13-04-14&quot;,&quot;28-12-23&quot;,179),
-  (180,180,&quot;491645 6833149815&quot;,&quot;901&quot;,&quot;12-02-20&quot;,&quot;09-09-28&quot;,180);
+  (171,171,&quot;532358 722415 5453&quot;,&quot;846&quot;,&quot;28-08-19&quot;,&quot;27-06-29&quot;,3),
+  (172,172,&quot;455 63862 54494 371&quot;,&quot;378&quot;,&quot;15-04-19&quot;,&quot;12-08-25&quot;,3),
+  (173,173,&quot;341568941943919&quot;,&quot;313&quot;,&quot;10-06-19&quot;,&quot;12-08-28&quot;,1),
+  (174,174,&quot;515711 4368927653&quot;,&quot;495&quot;,&quot;30-04-21&quot;,&quot;22-02-29&quot;,1),
+  (175,175,&quot;5494834523968886&quot;,&quot;709&quot;,&quot;27-02-19&quot;,&quot;03-04-25&quot;,2),
+  (176,176,&quot;527 27551 55348 782&quot;,&quot;662&quot;,&quot;14-02-20&quot;,&quot;05-05-28&quot;,3),
+  (177,177,&quot;5427 6635 1799 9363&quot;,&quot;204&quot;,&quot;12-06-21&quot;,&quot;15-12-23&quot;,2),
+  (178,178,&quot;371158524966231&quot;,&quot;709&quot;,&quot;05-10-19&quot;,&quot;08-01-26&quot;,2),
+  (179,179,&quot;402400 718626 8311&quot;,&quot;302&quot;,&quot;18-09-20&quot;,&quot;19-06-27&quot;,1),
+  (180,180,&quot;5246569735573659&quot;,&quot;672&quot;,&quot;05-06-21&quot;,&quot;26-11-28&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (181,181,&quot;448563 762419 7458&quot;,&quot;776&quot;,&quot;16-03-19&quot;,&quot;10-10-25&quot;,181),
-  (182,182,&quot;3775 436536 23261&quot;,&quot;470&quot;,&quot;08-09-10&quot;,&quot;26-06-29&quot;,182),
-  (183,183,&quot;491 66574 21316 522&quot;,&quot;803&quot;,&quot;06-07-14&quot;,&quot;11-03-27&quot;,183),
-  (184,184,&quot;4532 362 33 6119&quot;,&quot;262&quot;,&quot;13-10-18&quot;,&quot;15-02-24&quot;,184),
-  (185,185,&quot;4539 1687 6854 3535&quot;,&quot;876&quot;,&quot;27-04-19&quot;,&quot;01-05-22&quot;,185),
-  (186,186,&quot;3473 548652 27124&quot;,&quot;160&quot;,&quot;04-03-17&quot;,&quot;31-03-25&quot;,186),
-  (187,187,&quot;4556 665 62 4558&quot;,&quot;265&quot;,&quot;21-01-19&quot;,&quot;02-07-29&quot;,187),
-  (188,188,&quot;453986 4894496941&quot;,&quot;890&quot;,&quot;23-01-13&quot;,&quot;04-08-22&quot;,188),
-  (189,189,&quot;448524 6858498242&quot;,&quot;497&quot;,&quot;30-05-17&quot;,&quot;21-04-24&quot;,189),
-  (190,190,&quot;537558 1352152280&quot;,&quot;147&quot;,&quot;13-11-20&quot;,&quot;14-02-29&quot;,190);
+  (181,181,&quot;3488 868245 82619&quot;,&quot;383&quot;,&quot;02-11-20&quot;,&quot;10-02-25&quot;,1),
+  (182,182,&quot;5337922137265376&quot;,&quot;295&quot;,&quot;23-11-21&quot;,&quot;12-06-24&quot;,1),
+  (183,183,&quot;4277 723 84 1171&quot;,&quot;729&quot;,&quot;07-06-21&quot;,&quot;11-11-26&quot;,2),
+  (184,184,&quot;453 24267 96652 554&quot;,&quot;282&quot;,&quot;25-06-22&quot;,&quot;16-12-28&quot;,1),
+  (185,185,&quot;402400 716667 8323&quot;,&quot;903&quot;,&quot;29-10-20&quot;,&quot;01-04-28&quot;,2),
+  (186,186,&quot;4024 007 18 7610&quot;,&quot;219&quot;,&quot;09-06-20&quot;,&quot;03-04-26&quot;,1),
+  (187,187,&quot;402400 714338 2882&quot;,&quot;573&quot;,&quot;30-01-20&quot;,&quot;03-09-23&quot;,3),
+  (188,188,&quot;345498542891836&quot;,&quot;189&quot;,&quot;11-02-22&quot;,&quot;29-03-24&quot;,1),
+  (189,189,&quot;3766 511477 25716&quot;,&quot;835&quot;,&quot;25-04-21&quot;,&quot;01-07-26&quot;,2),
+  (190,190,&quot;492 92322 94833 931&quot;,&quot;538&quot;,&quot;13-12-18&quot;,&quot;25-05-27&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (191,191,&quot;472 84889 86983 896&quot;,&quot;238&quot;,&quot;24-02-23&quot;,&quot;25-07-29&quot;,191),
-  (192,192,&quot;545 17846 41225 753&quot;,&quot;898&quot;,&quot;26-10-16&quot;,&quot;23-12-22&quot;,192),
-  (193,193,&quot;348247152735537&quot;,&quot;309&quot;,&quot;14-02-19&quot;,&quot;01-05-28&quot;,193),
-  (194,194,&quot;377764222766569&quot;,&quot;263&quot;,&quot;13-05-22&quot;,&quot;18-01-29&quot;,194),
-  (195,195,&quot;453 28574 77468 433&quot;,&quot;686&quot;,&quot;04-11-21&quot;,&quot;23-10-24&quot;,195),
-  (196,196,&quot;373554386672552&quot;,&quot;767&quot;,&quot;18-05-20&quot;,&quot;02-09-28&quot;,196),
-  (197,197,&quot;5519 1893 7688 7373&quot;,&quot;599&quot;,&quot;15-03-23&quot;,&quot;19-12-26&quot;,197),
-  (198,198,&quot;4539 2784 9657 2829&quot;,&quot;528&quot;,&quot;28-11-20&quot;,&quot;13-07-24&quot;,198),
-  (199,199,&quot;3732 664393 36420&quot;,&quot;672&quot;,&quot;25-10-19&quot;,&quot;10-08-21&quot;,199),
-  (200,200,&quot;4929 666 14 5370&quot;,&quot;877&quot;,&quot;03-06-11&quot;,&quot;27-12-28&quot;,200);
+  (191,191,&quot;521462 346441 6446&quot;,&quot;411&quot;,&quot;16-08-19&quot;,&quot;25-04-28&quot;,2),
+  (192,192,&quot;3736 854625 34470&quot;,&quot;125&quot;,&quot;05-09-21&quot;,&quot;16-11-24&quot;,3),
+  (193,193,&quot;521 27796 41242 469&quot;,&quot;428&quot;,&quot;12-06-22&quot;,&quot;22-01-26&quot;,2),
+  (194,194,&quot;3739 669328 26658&quot;,&quot;267&quot;,&quot;06-06-22&quot;,&quot;07-01-24&quot;,1),
+  (195,195,&quot;5217213621238383&quot;,&quot;434&quot;,&quot;04-08-20&quot;,&quot;26-10-22&quot;,2),
+  (196,196,&quot;491674 671275 7427&quot;,&quot;161&quot;,&quot;04-10-18&quot;,&quot;13-01-25&quot;,2),
+  (197,197,&quot;4532 372 22 9684&quot;,&quot;217&quot;,&quot;08-02-20&quot;,&quot;12-05-26&quot;,2),
+  (198,198,&quot;453 97677 28723 572&quot;,&quot;342&quot;,&quot;08-09-20&quot;,&quot;09-09-28&quot;,1),
+  (199,199,&quot;3735 453288 31876&quot;,&quot;112&quot;,&quot;05-10-19&quot;,&quot;07-09-26&quot;,2),
+  (200,200,&quot;4916916346643&quot;,&quot;207&quot;,&quot;13-04-22&quot;,&quot;17-12-27&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (201,201,&quot;491671 614535 3938&quot;,&quot;160&quot;,&quot;17-06-11&quot;,&quot;14-03-29&quot;,201),
-  (202,202,&quot;4024007155914&quot;,&quot;453&quot;,&quot;24-05-13&quot;,&quot;06-08-24&quot;,202),
-  (203,203,&quot;372327871446480&quot;,&quot;297&quot;,&quot;25-12-14&quot;,&quot;23-03-22&quot;,203),
-  (204,204,&quot;532 74349 69164 844&quot;,&quot;974&quot;,&quot;14-12-15&quot;,&quot;21-12-24&quot;,204),
-  (205,205,&quot;516183 5486198728&quot;,&quot;200&quot;,&quot;20-12-11&quot;,&quot;20-10-24&quot;,205),
-  (206,206,&quot;5219482862862593&quot;,&quot;782&quot;,&quot;20-08-21&quot;,&quot;13-10-25&quot;,206),
-  (207,207,&quot;491 67974 38561 528&quot;,&quot;344&quot;,&quot;26-06-23&quot;,&quot;29-03-25&quot;,207),
-  (208,208,&quot;4716 884 45 2872&quot;,&quot;625&quot;,&quot;14-03-23&quot;,&quot;23-01-27&quot;,208),
-  (209,209,&quot;514729 9239241492&quot;,&quot;214&quot;,&quot;17-11-12&quot;,&quot;05-12-23&quot;,209),
-  (210,210,&quot;4716134883531735&quot;,&quot;389&quot;,&quot;22-04-11&quot;,&quot;21-08-28&quot;,210);
+  (201,201,&quot;558742 724852 4726&quot;,&quot;904&quot;,&quot;02-09-20&quot;,&quot;17-12-24&quot;,2),
+  (202,202,&quot;5317137453788919&quot;,&quot;187&quot;,&quot;26-01-22&quot;,&quot;24-07-28&quot;,3),
+  (203,203,&quot;553 43547 85338 274&quot;,&quot;182&quot;,&quot;15-06-22&quot;,&quot;19-08-28&quot;,2),
+  (204,204,&quot;4716592938725&quot;,&quot;729&quot;,&quot;03-08-20&quot;,&quot;09-10-25&quot;,2),
+  (205,205,&quot;491 64788 46813 989&quot;,&quot;729&quot;,&quot;07-09-21&quot;,&quot;18-10-22&quot;,2),
+  (206,206,&quot;4916 345 22 9360&quot;,&quot;151&quot;,&quot;20-02-22&quot;,&quot;27-02-23&quot;,2),
+  (207,207,&quot;5464726397438333&quot;,&quot;731&quot;,&quot;31-01-20&quot;,&quot;05-08-24&quot;,1),
+  (208,208,&quot;542648 415637 5224&quot;,&quot;905&quot;,&quot;23-04-22&quot;,&quot;24-03-24&quot;,1),
+  (209,209,&quot;5218 5945 4375 9336&quot;,&quot;214&quot;,&quot;12-08-18&quot;,&quot;01-12-28&quot;,2),
+  (210,210,&quot;4485 2224 8278 5742&quot;,&quot;479&quot;,&quot;25-02-19&quot;,&quot;05-09-23&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (211,211,&quot;3471 491688 94392&quot;,&quot;722&quot;,&quot;20-10-15&quot;,&quot;21-02-27&quot;,211),
-  (212,212,&quot;5144 6545 6514 2842&quot;,&quot;194&quot;,&quot;19-09-22&quot;,&quot;05-11-23&quot;,212),
-  (213,213,&quot;343584283531541&quot;,&quot;604&quot;,&quot;21-07-13&quot;,&quot;11-12-21&quot;,213),
-  (214,214,&quot;527528 8585627861&quot;,&quot;448&quot;,&quot;16-11-13&quot;,&quot;03-02-24&quot;,214),
-  (215,215,&quot;529647 883869 1393&quot;,&quot;264&quot;,&quot;19-03-23&quot;,&quot;21-07-24&quot;,215),
-  (216,216,&quot;518888 384786 5584&quot;,&quot;789&quot;,&quot;18-08-22&quot;,&quot;04-10-26&quot;,216),
-  (217,217,&quot;5274968238457730&quot;,&quot;660&quot;,&quot;04-04-21&quot;,&quot;09-01-23&quot;,217),
-  (218,218,&quot;3428 215582 77694&quot;,&quot;661&quot;,&quot;18-08-18&quot;,&quot;20-12-28&quot;,218),
-  (219,219,&quot;3497 138359 79544&quot;,&quot;794&quot;,&quot;24-11-18&quot;,&quot;22-06-27&quot;,219),
-  (220,220,&quot;544 75844 44236 677&quot;,&quot;366&quot;,&quot;16-10-10&quot;,&quot;08-08-23&quot;,220);
+  (211,211,&quot;466843 572633 5640&quot;,&quot;337&quot;,&quot;28-07-19&quot;,&quot;05-04-28&quot;,2),
+  (212,212,&quot;4916693226537582&quot;,&quot;753&quot;,&quot;07-06-21&quot;,&quot;04-01-23&quot;,3),
+  (213,213,&quot;522759 7572354357&quot;,&quot;875&quot;,&quot;24-02-20&quot;,&quot;08-11-22&quot;,2),
+  (214,214,&quot;4532655645648&quot;,&quot;350&quot;,&quot;23-06-22&quot;,&quot;08-10-28&quot;,3),
+  (215,215,&quot;372263616366768&quot;,&quot;788&quot;,&quot;28-01-20&quot;,&quot;16-11-27&quot;,2),
+  (216,216,&quot;4485 471 85 7451&quot;,&quot;980&quot;,&quot;20-09-20&quot;,&quot;27-12-26&quot;,3),
+  (217,217,&quot;5312487647184474&quot;,&quot;987&quot;,&quot;23-05-22&quot;,&quot;10-06-27&quot;,3),
+  (218,218,&quot;371921824621974&quot;,&quot;581&quot;,&quot;17-06-22&quot;,&quot;12-01-23&quot;,2),
+  (219,219,&quot;378353333252161&quot;,&quot;214&quot;,&quot;06-07-22&quot;,&quot;16-02-24&quot;,2),
+  (220,220,&quot;4213 281 23 6736&quot;,&quot;961&quot;,&quot;05-08-18&quot;,&quot;22-10-23&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (221,221,&quot;3788 869225 76482&quot;,&quot;764&quot;,&quot;18-07-23&quot;,&quot;02-06-26&quot;,221),
-  (222,222,&quot;455 61566 82438 344&quot;,&quot;136&quot;,&quot;04-09-11&quot;,&quot;30-04-26&quot;,222),
-  (223,223,&quot;3455 662723 23616&quot;,&quot;772&quot;,&quot;11-09-14&quot;,&quot;08-01-26&quot;,223),
-  (224,224,&quot;3782 667777 75879&quot;,&quot;481&quot;,&quot;20-06-15&quot;,&quot;21-04-28&quot;,224),
-  (225,225,&quot;347642874221371&quot;,&quot;370&quot;,&quot;17-03-17&quot;,&quot;30-12-25&quot;,225),
-  (226,226,&quot;554686 748863 9686&quot;,&quot;413&quot;,&quot;23-02-21&quot;,&quot;02-04-29&quot;,226),
-  (227,227,&quot;3465 622646 32360&quot;,&quot;653&quot;,&quot;18-09-14&quot;,&quot;09-09-24&quot;,227),
-  (228,228,&quot;545224 329629 7756&quot;,&quot;834&quot;,&quot;23-07-13&quot;,&quot;15-11-25&quot;,228),
-  (229,229,&quot;526935 375714 7672&quot;,&quot;526&quot;,&quot;30-06-23&quot;,&quot;23-12-26&quot;,229),
-  (230,230,&quot;551465 8548414253&quot;,&quot;514&quot;,&quot;22-03-21&quot;,&quot;03-04-23&quot;,230);
+  (221,221,&quot;545 21171 22882 413&quot;,&quot;212&quot;,&quot;14-02-21&quot;,&quot;01-02-27&quot;,1),
+  (222,222,&quot;514 15397 94621 943&quot;,&quot;587&quot;,&quot;31-12-21&quot;,&quot;23-11-24&quot;,2),
+  (223,223,&quot;4716928244693641&quot;,&quot;780&quot;,&quot;04-06-19&quot;,&quot;29-06-29&quot;,2),
+  (224,224,&quot;463662 986531 8263&quot;,&quot;527&quot;,&quot;28-12-19&quot;,&quot;13-02-28&quot;,3),
+  (225,225,&quot;4716645836470&quot;,&quot;132&quot;,&quot;17-06-22&quot;,&quot;29-01-29&quot;,1),
+  (226,226,&quot;5356 4526 4155 6686&quot;,&quot;650&quot;,&quot;22-03-22&quot;,&quot;21-07-23&quot;,1),
+  (227,227,&quot;478277 683541 3377&quot;,&quot;644&quot;,&quot;04-10-18&quot;,&quot;21-09-25&quot;,3),
+  (228,228,&quot;4716 1177 3236 8185&quot;,&quot;774&quot;,&quot;07-06-22&quot;,&quot;22-07-29&quot;,2),
+  (229,229,&quot;373488953456455&quot;,&quot;218&quot;,&quot;06-07-20&quot;,&quot;07-02-24&quot;,2),
+  (230,230,&quot;4916 827 29 7794&quot;,&quot;407&quot;,&quot;23-12-18&quot;,&quot;08-03-25&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (231,231,&quot;525 55156 52527 788&quot;,&quot;886&quot;,&quot;10-01-15&quot;,&quot;07-07-24&quot;,231),
-  (232,232,&quot;3468 562642 48924&quot;,&quot;355&quot;,&quot;14-10-20&quot;,&quot;01-10-28&quot;,232),
-  (233,233,&quot;371382677888261&quot;,&quot;410&quot;,&quot;14-02-11&quot;,&quot;28-05-29&quot;,233),
-  (234,234,&quot;515365 368272 5180&quot;,&quot;215&quot;,&quot;10-09-18&quot;,&quot;15-01-28&quot;,234),
-  (235,235,&quot;3468 384287 66660&quot;,&quot;704&quot;,&quot;27-10-18&quot;,&quot;26-09-26&quot;,235),
-  (236,236,&quot;3713 244973 25371&quot;,&quot;438&quot;,&quot;26-01-15&quot;,&quot;30-09-28&quot;,236),
-  (237,237,&quot;3479 124347 56335&quot;,&quot;616&quot;,&quot;06-06-17&quot;,&quot;22-09-23&quot;,237),
-  (238,238,&quot;4748 7962 5236 5143&quot;,&quot;538&quot;,&quot;11-10-19&quot;,&quot;25-03-27&quot;,238),
-  (239,239,&quot;5332465318671744&quot;,&quot;631&quot;,&quot;01-06-23&quot;,&quot;02-01-29&quot;,239),
-  (240,240,&quot;5262627325822859&quot;,&quot;618&quot;,&quot;10-01-18&quot;,&quot;28-02-24&quot;,240);
+  (231,231,&quot;455623 875788 3834&quot;,&quot;398&quot;,&quot;24-07-19&quot;,&quot;11-10-22&quot;,2),
+  (232,232,&quot;515774 6287624273&quot;,&quot;530&quot;,&quot;19-06-19&quot;,&quot;13-09-24&quot;,2),
+  (233,233,&quot;3434 589252 83763&quot;,&quot;712&quot;,&quot;04-06-20&quot;,&quot;30-03-29&quot;,2),
+  (234,234,&quot;546 99275 24348 966&quot;,&quot;549&quot;,&quot;14-02-20&quot;,&quot;07-03-29&quot;,1),
+  (235,235,&quot;491639 677986 7147&quot;,&quot;607&quot;,&quot;01-10-21&quot;,&quot;19-03-25&quot;,2),
+  (236,236,&quot;348188526747891&quot;,&quot;765&quot;,&quot;14-12-18&quot;,&quot;18-08-22&quot;,2),
+  (237,237,&quot;4716741522827736&quot;,&quot;361&quot;,&quot;14-11-20&quot;,&quot;31-03-26&quot;,2),
+  (238,238,&quot;3776 198854 16391&quot;,&quot;513&quot;,&quot;05-08-21&quot;,&quot;29-01-28&quot;,1),
+  (239,239,&quot;375815592798392&quot;,&quot;932&quot;,&quot;18-05-19&quot;,&quot;27-06-28&quot;,3),
+  (240,240,&quot;4916 5782 6534 4653&quot;,&quot;197&quot;,&quot;02-10-21&quot;,&quot;28-11-24&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (241,241,&quot;4929 6212 1854 8411&quot;,&quot;892&quot;,&quot;04-12-14&quot;,&quot;03-02-29&quot;,241),
-  (242,242,&quot;512653 359865 7574&quot;,&quot;144&quot;,&quot;26-04-11&quot;,&quot;05-03-26&quot;,242),
-  (243,243,&quot;5522 7547 2428 3735&quot;,&quot;678&quot;,&quot;24-10-18&quot;,&quot;27-10-26&quot;,243),
-  (244,244,&quot;4716 4787 2916 4270&quot;,&quot;665&quot;,&quot;13-04-11&quot;,&quot;18-09-27&quot;,244),
-  (245,245,&quot;376934514824571&quot;,&quot;264&quot;,&quot;30-11-21&quot;,&quot;09-12-28&quot;,245),
-  (246,246,&quot;341164174526785&quot;,&quot;948&quot;,&quot;26-02-14&quot;,&quot;17-07-26&quot;,246),
-  (247,247,&quot;3738 654273 34766&quot;,&quot;694&quot;,&quot;14-04-19&quot;,&quot;17-03-29&quot;,247),
-  (248,248,&quot;3428 878744 78241&quot;,&quot;223&quot;,&quot;19-04-14&quot;,&quot;18-10-21&quot;,248),
-  (249,249,&quot;3444 587465 82764&quot;,&quot;468&quot;,&quot;28-02-14&quot;,&quot;30-03-27&quot;,249),
-  (250,250,&quot;3727 367576 53565&quot;,&quot;620&quot;,&quot;17-11-14&quot;,&quot;26-10-25&quot;,250);
+  (241,241,&quot;543398 7825284214&quot;,&quot;203&quot;,&quot;01-06-22&quot;,&quot;20-04-24&quot;,2),
+  (242,242,&quot;5314 2848 2843 1750&quot;,&quot;294&quot;,&quot;05-04-19&quot;,&quot;03-12-22&quot;,2),
+  (243,243,&quot;4929523288926347&quot;,&quot;783&quot;,&quot;07-10-19&quot;,&quot;01-11-28&quot;,2),
+  (244,244,&quot;5452352736638345&quot;,&quot;608&quot;,&quot;13-02-19&quot;,&quot;12-12-26&quot;,2),
+  (245,245,&quot;4532 1849 2331 2366&quot;,&quot;168&quot;,&quot;25-07-20&quot;,&quot;05-01-26&quot;,2),
+  (246,246,&quot;3424 871362 37673&quot;,&quot;473&quot;,&quot;07-11-19&quot;,&quot;21-11-23&quot;,1),
+  (247,247,&quot;4929 3729 5174 8681&quot;,&quot;704&quot;,&quot;08-11-20&quot;,&quot;26-02-28&quot;,2),
+  (248,248,&quot;4024007136986954&quot;,&quot;718&quot;,&quot;08-09-21&quot;,&quot;11-06-26&quot;,2),
+  (249,249,&quot;4716 7886 6694 8711&quot;,&quot;958&quot;,&quot;19-11-20&quot;,&quot;30-08-22&quot;,2),
+  (250,250,&quot;455621 485225 7596&quot;,&quot;746&quot;,&quot;19-07-19&quot;,&quot;22-08-25&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (251,251,&quot;3465 686844 68798&quot;,&quot;599&quot;,&quot;09-08-18&quot;,&quot;30-10-22&quot;,251),
-  (252,252,&quot;448547 733859 4132&quot;,&quot;129&quot;,&quot;17-10-18&quot;,&quot;30-11-27&quot;,252),
-  (253,253,&quot;455 67381 66646 748&quot;,&quot;370&quot;,&quot;03-05-11&quot;,&quot;30-07-24&quot;,253),
-  (254,254,&quot;511 69386 63662 973&quot;,&quot;265&quot;,&quot;12-01-23&quot;,&quot;10-12-24&quot;,254),
-  (255,255,&quot;4288925734924&quot;,&quot;587&quot;,&quot;25-08-11&quot;,&quot;06-07-29&quot;,255),
-  (256,256,&quot;4539415788255776&quot;,&quot;591&quot;,&quot;19-01-16&quot;,&quot;30-09-21&quot;,256),
-  (257,257,&quot;448 54116 38956 436&quot;,&quot;386&quot;,&quot;24-08-19&quot;,&quot;12-08-28&quot;,257),
-  (258,258,&quot;3741 931266 64246&quot;,&quot;240&quot;,&quot;22-08-21&quot;,&quot;14-11-21&quot;,258),
-  (259,259,&quot;559 75429 22627 344&quot;,&quot;903&quot;,&quot;24-04-11&quot;,&quot;15-11-28&quot;,259),
-  (260,260,&quot;446827 4748682560&quot;,&quot;882&quot;,&quot;03-08-17&quot;,&quot;12-11-21&quot;,260);
+  (251,251,&quot;4539988216435&quot;,&quot;409&quot;,&quot;03-07-22&quot;,&quot;19-10-22&quot;,3),
+  (252,252,&quot;4539 5467 1667 6764&quot;,&quot;741&quot;,&quot;03-07-21&quot;,&quot;11-04-29&quot;,3),
+  (253,253,&quot;343797288786841&quot;,&quot;903&quot;,&quot;10-03-20&quot;,&quot;03-08-23&quot;,1),
+  (254,254,&quot;4539 375 83 7843&quot;,&quot;343&quot;,&quot;29-05-19&quot;,&quot;15-01-25&quot;,1),
+  (255,255,&quot;556619 672733 4726&quot;,&quot;700&quot;,&quot;09-07-20&quot;,&quot;06-03-27&quot;,1),
+  (256,256,&quot;375793876866443&quot;,&quot;272&quot;,&quot;26-10-21&quot;,&quot;28-06-24&quot;,2),
+  (257,257,&quot;5447463323763657&quot;,&quot;641&quot;,&quot;31-10-20&quot;,&quot;15-12-25&quot;,2),
+  (258,258,&quot;542935 2567862824&quot;,&quot;872&quot;,&quot;25-10-19&quot;,&quot;02-12-26&quot;,3),
+  (259,259,&quot;4024 0071 6734 8892&quot;,&quot;302&quot;,&quot;08-10-21&quot;,&quot;22-07-26&quot;,2),
+  (260,260,&quot;4556 1427 7447 9487&quot;,&quot;432&quot;,&quot;23-08-19&quot;,&quot;28-10-28&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (261,261,&quot;4929582972162&quot;,&quot;890&quot;,&quot;13-09-22&quot;,&quot;20-10-25&quot;,261),
-  (262,262,&quot;378625338567556&quot;,&quot;247&quot;,&quot;23-07-22&quot;,&quot;09-12-28&quot;,262),
-  (263,263,&quot;471691 987836 4625&quot;,&quot;791&quot;,&quot;06-01-18&quot;,&quot;05-12-24&quot;,263),
-  (264,264,&quot;4694 949 75 9328&quot;,&quot;561&quot;,&quot;17-03-20&quot;,&quot;17-12-25&quot;,264),
-  (265,265,&quot;373687324137351&quot;,&quot;460&quot;,&quot;11-05-16&quot;,&quot;05-02-27&quot;,265),
-  (266,266,&quot;4485452345781&quot;,&quot;166&quot;,&quot;25-06-21&quot;,&quot;12-01-23&quot;,266),
-  (267,267,&quot;5515932684837174&quot;,&quot;308&quot;,&quot;20-12-15&quot;,&quot;18-12-28&quot;,267),
-  (268,268,&quot;453211 565273 3422&quot;,&quot;677&quot;,&quot;12-04-11&quot;,&quot;27-10-24&quot;,268),
-  (269,269,&quot;4532376648467&quot;,&quot;958&quot;,&quot;27-12-21&quot;,&quot;26-10-27&quot;,269),
-  (270,270,&quot;5128 8852 5988 4758&quot;,&quot;363&quot;,&quot;24-05-13&quot;,&quot;09-07-26&quot;,270);
+  (261,261,&quot;453223 423347 4222&quot;,&quot;319&quot;,&quot;30-11-21&quot;,&quot;23-12-28&quot;,1),
+  (262,262,&quot;3725 741871 56341&quot;,&quot;591&quot;,&quot;02-02-20&quot;,&quot;10-02-23&quot;,1),
+  (263,263,&quot;348474573744571&quot;,&quot;548&quot;,&quot;01-10-19&quot;,&quot;09-03-28&quot;,2),
+  (264,264,&quot;448582 8937929394&quot;,&quot;848&quot;,&quot;07-07-21&quot;,&quot;01-07-24&quot;,2),
+  (265,265,&quot;512259 5829658626&quot;,&quot;835&quot;,&quot;15-12-20&quot;,&quot;27-01-29&quot;,1),
+  (266,266,&quot;4024007182637&quot;,&quot;682&quot;,&quot;17-10-19&quot;,&quot;29-08-24&quot;,1),
+  (267,267,&quot;3777 669899 15651&quot;,&quot;784&quot;,&quot;07-03-19&quot;,&quot;07-09-23&quot;,2),
+  (268,268,&quot;3719 344373 35445&quot;,&quot;990&quot;,&quot;04-07-20&quot;,&quot;19-03-23&quot;,2),
+  (269,269,&quot;3782 576856 88841&quot;,&quot;699&quot;,&quot;10-05-22&quot;,&quot;04-07-26&quot;,1),
+  (270,270,&quot;4716381121384&quot;,&quot;460&quot;,&quot;17-09-18&quot;,&quot;14-12-22&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (271,271,&quot;413 24277 44169 588&quot;,&quot;792&quot;,&quot;22-06-12&quot;,&quot;24-04-27&quot;,271),
-  (272,272,&quot;471 63516 37428 451&quot;,&quot;551&quot;,&quot;18-02-16&quot;,&quot;04-01-22&quot;,272),
-  (273,273,&quot;536 51326 26822 969&quot;,&quot;383&quot;,&quot;09-05-13&quot;,&quot;17-02-27&quot;,273),
-  (274,274,&quot;448543 267422 7896&quot;,&quot;512&quot;,&quot;11-03-18&quot;,&quot;12-06-25&quot;,274),
-  (275,275,&quot;4485768379649&quot;,&quot;282&quot;,&quot;10-01-19&quot;,&quot;01-07-27&quot;,275),
-  (276,276,&quot;3481 535265 72897&quot;,&quot;192&quot;,&quot;14-06-16&quot;,&quot;19-11-23&quot;,276),
-  (277,277,&quot;3465 654651 59315&quot;,&quot;739&quot;,&quot;14-02-16&quot;,&quot;16-09-26&quot;,277),
-  (278,278,&quot;5118626124639346&quot;,&quot;707&quot;,&quot;16-02-14&quot;,&quot;20-06-22&quot;,278),
-  (279,279,&quot;548 54845 48112 564&quot;,&quot;149&quot;,&quot;25-03-21&quot;,&quot;26-04-23&quot;,279),
-  (280,280,&quot;5351186852416652&quot;,&quot;873&quot;,&quot;20-03-12&quot;,&quot;22-02-27&quot;,280);
+  (271,271,&quot;557 82744 53148 341&quot;,&quot;199&quot;,&quot;02-08-21&quot;,&quot;28-11-23&quot;,3),
+  (272,272,&quot;471 65627 72424 689&quot;,&quot;359&quot;,&quot;07-11-18&quot;,&quot;21-12-28&quot;,2),
+  (273,273,&quot;343568495529864&quot;,&quot;670&quot;,&quot;23-01-21&quot;,&quot;19-05-29&quot;,2),
+  (274,274,&quot;346777668496721&quot;,&quot;492&quot;,&quot;05-02-19&quot;,&quot;06-12-25&quot;,2),
+  (275,275,&quot;448434 881977 4694&quot;,&quot;278&quot;,&quot;17-07-22&quot;,&quot;31-12-28&quot;,3),
+  (276,276,&quot;532312 639663 3227&quot;,&quot;929&quot;,&quot;11-11-18&quot;,&quot;03-04-28&quot;,2),
+  (277,277,&quot;527 29398 52227 925&quot;,&quot;170&quot;,&quot;20-09-21&quot;,&quot;10-02-25&quot;,2),
+  (278,278,&quot;491667 477725 2748&quot;,&quot;821&quot;,&quot;13-07-19&quot;,&quot;23-11-26&quot;,2),
+  (279,279,&quot;3453 587727 51540&quot;,&quot;175&quot;,&quot;22-05-21&quot;,&quot;14-11-26&quot;,2),
+  (280,280,&quot;3485 777452 57569&quot;,&quot;468&quot;,&quot;31-10-18&quot;,&quot;30-04-24&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (281,281,&quot;557783 529255 7834&quot;,&quot;243&quot;,&quot;01-04-13&quot;,&quot;11-06-28&quot;,281),
-  (282,282,&quot;528612 7728117249&quot;,&quot;259&quot;,&quot;11-06-11&quot;,&quot;24-05-22&quot;,282),
-  (283,283,&quot;3743 143355 76589&quot;,&quot;519&quot;,&quot;19-11-14&quot;,&quot;01-03-22&quot;,283),
-  (284,284,&quot;341831718517443&quot;,&quot;127&quot;,&quot;13-08-21&quot;,&quot;24-10-28&quot;,284),
-  (285,285,&quot;3437 162565 78899&quot;,&quot;905&quot;,&quot;02-04-18&quot;,&quot;07-02-28&quot;,285),
-  (286,286,&quot;5126 8686 4685 2276&quot;,&quot;546&quot;,&quot;30-07-16&quot;,&quot;03-12-23&quot;,286),
-  (287,287,&quot;374827169297386&quot;,&quot;540&quot;,&quot;21-02-13&quot;,&quot;19-11-28&quot;,287),
-  (288,288,&quot;521789 3123778273&quot;,&quot;896&quot;,&quot;19-07-18&quot;,&quot;28-06-24&quot;,288),
-  (289,289,&quot;515573 8595227255&quot;,&quot;921&quot;,&quot;16-02-11&quot;,&quot;25-01-24&quot;,289),
-  (290,290,&quot;5546 1711 4415 4341&quot;,&quot;146&quot;,&quot;12-08-19&quot;,&quot;09-08-21&quot;,290);
+  (281,281,&quot;4024 0071 4844 2616&quot;,&quot;161&quot;,&quot;21-07-19&quot;,&quot;17-11-22&quot;,2),
+  (282,282,&quot;345433566232633&quot;,&quot;922&quot;,&quot;22-09-19&quot;,&quot;28-05-26&quot;,3),
+  (283,283,&quot;453996 9543686626&quot;,&quot;759&quot;,&quot;16-07-22&quot;,&quot;25-03-29&quot;,2),
+  (284,284,&quot;3718 342759 55520&quot;,&quot;294&quot;,&quot;14-06-19&quot;,&quot;02-09-23&quot;,1),
+  (285,285,&quot;3434 263827 78211&quot;,&quot;384&quot;,&quot;27-04-21&quot;,&quot;01-12-24&quot;,2),
+  (286,286,&quot;3788 913828 26427&quot;,&quot;686&quot;,&quot;26-02-20&quot;,&quot;29-11-23&quot;,1),
+  (287,287,&quot;3492 972721 88587&quot;,&quot;947&quot;,&quot;12-09-19&quot;,&quot;26-12-26&quot;,2),
+  (288,288,&quot;4539967845463868&quot;,&quot;826&quot;,&quot;20-09-18&quot;,&quot;31-12-25&quot;,1),
+  (289,289,&quot;3731 865283 76691&quot;,&quot;383&quot;,&quot;19-01-22&quot;,&quot;26-07-29&quot;,1),
+  (290,290,&quot;5422847255422234&quot;,&quot;696&quot;,&quot;11-03-21&quot;,&quot;17-10-26&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (291,291,&quot;5242855834131216&quot;,&quot;307&quot;,&quot;19-07-18&quot;,&quot;31-03-28&quot;,291),
-  (292,292,&quot;492936 357244 8264&quot;,&quot;418&quot;,&quot;16-09-13&quot;,&quot;08-04-23&quot;,292),
-  (293,293,&quot;3766 763596 72397&quot;,&quot;483&quot;,&quot;23-08-13&quot;,&quot;26-03-29&quot;,293),
-  (294,294,&quot;3454 387528 71813&quot;,&quot;883&quot;,&quot;17-01-23&quot;,&quot;08-11-28&quot;,294),
-  (295,295,&quot;349517666215385&quot;,&quot;182&quot;,&quot;25-11-17&quot;,&quot;18-02-24&quot;,295),
-  (296,296,&quot;554574 2357748671&quot;,&quot;277&quot;,&quot;03-06-17&quot;,&quot;12-12-27&quot;,296),
-  (297,297,&quot;512227 872966 5872&quot;,&quot;467&quot;,&quot;18-05-14&quot;,&quot;23-10-22&quot;,297),
-  (298,298,&quot;455678 4166329620&quot;,&quot;966&quot;,&quot;09-11-22&quot;,&quot;14-09-23&quot;,298),
-  (299,299,&quot;3719 437843 95654&quot;,&quot;651&quot;,&quot;28-12-12&quot;,&quot;14-07-28&quot;,299),
-  (300,300,&quot;3728 335244 88886&quot;,&quot;737&quot;,&quot;20-01-20&quot;,&quot;17-08-27&quot;,300);
+  (291,291,&quot;3451 535332 57238&quot;,&quot;307&quot;,&quot;28-04-19&quot;,&quot;04-12-28&quot;,2),
+  (292,292,&quot;3762 472514 44440&quot;,&quot;318&quot;,&quot;29-06-20&quot;,&quot;04-12-27&quot;,1),
+  (293,293,&quot;448512 935463 8786&quot;,&quot;481&quot;,&quot;19-06-19&quot;,&quot;22-08-27&quot;,2),
+  (294,294,&quot;3772 355122 13539&quot;,&quot;908&quot;,&quot;15-05-22&quot;,&quot;19-05-27&quot;,2),
+  (295,295,&quot;402400 717694 7387&quot;,&quot;855&quot;,&quot;20-07-22&quot;,&quot;30-07-22&quot;,2),
+  (296,296,&quot;3438 672226 32722&quot;,&quot;438&quot;,&quot;03-05-21&quot;,&quot;19-10-27&quot;,2),
+  (297,297,&quot;3476 243822 67658&quot;,&quot;319&quot;,&quot;17-03-19&quot;,&quot;21-08-26&quot;,1),
+  (298,298,&quot;548 87599 23641 551&quot;,&quot;730&quot;,&quot;21-03-21&quot;,&quot;10-08-27&quot;,2),
+  (299,299,&quot;491658 852476 3833&quot;,&quot;464&quot;,&quot;22-10-20&quot;,&quot;01-05-29&quot;,3),
+  (300,300,&quot;453 97698 38863 637&quot;,&quot;927&quot;,&quot;12-01-19&quot;,&quot;28-03-23&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (301,301,&quot;4368 537 59 6513&quot;,&quot;683&quot;,&quot;01-06-23&quot;,&quot;03-04-25&quot;,301),
-  (302,302,&quot;518374 379718 8277&quot;,&quot;773&quot;,&quot;10-07-19&quot;,&quot;15-04-24&quot;,302),
-  (303,303,&quot;5385226864515834&quot;,&quot;522&quot;,&quot;23-09-14&quot;,&quot;17-09-21&quot;,303),
-  (304,304,&quot;342838549229857&quot;,&quot;632&quot;,&quot;02-08-20&quot;,&quot;22-04-29&quot;,304),
-  (305,305,&quot;376832148824571&quot;,&quot;861&quot;,&quot;13-01-23&quot;,&quot;26-08-27&quot;,305),
-  (306,306,&quot;3485 627624 74883&quot;,&quot;682&quot;,&quot;03-10-21&quot;,&quot;24-12-26&quot;,306),
-  (307,307,&quot;3428 988579 94872&quot;,&quot;609&quot;,&quot;26-10-11&quot;,&quot;21-05-28&quot;,307),
-  (308,308,&quot;488725 5866354358&quot;,&quot;908&quot;,&quot;17-04-18&quot;,&quot;14-04-25&quot;,308),
-  (309,309,&quot;453957 6531523966&quot;,&quot;250&quot;,&quot;06-05-21&quot;,&quot;20-06-24&quot;,309),
-  (310,310,&quot;5224 5654 8686 9532&quot;,&quot;978&quot;,&quot;12-01-17&quot;,&quot;30-10-26&quot;,310);
+  (301,301,&quot;3457 996552 39436&quot;,&quot;688&quot;,&quot;14-02-21&quot;,&quot;30-01-28&quot;,3),
+  (302,302,&quot;374483695225333&quot;,&quot;312&quot;,&quot;22-12-19&quot;,&quot;07-02-23&quot;,3),
+  (303,303,&quot;377825786661247&quot;,&quot;377&quot;,&quot;16-12-20&quot;,&quot;13-08-24&quot;,1),
+  (304,304,&quot;4539 4489 8422 2753&quot;,&quot;504&quot;,&quot;17-12-19&quot;,&quot;22-03-26&quot;,1),
+  (305,305,&quot;4532757916337225&quot;,&quot;724&quot;,&quot;28-05-22&quot;,&quot;24-06-27&quot;,2),
+  (306,306,&quot;379454572735699&quot;,&quot;504&quot;,&quot;24-07-19&quot;,&quot;22-12-28&quot;,2),
+  (307,307,&quot;555 78588 84722 578&quot;,&quot;122&quot;,&quot;28-11-18&quot;,&quot;11-08-28&quot;,2),
+  (308,308,&quot;453 92334 73777 776&quot;,&quot;855&quot;,&quot;09-10-20&quot;,&quot;20-03-26&quot;,2),
+  (309,309,&quot;4532567231299228&quot;,&quot;974&quot;,&quot;10-07-20&quot;,&quot;28-09-26&quot;,2),
+  (310,310,&quot;4716633718789&quot;,&quot;127&quot;,&quot;23-09-18&quot;,&quot;12-07-28&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (311,311,&quot;444586 4645758535&quot;,&quot;288&quot;,&quot;03-02-22&quot;,&quot;22-06-28&quot;,311),
-  (312,312,&quot;373633367735370&quot;,&quot;260&quot;,&quot;20-12-11&quot;,&quot;09-08-25&quot;,312),
-  (313,313,&quot;427 67472 73783 244&quot;,&quot;170&quot;,&quot;05-05-12&quot;,&quot;31-05-25&quot;,313),
-  (314,314,&quot;4024 007 16 6325&quot;,&quot;332&quot;,&quot;15-07-19&quot;,&quot;10-11-28&quot;,314),
-  (315,315,&quot;3783 164434 88157&quot;,&quot;291&quot;,&quot;15-03-21&quot;,&quot;17-11-24&quot;,315),
-  (316,316,&quot;374574553174355&quot;,&quot;275&quot;,&quot;03-04-18&quot;,&quot;23-08-22&quot;,316),
-  (317,317,&quot;448 54382 45995 531&quot;,&quot;845&quot;,&quot;17-11-18&quot;,&quot;19-09-25&quot;,317),
-  (318,318,&quot;4916 5932 1243 5231&quot;,&quot;951&quot;,&quot;28-09-16&quot;,&quot;24-06-29&quot;,318),
-  (319,319,&quot;3757 846732 88451&quot;,&quot;779&quot;,&quot;20-03-21&quot;,&quot;07-06-29&quot;,319),
-  (320,320,&quot;4276 4741 2286 1531&quot;,&quot;845&quot;,&quot;11-12-11&quot;,&quot;14-05-23&quot;,320);
+  (311,311,&quot;5133848888562271&quot;,&quot;314&quot;,&quot;04-08-18&quot;,&quot;06-04-23&quot;,3),
+  (312,312,&quot;548243 3198783151&quot;,&quot;784&quot;,&quot;29-11-20&quot;,&quot;15-09-23&quot;,2),
+  (313,313,&quot;4916 9736 2748 2236&quot;,&quot;159&quot;,&quot;01-01-21&quot;,&quot;14-06-28&quot;,3),
+  (314,314,&quot;515475 118276 3757&quot;,&quot;420&quot;,&quot;25-09-21&quot;,&quot;13-01-27&quot;,2),
+  (315,315,&quot;3429 235363 55574&quot;,&quot;124&quot;,&quot;28-11-20&quot;,&quot;17-02-27&quot;,3),
+  (316,316,&quot;372243894215283&quot;,&quot;949&quot;,&quot;15-10-19&quot;,&quot;24-09-27&quot;,3),
+  (317,317,&quot;5137 2654 2456 1244&quot;,&quot;170&quot;,&quot;22-02-22&quot;,&quot;01-11-28&quot;,3),
+  (318,318,&quot;3747 837933 86873&quot;,&quot;885&quot;,&quot;21-05-22&quot;,&quot;27-01-23&quot;,1),
+  (319,319,&quot;453 97389 57325 462&quot;,&quot;648&quot;,&quot;16-11-21&quot;,&quot;29-01-24&quot;,2),
+  (320,320,&quot;547335 942444 3826&quot;,&quot;119&quot;,&quot;28-01-22&quot;,&quot;31-01-26&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (321,321,&quot;5243 5523 5856 6948&quot;,&quot;486&quot;,&quot;11-02-12&quot;,&quot;01-11-22&quot;,321),
-  (322,322,&quot;5388 5167 6724 8765&quot;,&quot;898&quot;,&quot;31-03-16&quot;,&quot;20-03-25&quot;,322),
-  (323,323,&quot;344237633248758&quot;,&quot;132&quot;,&quot;01-03-12&quot;,&quot;05-03-26&quot;,323),
-  (324,324,&quot;5334344684257222&quot;,&quot;788&quot;,&quot;08-09-18&quot;,&quot;03-09-27&quot;,324),
-  (325,325,&quot;3483 448465 57847&quot;,&quot;166&quot;,&quot;13-08-12&quot;,&quot;28-02-24&quot;,325),
-  (326,326,&quot;3446 283679 23527&quot;,&quot;451&quot;,&quot;27-12-15&quot;,&quot;30-01-23&quot;,326),
-  (327,327,&quot;529432 768318 9866&quot;,&quot;754&quot;,&quot;05-06-16&quot;,&quot;22-04-23&quot;,327),
-  (328,328,&quot;534124 1781518251&quot;,&quot;673&quot;,&quot;28-12-21&quot;,&quot;07-09-25&quot;,328),
-  (329,329,&quot;471684 729559 4658&quot;,&quot;489&quot;,&quot;31-07-19&quot;,&quot;24-03-24&quot;,329),
-  (330,330,&quot;3462 782846 89278&quot;,&quot;446&quot;,&quot;25-11-14&quot;,&quot;03-05-29&quot;,330);
+  (321,321,&quot;471678 2366434221&quot;,&quot;808&quot;,&quot;16-05-19&quot;,&quot;10-11-28&quot;,3),
+  (322,322,&quot;3769 533119 25399&quot;,&quot;724&quot;,&quot;03-02-22&quot;,&quot;25-07-27&quot;,3),
+  (323,323,&quot;513292 379328 4716&quot;,&quot;374&quot;,&quot;26-06-19&quot;,&quot;17-09-23&quot;,2),
+  (324,324,&quot;529817 7799788226&quot;,&quot;920&quot;,&quot;05-02-19&quot;,&quot;06-10-24&quot;,3),
+  (325,325,&quot;5342 4743 7274 8826&quot;,&quot;554&quot;,&quot;11-12-21&quot;,&quot;21-12-24&quot;,1),
+  (326,326,&quot;4158 248 58 6774&quot;,&quot;756&quot;,&quot;27-05-22&quot;,&quot;07-12-25&quot;,2),
+  (327,327,&quot;3465 963356 89892&quot;,&quot;824&quot;,&quot;27-04-21&quot;,&quot;03-12-22&quot;,2),
+  (328,328,&quot;455 68414 77311 562&quot;,&quot;158&quot;,&quot;29-07-22&quot;,&quot;03-10-23&quot;,1),
+  (329,329,&quot;378736983188661&quot;,&quot;607&quot;,&quot;30-04-20&quot;,&quot;05-12-23&quot;,2),
+  (330,330,&quot;377228265557376&quot;,&quot;475&quot;,&quot;26-11-21&quot;,&quot;21-08-23&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (331,331,&quot;376828272743447&quot;,&quot;781&quot;,&quot;26-10-15&quot;,&quot;30-12-27&quot;,331),
-  (332,332,&quot;5428236458911744&quot;,&quot;604&quot;,&quot;29-01-20&quot;,&quot;16-05-24&quot;,332),
-  (333,333,&quot;4929 4883 3272 3779&quot;,&quot;436&quot;,&quot;07-03-19&quot;,&quot;08-11-23&quot;,333),
-  (334,334,&quot;346524765783423&quot;,&quot;546&quot;,&quot;28-09-14&quot;,&quot;12-04-24&quot;,334),
-  (335,335,&quot;535542 7651524460&quot;,&quot;412&quot;,&quot;11-08-20&quot;,&quot;02-03-22&quot;,335),
-  (336,336,&quot;402400 7113552662&quot;,&quot;364&quot;,&quot;15-08-22&quot;,&quot;16-01-22&quot;,336),
-  (337,337,&quot;4532573736446&quot;,&quot;218&quot;,&quot;09-03-11&quot;,&quot;21-12-27&quot;,337),
-  (338,338,&quot;5338 9786 7559 7975&quot;,&quot;414&quot;,&quot;11-02-23&quot;,&quot;21-08-21&quot;,338),
-  (339,339,&quot;3745 122626 38526&quot;,&quot;198&quot;,&quot;02-06-12&quot;,&quot;20-01-26&quot;,339),
-  (340,340,&quot;471 63557 22125 328&quot;,&quot;671&quot;,&quot;17-08-11&quot;,&quot;12-05-22&quot;,340);
+  (331,331,&quot;455634 2554842959&quot;,&quot;943&quot;,&quot;26-06-21&quot;,&quot;27-05-23&quot;,3),
+  (332,332,&quot;345945634458585&quot;,&quot;836&quot;,&quot;01-10-19&quot;,&quot;29-08-26&quot;,2),
+  (333,333,&quot;4532 1545 7861 7179&quot;,&quot;363&quot;,&quot;19-10-21&quot;,&quot;03-01-29&quot;,2),
+  (334,334,&quot;534636 934931 1656&quot;,&quot;563&quot;,&quot;24-12-19&quot;,&quot;15-12-26&quot;,2),
+  (335,335,&quot;4716 9542 2873 3583&quot;,&quot;830&quot;,&quot;20-03-21&quot;,&quot;22-10-22&quot;,2),
+  (336,336,&quot;3458 453159 45126&quot;,&quot;638&quot;,&quot;10-07-19&quot;,&quot;24-08-22&quot;,1),
+  (337,337,&quot;346645169376330&quot;,&quot;279&quot;,&quot;04-12-19&quot;,&quot;04-11-23&quot;,3),
+  (338,338,&quot;513418 3677173125&quot;,&quot;201&quot;,&quot;20-09-21&quot;,&quot;21-07-25&quot;,1),
+  (339,339,&quot;523145 1824667790&quot;,&quot;911&quot;,&quot;01-11-21&quot;,&quot;09-07-29&quot;,1),
+  (340,340,&quot;347775735154363&quot;,&quot;545&quot;,&quot;29-05-20&quot;,&quot;10-01-29&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (341,341,&quot;4365375434296633&quot;,&quot;401&quot;,&quot;25-12-10&quot;,&quot;04-04-25&quot;,341),
-  (342,342,&quot;544344 6638882761&quot;,&quot;878&quot;,&quot;01-03-23&quot;,&quot;23-06-22&quot;,342),
-  (343,343,&quot;555233 591564 4613&quot;,&quot;951&quot;,&quot;07-06-13&quot;,&quot;22-06-26&quot;,343),
-  (344,344,&quot;378848452687246&quot;,&quot;780&quot;,&quot;26-03-22&quot;,&quot;21-09-24&quot;,344),
-  (345,345,&quot;5425341735829835&quot;,&quot;906&quot;,&quot;13-04-19&quot;,&quot;13-12-25&quot;,345),
-  (346,346,&quot;349366148415563&quot;,&quot;566&quot;,&quot;14-12-14&quot;,&quot;17-06-24&quot;,346),
-  (347,347,&quot;558366 885338 5218&quot;,&quot;764&quot;,&quot;20-05-22&quot;,&quot;09-05-28&quot;,347),
-  (348,348,&quot;4485668578869511&quot;,&quot;774&quot;,&quot;30-04-18&quot;,&quot;23-06-25&quot;,348),
-  (349,349,&quot;4684841444996&quot;,&quot;429&quot;,&quot;11-11-16&quot;,&quot;11-11-23&quot;,349),
-  (350,350,&quot;555576 7321847223&quot;,&quot;452&quot;,&quot;04-09-17&quot;,&quot;22-06-28&quot;,350);
+  (341,341,&quot;4539926769766243&quot;,&quot;392&quot;,&quot;05-04-22&quot;,&quot;14-05-26&quot;,2),
+  (342,342,&quot;5342 1394 8281 3329&quot;,&quot;741&quot;,&quot;10-07-20&quot;,&quot;04-03-26&quot;,3),
+  (343,343,&quot;4532123344279&quot;,&quot;245&quot;,&quot;03-01-22&quot;,&quot;27-02-26&quot;,2),
+  (344,344,&quot;378781845642174&quot;,&quot;806&quot;,&quot;09-06-20&quot;,&quot;28-06-27&quot;,3),
+  (345,345,&quot;4929 9327 8363 8952&quot;,&quot;322&quot;,&quot;30-11-18&quot;,&quot;28-09-22&quot;,2),
+  (346,346,&quot;453965 1387783830&quot;,&quot;230&quot;,&quot;13-07-19&quot;,&quot;28-10-22&quot;,1),
+  (347,347,&quot;453948 732588 3253&quot;,&quot;762&quot;,&quot;29-06-19&quot;,&quot;07-09-26&quot;,2),
+  (348,348,&quot;5465772375763390&quot;,&quot;170&quot;,&quot;23-07-19&quot;,&quot;20-03-28&quot;,1),
+  (349,349,&quot;3748 672674 25869&quot;,&quot;361&quot;,&quot;13-05-21&quot;,&quot;24-04-27&quot;,2),
+  (350,350,&quot;5442718573691584&quot;,&quot;265&quot;,&quot;03-12-18&quot;,&quot;27-11-23&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (351,351,&quot;4469 5524 5741 1951&quot;,&quot;614&quot;,&quot;05-09-15&quot;,&quot;20-05-23&quot;,351),
-  (352,352,&quot;4916 1566 8379 8642&quot;,&quot;922&quot;,&quot;22-06-13&quot;,&quot;02-10-26&quot;,352),
-  (353,353,&quot;3418 465227 84963&quot;,&quot;484&quot;,&quot;01-07-13&quot;,&quot;01-12-26&quot;,353),
-  (354,354,&quot;515 86254 86976 420&quot;,&quot;998&quot;,&quot;24-03-16&quot;,&quot;07-08-27&quot;,354),
-  (355,355,&quot;373677614192547&quot;,&quot;519&quot;,&quot;10-02-15&quot;,&quot;18-11-26&quot;,355),
-  (356,356,&quot;4929486987134&quot;,&quot;962&quot;,&quot;23-07-20&quot;,&quot;07-01-22&quot;,356),
-  (357,357,&quot;4929 3874 8146 7511&quot;,&quot;362&quot;,&quot;09-02-23&quot;,&quot;07-12-22&quot;,357),
-  (358,358,&quot;349386321617488&quot;,&quot;209&quot;,&quot;03-12-15&quot;,&quot;01-01-22&quot;,358),
-  (359,359,&quot;5311144362863789&quot;,&quot;534&quot;,&quot;05-02-19&quot;,&quot;25-11-21&quot;,359),
-  (360,360,&quot;453284 4625451941&quot;,&quot;237&quot;,&quot;17-06-21&quot;,&quot;19-10-23&quot;,360);
+  (351,351,&quot;343977872982663&quot;,&quot;236&quot;,&quot;09-07-19&quot;,&quot;21-12-23&quot;,1),
+  (352,352,&quot;518 95385 92872 594&quot;,&quot;289&quot;,&quot;08-09-20&quot;,&quot;07-07-23&quot;,2),
+  (353,353,&quot;517 69643 13572 815&quot;,&quot;171&quot;,&quot;30-08-18&quot;,&quot;18-06-27&quot;,1),
+  (354,354,&quot;4655186485267558&quot;,&quot;351&quot;,&quot;06-11-21&quot;,&quot;08-04-28&quot;,3),
+  (355,355,&quot;5223676782376725&quot;,&quot;336&quot;,&quot;12-06-22&quot;,&quot;25-12-26&quot;,2),
+  (356,356,&quot;448572 458852 3794&quot;,&quot;190&quot;,&quot;17-02-20&quot;,&quot;27-11-28&quot;,3),
+  (357,357,&quot;377925372245874&quot;,&quot;530&quot;,&quot;11-06-19&quot;,&quot;23-07-25&quot;,2),
+  (358,358,&quot;4485551674545&quot;,&quot;820&quot;,&quot;27-12-20&quot;,&quot;08-11-28&quot;,2),
+  (359,359,&quot;448 57177 22339 325&quot;,&quot;518&quot;,&quot;30-05-20&quot;,&quot;25-08-22&quot;,2),
+  (360,360,&quot;3413 547629 46871&quot;,&quot;618&quot;,&quot;01-05-22&quot;,&quot;11-09-26&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (361,361,&quot;3438 279543 63441&quot;,&quot;120&quot;,&quot;23-09-20&quot;,&quot;09-10-24&quot;,361),
-  (362,362,&quot;556 82383 43483 871&quot;,&quot;302&quot;,&quot;01-04-21&quot;,&quot;08-02-22&quot;,362),
-  (363,363,&quot;4024007176290&quot;,&quot;700&quot;,&quot;11-08-11&quot;,&quot;30-06-22&quot;,363),
-  (364,364,&quot;3763 223738 38876&quot;,&quot;812&quot;,&quot;15-08-12&quot;,&quot;10-02-22&quot;,364),
-  (365,365,&quot;379471714416384&quot;,&quot;579&quot;,&quot;23-10-16&quot;,&quot;03-07-25&quot;,365),
-  (366,366,&quot;402400 7154226473&quot;,&quot;508&quot;,&quot;18-04-22&quot;,&quot;08-06-29&quot;,366),
-  (367,367,&quot;491632 466641 8261&quot;,&quot;323&quot;,&quot;20-12-12&quot;,&quot;23-02-22&quot;,367),
-  (368,368,&quot;554557 184346 6170&quot;,&quot;412&quot;,&quot;11-03-14&quot;,&quot;18-02-25&quot;,368),
-  (369,369,&quot;3744 549726 43480&quot;,&quot;241&quot;,&quot;18-01-13&quot;,&quot;28-03-24&quot;,369),
-  (370,370,&quot;546687 3248422963&quot;,&quot;395&quot;,&quot;06-12-12&quot;,&quot;12-08-24&quot;,370);
+  (361,361,&quot;3477 188637 76565&quot;,&quot;449&quot;,&quot;19-07-19&quot;,&quot;19-04-28&quot;,2),
+  (362,362,&quot;5155433624639650&quot;,&quot;690&quot;,&quot;17-01-21&quot;,&quot;09-01-24&quot;,2),
+  (363,363,&quot;3465 624533 85226&quot;,&quot;622&quot;,&quot;07-06-21&quot;,&quot;30-10-22&quot;,1),
+  (364,364,&quot;5315 5353 8538 7480&quot;,&quot;230&quot;,&quot;06-01-21&quot;,&quot;18-03-26&quot;,2),
+  (365,365,&quot;374456786446869&quot;,&quot;221&quot;,&quot;30-04-21&quot;,&quot;11-10-26&quot;,1),
+  (366,366,&quot;5342 8251 2729 3444&quot;,&quot;189&quot;,&quot;02-07-19&quot;,&quot;02-02-27&quot;,2),
+  (367,367,&quot;373534334235884&quot;,&quot;594&quot;,&quot;14-08-19&quot;,&quot;10-08-24&quot;,2),
+  (368,368,&quot;376812344729162&quot;,&quot;811&quot;,&quot;31-12-20&quot;,&quot;03-04-29&quot;,2),
+  (369,369,&quot;3421 896525 13855&quot;,&quot;510&quot;,&quot;22-04-22&quot;,&quot;28-05-25&quot;,2),
+  (370,370,&quot;453 26279 75489 151&quot;,&quot;962&quot;,&quot;15-06-20&quot;,&quot;30-11-24&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (371,371,&quot;3488 976893 53228&quot;,&quot;315&quot;,&quot;21-12-14&quot;,&quot;26-05-23&quot;,371),
-  (372,372,&quot;541 76522 38176 494&quot;,&quot;388&quot;,&quot;20-01-17&quot;,&quot;23-03-28&quot;,372),
-  (373,373,&quot;558328 1357313767&quot;,&quot;466&quot;,&quot;28-04-21&quot;,&quot;21-01-24&quot;,373),
-  (374,374,&quot;512368 6328766645&quot;,&quot;260&quot;,&quot;11-04-15&quot;,&quot;29-11-26&quot;,374),
-  (375,375,&quot;3422 227884 35667&quot;,&quot;693&quot;,&quot;12-06-11&quot;,&quot;29-10-22&quot;,375),
-  (376,376,&quot;3752 163286 74272&quot;,&quot;584&quot;,&quot;30-05-14&quot;,&quot;12-01-26&quot;,376),
-  (377,377,&quot;4485466242651&quot;,&quot;384&quot;,&quot;16-04-21&quot;,&quot;29-07-27&quot;,377),
-  (378,378,&quot;3744 752336 14937&quot;,&quot;196&quot;,&quot;17-12-17&quot;,&quot;18-04-26&quot;,378),
-  (379,379,&quot;471686 345328 7274&quot;,&quot;771&quot;,&quot;31-10-19&quot;,&quot;15-11-26&quot;,379),
-  (380,380,&quot;453275 8345332621&quot;,&quot;239&quot;,&quot;30-06-13&quot;,&quot;06-05-22&quot;,380);
+  (371,371,&quot;375754377459294&quot;,&quot;647&quot;,&quot;18-03-20&quot;,&quot;18-11-27&quot;,3),
+  (372,372,&quot;4592747185151&quot;,&quot;338&quot;,&quot;26-08-21&quot;,&quot;27-02-24&quot;,2),
+  (373,373,&quot;5539 6822 4554 2647&quot;,&quot;466&quot;,&quot;01-04-22&quot;,&quot;31-08-23&quot;,2),
+  (374,374,&quot;552728 6668253445&quot;,&quot;344&quot;,&quot;08-05-21&quot;,&quot;23-09-25&quot;,2),
+  (375,375,&quot;3467 867639 36127&quot;,&quot;759&quot;,&quot;26-06-20&quot;,&quot;04-01-27&quot;,2),
+  (376,376,&quot;377983551617629&quot;,&quot;634&quot;,&quot;06-07-22&quot;,&quot;15-10-27&quot;,1),
+  (377,377,&quot;3732 618257 38545&quot;,&quot;788&quot;,&quot;04-07-19&quot;,&quot;09-12-25&quot;,3),
+  (378,378,&quot;553655 791854 6922&quot;,&quot;966&quot;,&quot;30-04-22&quot;,&quot;01-01-27&quot;,1),
+  (379,379,&quot;372614578459811&quot;,&quot;779&quot;,&quot;25-04-20&quot;,&quot;10-12-25&quot;,1),
+  (380,380,&quot;471 66535 68785 639&quot;,&quot;385&quot;,&quot;31-03-20&quot;,&quot;24-02-24&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (381,381,&quot;5232745151826765&quot;,&quot;360&quot;,&quot;22-06-15&quot;,&quot;22-08-21&quot;,381),
-  (382,382,&quot;518629 953157 6365&quot;,&quot;477&quot;,&quot;11-02-15&quot;,&quot;03-02-24&quot;,382),
-  (383,383,&quot;4556578793225684&quot;,&quot;888&quot;,&quot;23-06-23&quot;,&quot;01-11-21&quot;,383),
-  (384,384,&quot;455 62767 88856 197&quot;,&quot;221&quot;,&quot;17-01-17&quot;,&quot;14-07-29&quot;,384),
-  (385,385,&quot;344717287717489&quot;,&quot;230&quot;,&quot;05-02-12&quot;,&quot;12-01-23&quot;,385),
-  (386,386,&quot;5557328748729870&quot;,&quot;938&quot;,&quot;20-10-18&quot;,&quot;15-07-23&quot;,386),
-  (387,387,&quot;425786 7787482134&quot;,&quot;134&quot;,&quot;24-05-16&quot;,&quot;18-11-21&quot;,387),
-  (388,388,&quot;521484 3838577760&quot;,&quot;688&quot;,&quot;15-09-17&quot;,&quot;09-02-23&quot;,388),
-  (389,389,&quot;453 97316 74388 640&quot;,&quot;295&quot;,&quot;19-03-21&quot;,&quot;16-05-24&quot;,389),
-  (390,390,&quot;4916 762 98 7359&quot;,&quot;947&quot;,&quot;30-04-12&quot;,&quot;21-04-24&quot;,390);
+  (381,381,&quot;4716 419 22 2618&quot;,&quot;660&quot;,&quot;20-03-20&quot;,&quot;16-04-24&quot;,1),
+  (382,382,&quot;547556 8563264573&quot;,&quot;752&quot;,&quot;15-05-20&quot;,&quot;03-06-26&quot;,2),
+  (383,383,&quot;549 46577 42834 823&quot;,&quot;395&quot;,&quot;23-04-22&quot;,&quot;12-09-23&quot;,2),
+  (384,384,&quot;528268 6173553673&quot;,&quot;118&quot;,&quot;26-09-18&quot;,&quot;01-05-29&quot;,2),
+  (385,385,&quot;3796 641785 24467&quot;,&quot;942&quot;,&quot;04-03-19&quot;,&quot;17-02-28&quot;,2),
+  (386,386,&quot;4539217575460&quot;,&quot;941&quot;,&quot;03-12-20&quot;,&quot;23-07-28&quot;,3),
+  (387,387,&quot;3463 354294 59221&quot;,&quot;925&quot;,&quot;01-09-21&quot;,&quot;25-11-26&quot;,1),
+  (388,388,&quot;548827 214699 9244&quot;,&quot;658&quot;,&quot;03-12-21&quot;,&quot;21-05-26&quot;,3),
+  (389,389,&quot;5483822579383517&quot;,&quot;832&quot;,&quot;22-07-19&quot;,&quot;22-09-26&quot;,3),
+  (390,390,&quot;5487 6259 6287 2657&quot;,&quot;675&quot;,&quot;19-11-18&quot;,&quot;05-02-23&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (391,391,&quot;5412784874788335&quot;,&quot;888&quot;,&quot;23-03-15&quot;,&quot;24-10-21&quot;,391),
-  (392,392,&quot;3497 842553 79135&quot;,&quot;289&quot;,&quot;26-01-14&quot;,&quot;13-12-28&quot;,392),
-  (393,393,&quot;4485535464567&quot;,&quot;259&quot;,&quot;02-08-14&quot;,&quot;07-08-22&quot;,393),
-  (394,394,&quot;346378791593227&quot;,&quot;296&quot;,&quot;24-09-11&quot;,&quot;20-04-26&quot;,394),
-  (395,395,&quot;535824 263187 6469&quot;,&quot;666&quot;,&quot;22-02-15&quot;,&quot;17-11-27&quot;,395),
-  (396,396,&quot;5153 3694 9245 6359&quot;,&quot;383&quot;,&quot;04-12-17&quot;,&quot;24-05-29&quot;,396),
-  (397,397,&quot;377964256621280&quot;,&quot;355&quot;,&quot;04-10-15&quot;,&quot;26-02-28&quot;,397),
-  (398,398,&quot;481832 937278 2883&quot;,&quot;887&quot;,&quot;07-05-22&quot;,&quot;12-11-27&quot;,398),
-  (399,399,&quot;3758 826772 58817&quot;,&quot;482&quot;,&quot;18-12-17&quot;,&quot;04-02-22&quot;,399),
-  (400,400,&quot;544515 2737551459&quot;,&quot;195&quot;,&quot;28-02-13&quot;,&quot;20-04-28&quot;,400);
+  (391,391,&quot;5539827347355485&quot;,&quot;199&quot;,&quot;22-12-20&quot;,&quot;11-07-29&quot;,3),
+  (392,392,&quot;4024007165285&quot;,&quot;337&quot;,&quot;29-09-21&quot;,&quot;27-05-23&quot;,2),
+  (393,393,&quot;3426 524422 86223&quot;,&quot;727&quot;,&quot;19-05-19&quot;,&quot;09-11-25&quot;,3),
+  (394,394,&quot;4716 4545 7455 7421&quot;,&quot;353&quot;,&quot;26-12-18&quot;,&quot;17-08-26&quot;,2),
+  (395,395,&quot;4024 007 18 7180&quot;,&quot;961&quot;,&quot;14-03-19&quot;,&quot;08-12-25&quot;,1),
+  (396,396,&quot;5142 9385 7788 1766&quot;,&quot;697&quot;,&quot;06-03-20&quot;,&quot;21-04-26&quot;,3),
+  (397,397,&quot;471 64472 78548 241&quot;,&quot;710&quot;,&quot;18-04-21&quot;,&quot;13-08-28&quot;,1),
+  (398,398,&quot;534882 726673 7581&quot;,&quot;994&quot;,&quot;12-05-21&quot;,&quot;02-06-27&quot;,2),
+  (399,399,&quot;4556 4735 2329 9649&quot;,&quot;270&quot;,&quot;05-04-20&quot;,&quot;23-08-28&quot;,1),
+  (400,400,&quot;448582 6578989370&quot;,&quot;120&quot;,&quot;04-11-18&quot;,&quot;31-08-27&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (401,401,&quot;4556484868659&quot;,&quot;341&quot;,&quot;16-09-12&quot;,&quot;01-11-26&quot;,401),
-  (402,402,&quot;376574695197353&quot;,&quot;994&quot;,&quot;03-11-22&quot;,&quot;07-02-24&quot;,402),
-  (403,403,&quot;5562 5722 5922 4721&quot;,&quot;785&quot;,&quot;17-12-12&quot;,&quot;21-07-25&quot;,403),
-  (404,404,&quot;555224 911775 5939&quot;,&quot;195&quot;,&quot;07-08-19&quot;,&quot;14-09-26&quot;,404),
-  (405,405,&quot;4556 857 67 4122&quot;,&quot;491&quot;,&quot;17-07-23&quot;,&quot;24-08-28&quot;,405),
-  (406,406,&quot;533 85435 44842 117&quot;,&quot;975&quot;,&quot;19-05-22&quot;,&quot;14-08-21&quot;,406),
-  (407,407,&quot;4539493984887676&quot;,&quot;159&quot;,&quot;19-11-13&quot;,&quot;28-04-26&quot;,407),
-  (408,408,&quot;3745 596436 25318&quot;,&quot;887&quot;,&quot;08-07-18&quot;,&quot;22-01-24&quot;,408),
-  (409,409,&quot;545 58689 41436 263&quot;,&quot;864&quot;,&quot;09-11-18&quot;,&quot;07-05-22&quot;,409),
-  (410,410,&quot;347337366494780&quot;,&quot;499&quot;,&quot;28-08-22&quot;,&quot;12-11-22&quot;,410);
+  (401,401,&quot;372739127283782&quot;,&quot;200&quot;,&quot;09-09-18&quot;,&quot;22-09-25&quot;,3),
+  (402,402,&quot;4916295555468783&quot;,&quot;435&quot;,&quot;01-03-19&quot;,&quot;03-09-27&quot;,1),
+  (403,403,&quot;4539732558224794&quot;,&quot;532&quot;,&quot;01-06-21&quot;,&quot;03-06-25&quot;,2),
+  (404,404,&quot;3771 777268 84442&quot;,&quot;191&quot;,&quot;08-10-20&quot;,&quot;17-03-27&quot;,1),
+  (405,405,&quot;379548595772785&quot;,&quot;307&quot;,&quot;27-08-18&quot;,&quot;18-02-25&quot;,2),
+  (406,406,&quot;344439232621233&quot;,&quot;383&quot;,&quot;07-01-19&quot;,&quot;07-03-23&quot;,2),
+  (407,407,&quot;518765 8378273361&quot;,&quot;175&quot;,&quot;28-08-18&quot;,&quot;17-06-25&quot;,2),
+  (408,408,&quot;5485233878574798&quot;,&quot;136&quot;,&quot;29-11-20&quot;,&quot;24-05-25&quot;,2),
+  (409,409,&quot;344453673674890&quot;,&quot;867&quot;,&quot;26-06-19&quot;,&quot;16-03-23&quot;,2),
+  (410,410,&quot;513 68443 32745 817&quot;,&quot;306&quot;,&quot;22-10-19&quot;,&quot;02-11-23&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (411,411,&quot;5353 1461 5163 2225&quot;,&quot;166&quot;,&quot;01-07-15&quot;,&quot;06-03-25&quot;,411),
-  (412,412,&quot;538 64452 28416 682&quot;,&quot;182&quot;,&quot;02-06-22&quot;,&quot;08-03-27&quot;,412),
-  (413,413,&quot;556323 759215 5821&quot;,&quot;851&quot;,&quot;05-09-13&quot;,&quot;10-12-22&quot;,413),
-  (414,414,&quot;4024007182744&quot;,&quot;958&quot;,&quot;17-12-12&quot;,&quot;17-02-27&quot;,414),
-  (415,415,&quot;5333663829793820&quot;,&quot;388&quot;,&quot;24-12-12&quot;,&quot;19-07-23&quot;,415),
-  (416,416,&quot;348886287585828&quot;,&quot;405&quot;,&quot;01-10-22&quot;,&quot;05-12-27&quot;,416),
-  (417,417,&quot;492936 3357351683&quot;,&quot;564&quot;,&quot;30-10-14&quot;,&quot;25-03-26&quot;,417),
-  (418,418,&quot;3462 927266 77312&quot;,&quot;922&quot;,&quot;31-08-14&quot;,&quot;08-08-28&quot;,418),
-  (419,419,&quot;542381 774231 6223&quot;,&quot;288&quot;,&quot;25-06-19&quot;,&quot;07-04-28&quot;,419),
-  (420,420,&quot;5438 7771 7552 3443&quot;,&quot;977&quot;,&quot;11-02-18&quot;,&quot;13-04-23&quot;,420);
+  (411,411,&quot;491 66754 95288 534&quot;,&quot;527&quot;,&quot;20-07-19&quot;,&quot;24-02-23&quot;,2),
+  (412,412,&quot;3787 243256 96849&quot;,&quot;960&quot;,&quot;09-02-19&quot;,&quot;17-08-25&quot;,1),
+  (413,413,&quot;347453263819498&quot;,&quot;318&quot;,&quot;15-11-20&quot;,&quot;19-08-27&quot;,3),
+  (414,414,&quot;4532 3586 8546 3654&quot;,&quot;312&quot;,&quot;09-06-19&quot;,&quot;16-02-25&quot;,2),
+  (415,415,&quot;373897299676776&quot;,&quot;228&quot;,&quot;20-02-22&quot;,&quot;07-01-24&quot;,2),
+  (416,416,&quot;3724 462856 38555&quot;,&quot;452&quot;,&quot;30-07-18&quot;,&quot;26-10-28&quot;,2),
+  (417,417,&quot;547819 4475259549&quot;,&quot;479&quot;,&quot;14-02-21&quot;,&quot;14-02-28&quot;,2),
+  (418,418,&quot;3733 871824 17835&quot;,&quot;609&quot;,&quot;14-08-18&quot;,&quot;04-07-23&quot;,2),
+  (419,419,&quot;372541478125798&quot;,&quot;910&quot;,&quot;26-02-21&quot;,&quot;09-06-29&quot;,1),
+  (420,420,&quot;345526185924447&quot;,&quot;970&quot;,&quot;03-07-21&quot;,&quot;21-07-27&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (421,421,&quot;5445556677487435&quot;,&quot;845&quot;,&quot;30-10-22&quot;,&quot;24-08-28&quot;,421),
-  (422,422,&quot;541512 584843 8887&quot;,&quot;205&quot;,&quot;04-11-18&quot;,&quot;13-09-23&quot;,422),
-  (423,423,&quot;4556868381534971&quot;,&quot;669&quot;,&quot;18-06-23&quot;,&quot;03-02-23&quot;,423),
-  (424,424,&quot;448 59562 23536 522&quot;,&quot;558&quot;,&quot;23-05-22&quot;,&quot;13-09-23&quot;,424),
-  (425,425,&quot;4485434239886331&quot;,&quot;268&quot;,&quot;27-06-13&quot;,&quot;28-03-27&quot;,425),
-  (426,426,&quot;376125471856462&quot;,&quot;510&quot;,&quot;29-08-11&quot;,&quot;24-01-26&quot;,426),
-  (427,427,&quot;518 84455 22188 557&quot;,&quot;519&quot;,&quot;14-01-15&quot;,&quot;16-09-25&quot;,427),
-  (428,428,&quot;374889737595170&quot;,&quot;562&quot;,&quot;15-05-11&quot;,&quot;04-05-27&quot;,428),
-  (429,429,&quot;519349 768278 7721&quot;,&quot;461&quot;,&quot;23-01-12&quot;,&quot;10-02-27&quot;,429),
-  (430,430,&quot;3738 275574 88531&quot;,&quot;292&quot;,&quot;26-01-23&quot;,&quot;23-03-27&quot;,430);
+  (421,421,&quot;402400 7146292666&quot;,&quot;445&quot;,&quot;24-11-20&quot;,&quot;02-04-24&quot;,2),
+  (422,422,&quot;375638124429553&quot;,&quot;583&quot;,&quot;07-07-19&quot;,&quot;25-04-27&quot;,2),
+  (423,423,&quot;4539 568 58 5688&quot;,&quot;246&quot;,&quot;18-01-22&quot;,&quot;30-03-25&quot;,2),
+  (424,424,&quot;548438 2576886722&quot;,&quot;447&quot;,&quot;08-01-21&quot;,&quot;02-01-26&quot;,3),
+  (425,425,&quot;5284668684333371&quot;,&quot;833&quot;,&quot;19-07-21&quot;,&quot;20-08-23&quot;,2),
+  (426,426,&quot;5167824375377472&quot;,&quot;336&quot;,&quot;05-10-21&quot;,&quot;26-06-24&quot;,2),
+  (427,427,&quot;4929 789 57 7699&quot;,&quot;299&quot;,&quot;27-06-22&quot;,&quot;22-09-26&quot;,3),
+  (428,428,&quot;545616 7432538813&quot;,&quot;266&quot;,&quot;15-01-22&quot;,&quot;20-01-29&quot;,1),
+  (429,429,&quot;519797 275134 6977&quot;,&quot;881&quot;,&quot;27-03-19&quot;,&quot;10-01-29&quot;,3),
+  (430,430,&quot;3468 598337 21751&quot;,&quot;184&quot;,&quot;29-12-20&quot;,&quot;22-12-26&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (431,431,&quot;533 42378 48678 459&quot;,&quot;623&quot;,&quot;11-02-12&quot;,&quot;06-09-23&quot;,431),
-  (432,432,&quot;379633932274271&quot;,&quot;437&quot;,&quot;09-05-13&quot;,&quot;29-12-25&quot;,432),
-  (433,433,&quot;372243672326997&quot;,&quot;532&quot;,&quot;31-12-19&quot;,&quot;01-11-27&quot;,433),
-  (434,434,&quot;4716857466263363&quot;,&quot;624&quot;,&quot;19-10-10&quot;,&quot;25-08-25&quot;,434),
-  (435,435,&quot;378536925575672&quot;,&quot;156&quot;,&quot;06-01-17&quot;,&quot;25-04-25&quot;,435),
-  (436,436,&quot;5279978496635989&quot;,&quot;161&quot;,&quot;12-02-18&quot;,&quot;12-08-25&quot;,436),
-  (437,437,&quot;3747 664958 75137&quot;,&quot;969&quot;,&quot;10-06-15&quot;,&quot;06-03-29&quot;,437),
-  (438,438,&quot;5478655755456484&quot;,&quot;254&quot;,&quot;25-05-20&quot;,&quot;12-12-27&quot;,438),
-  (439,439,&quot;4532 8274 2433 7585&quot;,&quot;743&quot;,&quot;20-08-11&quot;,&quot;11-03-26&quot;,439),
-  (440,440,&quot;529 93457 36353 839&quot;,&quot;161&quot;,&quot;11-01-21&quot;,&quot;22-10-22&quot;,440);
+  (431,431,&quot;453946 3316656727&quot;,&quot;458&quot;,&quot;06-05-20&quot;,&quot;25-11-27&quot;,2),
+  (432,432,&quot;533 58742 95619 674&quot;,&quot;538&quot;,&quot;17-10-20&quot;,&quot;20-09-28&quot;,2),
+  (433,433,&quot;526377 377257 6744&quot;,&quot;966&quot;,&quot;13-07-21&quot;,&quot;26-11-28&quot;,2),
+  (434,434,&quot;4024007158313129&quot;,&quot;342&quot;,&quot;26-11-20&quot;,&quot;18-03-29&quot;,1),
+  (435,435,&quot;538537 2784259812&quot;,&quot;512&quot;,&quot;16-03-21&quot;,&quot;26-05-29&quot;,3),
+  (436,436,&quot;5172833253866640&quot;,&quot;596&quot;,&quot;09-04-19&quot;,&quot;10-02-26&quot;,3),
+  (437,437,&quot;547 63269 56579 621&quot;,&quot;732&quot;,&quot;17-08-21&quot;,&quot;24-03-26&quot;,2),
+  (438,438,&quot;4539853518469&quot;,&quot;469&quot;,&quot;20-06-22&quot;,&quot;21-01-28&quot;,2),
+  (439,439,&quot;343188779513854&quot;,&quot;230&quot;,&quot;01-11-21&quot;,&quot;14-09-23&quot;,1),
+  (440,440,&quot;3758 582278 78445&quot;,&quot;330&quot;,&quot;14-02-19&quot;,&quot;18-09-28&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (441,441,&quot;376865861573512&quot;,&quot;595&quot;,&quot;23-10-17&quot;,&quot;22-06-26&quot;,441),
-  (442,442,&quot;4716467588489852&quot;,&quot;826&quot;,&quot;03-02-23&quot;,&quot;12-10-21&quot;,442),
-  (443,443,&quot;3464 232982 76452&quot;,&quot;138&quot;,&quot;16-10-13&quot;,&quot;03-09-28&quot;,443),
-  (444,444,&quot;5335 4664 5327 8813&quot;,&quot;316&quot;,&quot;21-10-18&quot;,&quot;30-07-27&quot;,444),
-  (445,445,&quot;534 98398 69483 850&quot;,&quot;137&quot;,&quot;06-03-12&quot;,&quot;30-06-28&quot;,445),
-  (446,446,&quot;5434 8454 6282 2358&quot;,&quot;248&quot;,&quot;29-08-16&quot;,&quot;27-12-26&quot;,446),
-  (447,447,&quot;3446 777672 64396&quot;,&quot;746&quot;,&quot;14-02-23&quot;,&quot;07-11-24&quot;,447),
-  (448,448,&quot;517235 175773 2861&quot;,&quot;202&quot;,&quot;06-09-13&quot;,&quot;24-05-22&quot;,448),
-  (449,449,&quot;4929 8589 8546 8387&quot;,&quot;644&quot;,&quot;14-06-21&quot;,&quot;06-06-28&quot;,449),
-  (450,450,&quot;345848728427898&quot;,&quot;473&quot;,&quot;06-10-21&quot;,&quot;24-05-22&quot;,450);
+  (441,441,&quot;552462 346372 2427&quot;,&quot;671&quot;,&quot;27-04-19&quot;,&quot;09-06-25&quot;,2),
+  (442,442,&quot;5497 3141 2766 6456&quot;,&quot;783&quot;,&quot;01-05-21&quot;,&quot;29-05-27&quot;,1),
+  (443,443,&quot;378234174773749&quot;,&quot;293&quot;,&quot;26-05-19&quot;,&quot;11-09-26&quot;,1),
+  (444,444,&quot;555 16566 36499 446&quot;,&quot;195&quot;,&quot;20-08-20&quot;,&quot;12-02-26&quot;,2),
+  (445,445,&quot;347278225617429&quot;,&quot;817&quot;,&quot;17-07-20&quot;,&quot;09-10-24&quot;,2),
+  (446,446,&quot;532 59323 92942 548&quot;,&quot;706&quot;,&quot;15-08-21&quot;,&quot;24-09-26&quot;,2),
+  (447,447,&quot;341624242883666&quot;,&quot;234&quot;,&quot;23-06-21&quot;,&quot;30-11-22&quot;,2),
+  (448,448,&quot;453246 336586 4237&quot;,&quot;607&quot;,&quot;15-07-19&quot;,&quot;11-09-26&quot;,3),
+  (449,449,&quot;554575 655948 5379&quot;,&quot;543&quot;,&quot;23-11-20&quot;,&quot;04-07-25&quot;,2),
+  (450,450,&quot;526366 3742324434&quot;,&quot;351&quot;,&quot;02-01-20&quot;,&quot;17-05-27&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (451,451,&quot;529214 728613 3927&quot;,&quot;861&quot;,&quot;06-06-15&quot;,&quot;19-01-22&quot;,451),
-  (452,452,&quot;3779 798866 95371&quot;,&quot;472&quot;,&quot;14-01-18&quot;,&quot;19-08-28&quot;,452),
-  (453,453,&quot;345567356787460&quot;,&quot;396&quot;,&quot;26-03-16&quot;,&quot;24-09-28&quot;,453),
-  (454,454,&quot;371477744918743&quot;,&quot;324&quot;,&quot;21-05-22&quot;,&quot;04-07-24&quot;,454),
-  (455,455,&quot;3725 542564 36410&quot;,&quot;785&quot;,&quot;11-05-21&quot;,&quot;04-06-28&quot;,455),
-  (456,456,&quot;3745 276243 33681&quot;,&quot;343&quot;,&quot;18-09-15&quot;,&quot;26-10-21&quot;,456),
-  (457,457,&quot;5557537434938476&quot;,&quot;485&quot;,&quot;18-09-19&quot;,&quot;17-05-28&quot;,457),
-  (458,458,&quot;5121255322835533&quot;,&quot;371&quot;,&quot;02-05-15&quot;,&quot;28-09-27&quot;,458),
-  (459,459,&quot;512873 898319 8831&quot;,&quot;769&quot;,&quot;29-08-19&quot;,&quot;26-02-29&quot;,459),
-  (460,460,&quot;453 24689 54279 325&quot;,&quot;474&quot;,&quot;12-10-10&quot;,&quot;10-07-28&quot;,460);
+  (451,451,&quot;5421 1829 5118 5864&quot;,&quot;918&quot;,&quot;25-12-21&quot;,&quot;03-10-27&quot;,2),
+  (452,452,&quot;348952872594318&quot;,&quot;258&quot;,&quot;15-05-19&quot;,&quot;06-06-27&quot;,2),
+  (453,453,&quot;4716 865 43 2745&quot;,&quot;576&quot;,&quot;08-04-21&quot;,&quot;24-10-24&quot;,1),
+  (454,454,&quot;402400 717565 6963&quot;,&quot;301&quot;,&quot;29-03-19&quot;,&quot;02-12-25&quot;,1),
+  (455,455,&quot;453946 758486 4582&quot;,&quot;873&quot;,&quot;05-10-21&quot;,&quot;20-05-29&quot;,3),
+  (456,456,&quot;3767 756928 57556&quot;,&quot;280&quot;,&quot;13-08-21&quot;,&quot;26-04-24&quot;,2),
+  (457,457,&quot;4024007154586&quot;,&quot;916&quot;,&quot;10-02-22&quot;,&quot;30-07-27&quot;,3),
+  (458,458,&quot;5128384366587322&quot;,&quot;881&quot;,&quot;20-02-22&quot;,&quot;09-02-27&quot;,2),
+  (459,459,&quot;4539824564879867&quot;,&quot;303&quot;,&quot;21-05-21&quot;,&quot;13-12-26&quot;,1),
+  (460,460,&quot;4929547432179545&quot;,&quot;408&quot;,&quot;23-04-20&quot;,&quot;10-05-29&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (461,461,&quot;5388439518241445&quot;,&quot;756&quot;,&quot;22-03-19&quot;,&quot;28-06-24&quot;,461),
-  (462,462,&quot;344534495385672&quot;,&quot;821&quot;,&quot;20-07-12&quot;,&quot;17-07-22&quot;,462),
-  (463,463,&quot;342758216672330&quot;,&quot;763&quot;,&quot;14-09-13&quot;,&quot;07-11-28&quot;,463),
-  (464,464,&quot;515696 5374847339&quot;,&quot;252&quot;,&quot;05-09-10&quot;,&quot;06-07-24&quot;,464),
-  (465,465,&quot;3476 825734 81538&quot;,&quot;295&quot;,&quot;15-08-11&quot;,&quot;16-11-28&quot;,465),
-  (466,466,&quot;4556536237634226&quot;,&quot;712&quot;,&quot;27-12-21&quot;,&quot;06-04-23&quot;,466),
-  (467,467,&quot;378869482254419&quot;,&quot;728&quot;,&quot;20-05-20&quot;,&quot;05-03-26&quot;,467),
-  (468,468,&quot;556264 6184483345&quot;,&quot;628&quot;,&quot;04-10-18&quot;,&quot;19-07-22&quot;,468),
-  (469,469,&quot;3786 658289 54278&quot;,&quot;548&quot;,&quot;07-03-12&quot;,&quot;29-01-23&quot;,469),
-  (470,470,&quot;475741 8472114676&quot;,&quot;901&quot;,&quot;26-08-18&quot;,&quot;07-05-26&quot;,470);
+  (461,461,&quot;547239 928884 3472&quot;,&quot;430&quot;,&quot;22-08-18&quot;,&quot;30-05-28&quot;,1),
+  (462,462,&quot;4556 546 87 3119&quot;,&quot;371&quot;,&quot;29-04-20&quot;,&quot;30-07-27&quot;,2),
+  (463,463,&quot;3711 557244 36650&quot;,&quot;700&quot;,&quot;09-05-22&quot;,&quot;15-08-26&quot;,2),
+  (464,464,&quot;402400 713726 4484&quot;,&quot;387&quot;,&quot;11-10-19&quot;,&quot;01-11-27&quot;,1),
+  (465,465,&quot;377665486129321&quot;,&quot;791&quot;,&quot;29-05-19&quot;,&quot;28-04-26&quot;,2),
+  (466,466,&quot;4916229427486&quot;,&quot;931&quot;,&quot;06-05-21&quot;,&quot;06-05-26&quot;,1),
+  (467,467,&quot;4897 3248 2827 7210&quot;,&quot;610&quot;,&quot;07-11-19&quot;,&quot;10-04-24&quot;,2),
+  (468,468,&quot;373558779143188&quot;,&quot;650&quot;,&quot;04-10-18&quot;,&quot;31-10-26&quot;,1),
+  (469,469,&quot;344168984244726&quot;,&quot;252&quot;,&quot;31-05-22&quot;,&quot;27-03-23&quot;,2),
+  (470,470,&quot;4539954854138672&quot;,&quot;265&quot;,&quot;14-08-18&quot;,&quot;30-01-24&quot;,3);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (471,471,&quot;343626384898798&quot;,&quot;924&quot;,&quot;22-06-18&quot;,&quot;17-09-24&quot;,471),
-  (472,472,&quot;5356 3693 3615 4447&quot;,&quot;683&quot;,&quot;18-11-14&quot;,&quot;31-12-22&quot;,472),
-  (473,473,&quot;543156 362842 3796&quot;,&quot;931&quot;,&quot;16-11-17&quot;,&quot;08-06-27&quot;,473),
-  (474,474,&quot;492968 779773 4516&quot;,&quot;278&quot;,&quot;13-03-21&quot;,&quot;30-08-24&quot;,474),
-  (475,475,&quot;3743 398542 62618&quot;,&quot;698&quot;,&quot;09-01-22&quot;,&quot;07-05-26&quot;,475),
-  (476,476,&quot;4929 5282 8226 9867&quot;,&quot;705&quot;,&quot;05-09-16&quot;,&quot;30-10-28&quot;,476),
-  (477,477,&quot;491653 634526 8375&quot;,&quot;950&quot;,&quot;15-05-17&quot;,&quot;06-03-27&quot;,477),
-  (478,478,&quot;378687864125217&quot;,&quot;622&quot;,&quot;20-08-10&quot;,&quot;02-03-26&quot;,478),
-  (479,479,&quot;4929231441737342&quot;,&quot;336&quot;,&quot;28-03-14&quot;,&quot;28-05-27&quot;,479),
-  (480,480,&quot;4716924472849666&quot;,&quot;153&quot;,&quot;11-06-21&quot;,&quot;23-04-25&quot;,480);
+  (471,471,&quot;543136 776346 5582&quot;,&quot;773&quot;,&quot;23-08-19&quot;,&quot;03-10-22&quot;,3),
+  (472,472,&quot;5566223321458147&quot;,&quot;448&quot;,&quot;01-03-22&quot;,&quot;06-03-25&quot;,1),
+  (473,473,&quot;5224235266166893&quot;,&quot;696&quot;,&quot;18-08-20&quot;,&quot;29-04-29&quot;,2),
+  (474,474,&quot;4485 4773 4259 8392&quot;,&quot;484&quot;,&quot;11-01-19&quot;,&quot;11-02-29&quot;,2),
+  (475,475,&quot;541466 2599357784&quot;,&quot;994&quot;,&quot;22-02-19&quot;,&quot;04-12-26&quot;,2),
+  (476,476,&quot;3428 274397 61269&quot;,&quot;592&quot;,&quot;30-03-22&quot;,&quot;10-10-24&quot;,1),
+  (477,477,&quot;5256 5448 2662 1243&quot;,&quot;751&quot;,&quot;29-03-19&quot;,&quot;03-05-27&quot;,2),
+  (478,478,&quot;544481 4756386767&quot;,&quot;358&quot;,&quot;23-10-19&quot;,&quot;09-04-29&quot;,3),
+  (479,479,&quot;377967544195264&quot;,&quot;971&quot;,&quot;08-12-20&quot;,&quot;16-10-26&quot;,2),
+  (480,480,&quot;541 64816 33877 352&quot;,&quot;813&quot;,&quot;13-06-22&quot;,&quot;04-04-26&quot;,2);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (481,481,&quot;342546266722737&quot;,&quot;473&quot;,&quot;31-07-22&quot;,&quot;29-11-22&quot;,481),
-  (482,482,&quot;5179975456793635&quot;,&quot;782&quot;,&quot;04-10-13&quot;,&quot;12-09-27&quot;,482),
-  (483,483,&quot;491 67798 88426 873&quot;,&quot;911&quot;,&quot;02-11-18&quot;,&quot;07-06-27&quot;,483),
-  (484,484,&quot;4556 7478 7413 3634&quot;,&quot;505&quot;,&quot;01-09-10&quot;,&quot;25-02-24&quot;,484),
-  (485,485,&quot;378143222648987&quot;,&quot;780&quot;,&quot;20-03-13&quot;,&quot;15-06-26&quot;,485),
-  (486,486,&quot;375354723583879&quot;,&quot;820&quot;,&quot;05-05-20&quot;,&quot;16-09-22&quot;,486),
-  (487,487,&quot;3724 785651 86823&quot;,&quot;840&quot;,&quot;13-01-22&quot;,&quot;04-01-27&quot;,487),
-  (488,488,&quot;537 74544 57344 731&quot;,&quot;304&quot;,&quot;23-08-16&quot;,&quot;14-04-22&quot;,488),
-  (489,489,&quot;343175493867443&quot;,&quot;512&quot;,&quot;05-07-11&quot;,&quot;11-11-23&quot;,489),
-  (490,490,&quot;4532357469878210&quot;,&quot;467&quot;,&quot;28-06-18&quot;,&quot;29-09-22&quot;,490);
+  (481,481,&quot;453225 888344 7824&quot;,&quot;188&quot;,&quot;03-08-18&quot;,&quot;02-11-23&quot;,2),
+  (482,482,&quot;4716682552453847&quot;,&quot;873&quot;,&quot;19-04-22&quot;,&quot;16-01-28&quot;,3),
+  (483,483,&quot;379355115229332&quot;,&quot;943&quot;,&quot;03-09-18&quot;,&quot;04-12-23&quot;,2),
+  (484,484,&quot;554 69543 97523 522&quot;,&quot;812&quot;,&quot;01-12-21&quot;,&quot;24-03-24&quot;,3),
+  (485,485,&quot;5127753663487363&quot;,&quot;475&quot;,&quot;13-11-19&quot;,&quot;14-12-28&quot;,2),
+  (486,486,&quot;548568 546556 4930&quot;,&quot;410&quot;,&quot;10-12-19&quot;,&quot;28-06-23&quot;,2),
+  (487,487,&quot;526 54476 33384 873&quot;,&quot;770&quot;,&quot;05-01-21&quot;,&quot;06-01-26&quot;,1),
+  (488,488,&quot;549 22871 39215 451&quot;,&quot;636&quot;,&quot;01-06-19&quot;,&quot;31-10-25&quot;,3),
+  (489,489,&quot;344727355872991&quot;,&quot;382&quot;,&quot;30-08-20&quot;,&quot;19-01-26&quot;,3),
+  (490,490,&quot;4539 585 64 8519&quot;,&quot;891&quot;,&quot;25-12-19&quot;,&quot;02-08-28&quot;,1);
 INSERT INTO `tarjeta` (`card_id`,`customer_id`,`card_number`,`card_cvv`,`card_granted_date`,`card_expiration_date`,`card_brand_id`)
 VALUES
-  (491,491,&quot;3767 466588 55561&quot;,&quot;926&quot;,&quot;02-07-11&quot;,&quot;16-05-29&quot;,491),
-  (492,492,&quot;4286451554435&quot;,&quot;770&quot;,&quot;29-05-19&quot;,&quot;27-09-24&quot;,492),
-  (493,493,&quot;4485 3733 9527 4322&quot;,&quot;641&quot;,&quot;21-11-12&quot;,&quot;04-12-22&quot;,493),
-  (494,494,&quot;453934 4797663186&quot;,&quot;903&quot;,&quot;23-03-15&quot;,&quot;22-01-25&quot;,494),
-  (495,495,&quot;344448867377474&quot;,&quot;311&quot;,&quot;17-11-16&quot;,&quot;09-06-23&quot;,495),
-  (496,496,&quot;542442 688446 2768&quot;,&quot;512&quot;,&quot;08-02-14&quot;,&quot;27-01-22&quot;,496),
-  (497,497,&quot;471625 442845 4829&quot;,&quot;344&quot;,&quot;28-08-11&quot;,&quot;14-09-27&quot;,497),
-  (498,498,&quot;4024007164684&quot;,&quot;659&quot;,&quot;24-08-13&quot;,&quot;23-05-22&quot;,498),
-  (499,499,&quot;542 96928 22362 585&quot;,&quot;119&quot;,&quot;10-03-19&quot;,&quot;29-06-23&quot;,499),
-  (500,500,&quot;343231488553421&quot;,&quot;623&quot;,&quot;31-08-12&quot;,&quot;28-08-23&quot;,500);
+  (491,491,&quot;5561 1357 9164 6453&quot;,&quot;223&quot;,&quot;07-02-21&quot;,&quot;15-10-26&quot;,3),
+  (492,492,&quot;371146884793691&quot;,&quot;355&quot;,&quot;30-01-21&quot;,&quot;11-01-27&quot;,3),
+  (493,493,&quot;544883 7587864377&quot;,&quot;284&quot;,&quot;22-04-21&quot;,&quot;03-01-26&quot;,1),
+  (494,494,&quot;3784 215211 19342&quot;,&quot;974&quot;,&quot;20-05-21&quot;,&quot;18-06-23&quot;,2),
+  (495,495,&quot;347765438414958&quot;,&quot;604&quot;,&quot;01-11-20&quot;,&quot;30-06-26&quot;,2),
+  (496,496,&quot;5331 3823 6227 7461&quot;,&quot;967&quot;,&quot;12-03-20&quot;,&quot;09-03-25&quot;,1),
+  (497,497,&quot;375812143152245&quot;,&quot;512&quot;,&quot;12-09-20&quot;,&quot;01-03-27&quot;,2),
+  (498,498,&quot;4968796521837&quot;,&quot;844&quot;,&quot;06-03-21&quot;,&quot;17-04-29&quot;,2),
+  (499,499,&quot;4716 874 26 7561&quot;,&quot;196&quot;,&quot;12-10-18&quot;,&quot;11-10-25&quot;,1),
+  (500,500,&quot;3437 526564 52476&quot;,&quot;628&quot;,&quot;26-02-20&quot;,&quot;22-05-24&quot;,2);
 </sql><current_tab id="0"/></tab_sql></sqlb_project>
