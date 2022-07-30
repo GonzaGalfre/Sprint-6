@@ -1,25 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3213"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:maintarjeta"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="account_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="126"/><column index="2" value="157"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="client_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="0"/></sort><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="110"/><column index="3" value="93"/><column index="4" value="120"/><column index="5" value="97"/><column index="6" value="98"/><column index="7" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones_ref" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="1"/></sort><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="p4" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Primera prob">/* Se crean las columnas nuevas */
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3213"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainempleado"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="account_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="126"/><column index="2" value="157"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="client_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="0"/></sort><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="110"/><column index="3" value="93"/><column index="4" value="120"/><column index="5" value="97"/><column index="6" value="98"/><column index="7" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones_ref" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="1"/></sort><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="p4" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Primera prob">/* Se crean las columnas nuevas */
 
 DROP TABLE tarjeta;
 DROP TABLE card_brand;
 DROP TABLE direcciones;
+DROP TABLE client_type;
+DROP TABLE account_type;
 
 /*Crear tabla tipo de cliente, tipo de cuenta, marcas de tarjeta*/
 CREATE TABLE client_type(
+	customer_id INT NOT NULL,
 	client_tier TEXT NOT NULL,
-	client_tier_id INT NOT NULL PRIMARY KEY
+	client_tier_id INT NOT NULL PRIMARY KEY,
+	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
 )
-INSERT INTO client_type(client_tier, client_tier_id) VALUES('Classic', 1);
-INSERT INTO client_type(client_tier, client_tier_id) VALUES('Gold', 2);
-INSERT INTO client_type(client_tier, client_tier_id) VALUES('Black', 3);+
 
 CREATE TABLE account_type(
+	customer_id INT NOT NULL,
 	account_type_id INT NOT NULL PRIMARY KEY,
-	account_tipo TEXT NOT NULL
+	account_tipo TEXT NOT NULL,
+	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
 )
-INSERT INTO account_type(account_tipo, account_type_id) VALUES('Caja de ahorro en pesos', 1);
-INSERT INTO account_type(account_tipo, account_type_id) VALUES('Caja de ahorro en dolares', 2);
-INSERT INTO account_type(account_tipo, account_type_id) VALUES('Cuenta corriente', 3);
+
 	
 
 /* Tabla de marcas de tarjetas */
@@ -48,8 +49,7 @@ CREATE TABLE tarjeta(
 CREATE TABLE direcciones(
 	adress_id INTEGER NOT NULL PRIMARY KEY,
 	adress_street TEXT NOT NULL,
-	adress_city TEXT NOT NULL,
-	adress_country TEXT NOT NULL,	
+	adress_city TEXT NOT NULL,	
 	customer_id INT,
 	employee_id INT,
 	branch_id INT,
@@ -57,7 +57,8 @@ CREATE TABLE direcciones(
 	FOREIGN KEY(employee_id) REFERENCES empleado(employee_id) ON DELETE CASCADE ON UPDATE CASCADE
 	FOREIGN KEY(branch_id) REFERENCES sucursal(branch_id) ON DELETE CASCADE ON UPDATE CASCADE
 )
-
+
+UPDATE empleado SET employee_hire_date = DATE(substr(employee_hire_date,7,4) || '-' || substr(employee_hire_date,4,2) || '-' || substr(employee_hire_date,1,2));
 
 	
 	
@@ -717,4 +718,1204 @@ VALUES
   (498,498,&quot;4968796521837&quot;,&quot;844&quot;,&quot;06-03-21&quot;,&quot;17-04-29&quot;,2),
   (499,499,&quot;4716 874 26 7561&quot;,&quot;196&quot;,&quot;12-10-18&quot;,&quot;11-10-25&quot;,1),
   (500,500,&quot;3437 526564 52476&quot;,&quot;628&quot;,&quot;26-02-20&quot;,&quot;22-05-24&quot;,2);
+</sql><sql name="direc_customer.sql">INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (1,&quot;269-7907 Fusce Street&quot;,&quot;Mespelare&quot;,21),
+  (2,&quot;610-5168 Tincidunt, Av.&quot;,&quot;Saalfelden am Steinernen Meer&quot;,22),
+  (3,&quot;995-9371 Gravida. Avenue&quot;,&quot;Heusden&quot;,23),
+  (4,&quot;6943 Justo Avenue&quot;,&quot;Sakhalin&quot;,24),
+  (5,&quot;478-5605 Tincidunt, Rd.&quot;,&quot;Tarma&quot;,25),
+  (6,&quot;P.O. Box 201, 6607 Auctor Rd.&quot;,&quot;Jerez de la Frontera&quot;,26),
+  (7,&quot;966-9915 Iaculis Ave&quot;,&quot;Paço do Lumiar&quot;,27),
+  (8,&quot;Ap #825-9685 Nibh St.&quot;,&quot;Galway&quot;,28),
+  (9,&quot;P.O. Box 466, 4965 Ipsum Rd.&quot;,&quot;Norrköping&quot;,29),
+  (10,&quot;Ap #311-509 Ligula. Street&quot;,&quot;Deventer&quot;,30);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (11,&quot;P.O. Box 369, 1876 Vel, St.&quot;,&quot;Quảng Ngãi&quot;,31),
+  (12,&quot;3628 Non Avenue&quot;,&quot;Modakeke&quot;,32),
+  (13,&quot;P.O. Box 990, 3920 Risus. Ave&quot;,&quot;Kimberley&quot;,33),
+  (14,&quot;6515 Aliquam Rd.&quot;,&quot;Blumenau&quot;,34),
+  (15,&quot;531-6875 Arcu. Rd.&quot;,&quot;Drohobych&quot;,35),
+  (16,&quot;Ap #445-1231 Eu Street&quot;,&quot;Huaraz&quot;,36),
+  (17,&quot;Ap #378-4475 Erat. St.&quot;,&quot;Haveli&quot;,37),
+  (18,&quot;Ap #397-2283 Mollis Rd.&quot;,&quot;Kristiansund&quot;,38),
+  (19,&quot;Ap #536-2455 Sed, Av.&quot;,&quot;Pervomaisk&quot;,39),
+  (20,&quot;Ap #901-753 Et Street&quot;,&quot;Vorst&quot;,40);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (21,&quot;404-4663 Odio Avenue&quot;,&quot;Smila&quot;,41),
+  (22,&quot;Ap #533-922 Nec Av.&quot;,&quot;Hallein&quot;,42),
+  (23,&quot;116-2040 Sapien, Ave&quot;,&quot;Donetsk&quot;,43),
+  (24,&quot;Ap #943-7156 Metus. Road&quot;,&quot;Tunja&quot;,44),
+  (25,&quot;Ap #175-9097 Egestas. Avenue&quot;,&quot;Kroonstad&quot;,45),
+  (26,&quot;884-3061 Vitae Avenue&quot;,&quot;Klerksdorp&quot;,46),
+  (27,&quot;9468 Sit Av.&quot;,&quot;Belmont&quot;,47),
+  (28,&quot;234-1961 Nunc Road&quot;,&quot;Motala&quot;,48),
+  (29,&quot;8929 Convallis Rd.&quot;,&quot;Gatchina&quot;,49),
+  (30,&quot;Ap #329-9475 Luctus Avenue&quot;,&quot;Galway&quot;,50);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (31,&quot;772-2240 Tortor St.&quot;,&quot;Mohmand Agency&quot;,51),
+  (32,&quot;Ap #953-9609 Dui St.&quot;,&quot;Port Elizabeth&quot;,52),
+  (33,&quot;Ap #498-3937 Ac Rd.&quot;,&quot;Davenport&quot;,53),
+  (34,&quot;181-5477 Sem Avenue&quot;,&quot;Wolfsberg&quot;,54),
+  (35,&quot;Ap #105-9406 Augue Ave&quot;,&quot;Gunsan&quot;,55),
+  (36,&quot;866-5202 Purus. St.&quot;,&quot;Makurdi&quot;,56),
+  (37,&quot;898-5502 Netus Rd.&quot;,&quot;Barranquilla&quot;,57),
+  (38,&quot;P.O. Box 721, 3778 Molestie. Street&quot;,&quot;Imphal&quot;,58),
+  (39,&quot;P.O. Box 124, 7107 Aliquam Ave&quot;,&quot;Åkrehamn&quot;,59),
+  (40,&quot;P.O. Box 717, 6250 Nam Rd.&quot;,&quot;Galway&quot;,60);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (41,&quot;Ap #801-3272 Sit St.&quot;,&quot;New Glasgow&quot;,61),
+  (42,&quot;Ap #933-8178 Risus St.&quot;,&quot;Barranca&quot;,62),
+  (43,&quot;Ap #922-9776 Suspendisse Rd.&quot;,&quot;Finspång&quot;,63),
+  (44,&quot;P.O. Box 578, 2391 Quam Street&quot;,&quot;Calamar&quot;,64),
+  (45,&quot;756-2650 Eget, Rd.&quot;,&quot;Melipeuco&quot;,65),
+  (46,&quot;3037 Aliquam St.&quot;,&quot;Oryol&quot;,66),
+  (47,&quot;8856 Arcu Rd.&quot;,&quot;Lutsk&quot;,67),
+  (48,&quot;P.O. Box 218, 3208 Nonummy St.&quot;,&quot;Rostov&quot;,68),
+  (49,&quot;718-7239 At Avenue&quot;,&quot;North-Eastern Islands&quot;,69),
+  (50,&quot;Ap #707-6951 Ipsum Rd.&quot;,&quot;Mount Gambier&quot;,70);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (51,&quot;P.O. Box 710, 7012 Arcu. St.&quot;,&quot;Quibdó&quot;,71),
+  (52,&quot;894-5049 Commodo St.&quot;,&quot;Jonesboro&quot;,72),
+  (53,&quot;P.O. Box 687, 5670 Lacus. Rd.&quot;,&quot;Saint-Nazaire&quot;,73),
+  (54,&quot;Ap #461-5515 Egestas St.&quot;,&quot;Belfast&quot;,74),
+  (55,&quot;P.O. Box 315, 9828 Vulputate Av.&quot;,&quot;Gyeongju&quot;,75),
+  (56,&quot;P.O. Box 297, 4650 Tortor. St.&quot;,&quot;Abbottabad&quot;,76),
+  (57,&quot;Ap #551-4254 Odio, Street&quot;,&quot;Tuy Hòa&quot;,77),
+  (58,&quot;Ap #881-8024 Magna. Street&quot;,&quot;Tân An&quot;,78),
+  (59,&quot;432-1336 At Ave&quot;,&quot;Covington&quot;,79),
+  (60,&quot;P.O. Box 891, 778 Quis Rd.&quot;,&quot;Chimbote&quot;,80);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (61,&quot;953-427 Imperdiet Avenue&quot;,&quot;Fuenlabrada&quot;,81),
+  (62,&quot;3147 Aenean St.&quot;,&quot;Toruń&quot;,82),
+  (63,&quot;2782 Ullamcorper St.&quot;,&quot;São José dos Pinhais&quot;,83),
+  (64,&quot;552-5377 Rutrum Road&quot;,&quot;Pachuca&quot;,84),
+  (65,&quot;8074 Lacus. Rd.&quot;,&quot;Umlazi&quot;,85),
+  (66,&quot;P.O. Box 540, 1264 Malesuada Av.&quot;,&quot;Parepare&quot;,86),
+  (67,&quot;319-2091 Nisi. St.&quot;,&quot;Stratford&quot;,87),
+  (68,&quot;P.O. Box 759, 1271 Vestibulum Avenue&quot;,&quot;Freising&quot;,88),
+  (69,&quot;Ap #222-8498 Et St.&quot;,&quot;Connah's Quay&quot;,89),
+  (70,&quot;Ap #213-3649 Orci Road&quot;,&quot;Goyang&quot;,90);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (71,&quot;Ap #190-4257 Vel, Rd.&quot;,&quot;Montluçon&quot;,91),
+  (72,&quot;273-7812 Magna. St.&quot;,&quot;Ostrowiec Świętokrzyski&quot;,92),
+  (73,&quot;364-6155 Donec Street&quot;,&quot;Castelló&quot;,93),
+  (74,&quot;247-5428 Mauris Rd.&quot;,&quot;Altach&quot;,94),
+  (75,&quot;P.O. Box 678, 2282 Nulla St.&quot;,&quot;Friedrichshafen&quot;,95),
+  (76,&quot;2301 Pretium Ave&quot;,&quot;Bremerhaven&quot;,96),
+  (77,&quot;806-6357 Sed Av.&quot;,&quot;Cork&quot;,97),
+  (78,&quot;Ap #227-6842 Nec Street&quot;,&quot;Banjarbaru&quot;,98),
+  (79,&quot;1581 Non, Rd.&quot;,&quot;Sherani&quot;,99),
+  (80,&quot;6353 Amet, Street&quot;,&quot;Constantia&quot;,100);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (81,&quot;122-8933 Vulputate, Ave&quot;,&quot;Darwin&quot;,101),
+  (82,&quot;P.O. Box 202, 3680 Et Rd.&quot;,&quot;Girardot&quot;,102),
+  (83,&quot;901-5661 Tristique St.&quot;,&quot;San José de Alajuela&quot;,103),
+  (84,&quot;9097 Semper Street&quot;,&quot;Kielce&quot;,104),
+  (85,&quot;5047 Fringilla Ave&quot;,&quot;Wałbrzych&quot;,105),
+  (86,&quot;125-2480 Nisl Ave&quot;,&quot;Galway&quot;,106),
+  (87,&quot;7575 Proin Ave&quot;,&quot;Minna&quot;,107),
+  (88,&quot;Ap #700-4476 Congue, St.&quot;,&quot;Piancastagnaio&quot;,108),
+  (89,&quot;2575 Cursus. Ave&quot;,&quot;Ulundi&quot;,109),
+  (90,&quot;160-9398 At Ave&quot;,&quot;Turrialba&quot;,110);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (91,&quot;Ap #948-8654 Cubilia St.&quot;,&quot;Aisén&quot;,111),
+  (92,&quot;P.O. Box 979, 9831 Egestas St.&quot;,&quot;Tarnów&quot;,112),
+  (93,&quot;Ap #970-8535 Aenean Rd.&quot;,&quot;Kailua&quot;,113),
+  (94,&quot;Ap #541-5255 Eros. St.&quot;,&quot;Lelystad&quot;,114),
+  (95,&quot;Ap #430-6854 In St.&quot;,&quot;Yogyakarta&quot;,115),
+  (96,&quot;943-1549 Aliquam Avenue&quot;,&quot;Nizhyn&quot;,116),
+  (97,&quot;Ap #709-2324 Hendrerit Road&quot;,&quot;Piracicaba&quot;,117),
+  (98,&quot;620 Amet Av.&quot;,&quot;Drachten&quot;,118),
+  (99,&quot;575-4270 Lobortis. St.&quot;,&quot;Nha Trang&quot;,119),
+  (100,&quot;Ap #706-6454 Vel Av.&quot;,&quot;Simpang&quot;,120);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (101,&quot;Ap #134-2599 Urna. St.&quot;,&quot;Ransart&quot;,121),
+  (102,&quot;325-9141 Est, Avenue&quot;,&quot;Guangdong&quot;,122),
+  (103,&quot;4753 Mauris St.&quot;,&quot;Watermaal-Bosvoorde&quot;,123),
+  (104,&quot;246 Justo Ave&quot;,&quot;Mala&quot;,124),
+  (105,&quot;969-8660 Eu Road&quot;,&quot;Voitsberg&quot;,125),
+  (106,&quot;Ap #797-9215 Consectetuer Avenue&quot;,&quot;Vastogirardi&quot;,126),
+  (107,&quot;P.O. Box 210, 7117 A Street&quot;,&quot;Otukpo&quot;,127),
+  (108,&quot;633-2241 Velit Street&quot;,&quot;Attock&quot;,128),
+  (109,&quot;P.O. Box 662, 2088 Nibh Road&quot;,&quot;Xuân Trường&quot;,129),
+  (110,&quot;663-995 Aliquam St.&quot;,&quot;Kavaratti&quot;,130);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (111,&quot;Ap #375-6844 Placerat Rd.&quot;,&quot;Punggol&quot;,131),
+  (112,&quot;Ap #972-6510 Phasellus St.&quot;,&quot;Sìn Hồ&quot;,132),
+  (113,&quot;730-3913 Vestibulum Street&quot;,&quot;Wolfville&quot;,133),
+  (114,&quot;392-6525 Pellentesque Rd.&quot;,&quot;Alingsås&quot;,134),
+  (115,&quot;931-9120 Quis Ave&quot;,&quot;Kisi&quot;,135),
+  (116,&quot;1013 Eget Rd.&quot;,&quot;Da Lat&quot;,136),
+  (117,&quot;Ap #625-2384 Urna. Rd.&quot;,&quot;Yopal&quot;,137),
+  (118,&quot;P.O. Box 353, 7606 Pede, Street&quot;,&quot;Jiangxi&quot;,138),
+  (119,&quot;P.O. Box 764, 5820 At Road&quot;,&quot;Berdychiv&quot;,139),
+  (120,&quot;611-6064 Placerat. Road&quot;,&quot;Timaru&quot;,140);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (121,&quot;P.O. Box 684, 5433 Purus Street&quot;,&quot;Vienna&quot;,141),
+  (122,&quot;7992 Ligula. Av.&quot;,&quot;Cauayan&quot;,142),
+  (123,&quot;289-3350 Dapibus Rd.&quot;,&quot;Erlangen&quot;,143),
+  (124,&quot;4890 Turpis. Ave&quot;,&quot;Chuncheon&quot;,144),
+  (125,&quot;Ap #435-5344 Magna. Road&quot;,&quot;Juiz de Fora&quot;,145),
+  (126,&quot;Ap #879-1953 Elementum, St.&quot;,&quot;Mexico City&quot;,146),
+  (127,&quot;Ap #964-4353 Auctor, Road&quot;,&quot;Ramillies&quot;,147),
+  (128,&quot;P.O. Box 960, 250 Et Road&quot;,&quot;Dubno&quot;,148),
+  (129,&quot;Ap #844-9292 Eu Avenue&quot;,&quot;Nazilli&quot;,149),
+  (130,&quot;Ap #936-254 Cras Rd.&quot;,&quot;Monclova&quot;,150);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (131,&quot;155-6345 Molestie Rd.&quot;,&quot;Batu&quot;,151),
+  (132,&quot;923-8713 Consectetuer, Avenue&quot;,&quot;Borås&quot;,152),
+  (133,&quot;Ap #961-3137 Donec Rd.&quot;,&quot;Ledbury&quot;,153),
+  (134,&quot;Ap #232-4810 Consectetuer Rd.&quot;,&quot;Haridwar&quot;,154),
+  (135,&quot;591-1549 Est. Avenue&quot;,&quot;Liberia&quot;,155),
+  (136,&quot;P.O. Box 733, 287 Nibh. Av.&quot;,&quot;Palena&quot;,156),
+  (137,&quot;281-4165 Orci. Av.&quot;,&quot;Gliwice&quot;,157),
+  (138,&quot;P.O. Box 972, 457 Enim. Street&quot;,&quot;Trollhättan&quot;,158),
+  (139,&quot;Ap #120-8923 Neque. Avenue&quot;,&quot;Shanghai&quot;,159),
+  (140,&quot;6694 Integer Avenue&quot;,&quot;Bremerhaven&quot;,160);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (141,&quot;Ap #154-7554 Consectetuer St.&quot;,&quot;Belo Horizonte&quot;,161),
+  (142,&quot;P.O. Box 399, 1304 Gravida St.&quot;,&quot;PiŽtrain&quot;,162),
+  (143,&quot;686-5433 Odio Street&quot;,&quot;Seogwipo&quot;,163),
+  (144,&quot;495-8644 Augue St.&quot;,&quot;Skien&quot;,164),
+  (145,&quot;719-477 Mauris. Rd.&quot;,&quot;Bondo&quot;,165),
+  (146,&quot;3953 Vitae Street&quot;,&quot;Finspång&quot;,166),
+  (147,&quot;3546 Eget, St.&quot;,&quot;Vienna&quot;,167),
+  (148,&quot;374-5840 Cursus Rd.&quot;,&quot;Córdoba&quot;,168),
+  (149,&quot;238-7392 Cras Ave&quot;,&quot;İnegöl&quot;,169),
+  (150,&quot;P.O. Box 695, 5876 Dapibus St.&quot;,&quot;Izmir&quot;,170);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (151,&quot;P.O. Box 412, 9125 Aenean Rd.&quot;,&quot;Shanxi&quot;,171),
+  (152,&quot;802-618 Luctus Rd.&quot;,&quot;Galway&quot;,172),
+  (153,&quot;Ap #641-9586 Varius Rd.&quot;,&quot;San Cristóbal de la Laguna&quot;,173),
+  (154,&quot;529-5305 Ornare, St.&quot;,&quot;Patos&quot;,174),
+  (155,&quot;Ap #410-5860 Nisl. Road&quot;,&quot;Denpasar&quot;,175),
+  (156,&quot;764-3544 Dignissim Road&quot;,&quot;Lerum&quot;,176),
+  (157,&quot;P.O. Box 126, 5685 Interdum. Road&quot;,&quot;Khmilnyk&quot;,177),
+  (158,&quot;172 Vitae Road&quot;,&quot;Cà Mau&quot;,178),
+  (159,&quot;626-8967 Magna. Rd.&quot;,&quot;Bajaur Agency&quot;,179),
+  (160,&quot;607-9863 Purus. Avenue&quot;,&quot;Vezirköprü&quot;,180);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (161,&quot;P.O. Box 247, 8035 Arcu. Rd.&quot;,&quot;Almelo&quot;,181),
+  (162,&quot;Ap #948-5400 Sed Road&quot;,&quot;Gdynia&quot;,182),
+  (163,&quot;P.O. Box 934, 1339 Hymenaeos. Ave&quot;,&quot;Kalush&quot;,183),
+  (164,&quot;220-6512 Molestie Street&quot;,&quot;Belfast&quot;,184),
+  (165,&quot;Ap #159-3063 A Av.&quot;,&quot;Kano&quot;,185),
+  (166,&quot;733-4720 Mauris. Street&quot;,&quot;Kaduna&quot;,186),
+  (167,&quot;Ap #191-9065 Ligula. Avenue&quot;,&quot;Sierning&quot;,187),
+  (168,&quot;Ap #916-996 Penatibus Road&quot;,&quot;Utrecht&quot;,188),
+  (169,&quot;P.O. Box 893, 5486 Malesuada Street&quot;,&quot;Facatativá&quot;,189),
+  (170,&quot;P.O. Box 784, 1830 Urna, Rd.&quot;,&quot;Grand-Leez&quot;,190);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (171,&quot;983-8161 Condimentum. Rd.&quot;,&quot;Campbellton&quot;,191),
+  (172,&quot;Ap #690-3852 Amet Avenue&quot;,&quot;Dublin&quot;,192),
+  (173,&quot;8099 Adipiscing Rd.&quot;,&quot;Arviat&quot;,193),
+  (174,&quot;830-6839 Ipsum Ave&quot;,&quot;Hualañé&quot;,194),
+  (175,&quot;895-4617 Sed Road&quot;,&quot;Carapicuíba&quot;,195),
+  (176,&quot;Ap #460-7066 Sit Rd.&quot;,&quot;Las Piñas&quot;,196),
+  (177,&quot;7550 Tempor Rd.&quot;,&quot;Cork&quot;,197),
+  (178,&quot;309-2335 Nulla Street&quot;,&quot;Legazpi&quot;,198),
+  (179,&quot;Ap #381-5887 Ante St.&quot;,&quot;San Rafael&quot;,199),
+  (180,&quot;707-9572 Enim, Avenue&quot;,&quot;Tame&quot;,200);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (181,&quot;7324 Arcu. Street&quot;,&quot;Alanya&quot;,201),
+  (182,&quot;P.O. Box 824, 3602 Elit. Rd.&quot;,&quot;Branchon&quot;,202),
+  (183,&quot;Ap #969-1819 Ut Avenue&quot;,&quot;Port Blair&quot;,203),
+  (184,&quot;Ap #156-7131 Purus St.&quot;,&quot;Troyes&quot;,204),
+  (185,&quot;424-1718 Fermentum St.&quot;,&quot;Bhubaneswar&quot;,205),
+  (186,&quot;Ap #239-3973 Amet St.&quot;,&quot;Iquitos&quot;,206),
+  (187,&quot;530-5993 Dignissim. St.&quot;,&quot;Swan&quot;,207),
+  (188,&quot;Ap #876-8816 Eget Rd.&quot;,&quot;Łomża&quot;,208),
+  (189,&quot;Ap #670-4707 Facilisis Ave&quot;,&quot;Mamuju&quot;,209),
+  (190,&quot;Ap #498-7573 Malesuada Rd.&quot;,&quot;Wolvertem&quot;,210);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`customer_id`)
+VALUES
+  (191,&quot;P.O. Box 184, 5213 Odio Avenue&quot;,&quot;Oslo&quot;,211),
+  (192,&quot;Ap #215-4160 Odio Rd.&quot;,&quot;Newport News&quot;,212),
+  (193,&quot;Ap #129-7805 Nec Road&quot;,&quot;Jerez de la Frontera&quot;,213),
+  (194,&quot;Ap #702-9808 Libero Rd.&quot;,&quot;Aberdeen&quot;,214),
+  (195,&quot;136-9914 Diam. Av.&quot;,&quot;Ourense&quot;,215),
+  (196,&quot;Ap #458-6985 Interdum Street&quot;,&quot;Murcia&quot;,216),
+  (197,&quot;948-9379 Sed, Rd.&quot;,&quot;Yurimaguas&quot;,217),
+  (198,&quot;Ap #236-9249 Gravida St.&quot;,&quot;Cambridge&quot;,218),
+  (199,&quot;Ap #514-1703 Tempus Rd.&quot;,&quot;Płock&quot;,219),
+  (200,&quot;Ap #770-7091 Donec Ave&quot;,&quot;Traiskirchen&quot;,220);
+</sql><sql name="direc_employee.sql">INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (201,&quot;659-250 Eu Avenue&quot;,&quot;Ashburton&quot;,122),
+  (202,&quot;Ap #533-3973 Libero Av.&quot;,&quot;Adelaide&quot;,123),
+  (203,&quot;888-1650 Ornare. Rd.&quot;,&quot;Jørpeland&quot;,124),
+  (204,&quot;990-5808 Pede. Ave&quot;,&quot;Tiverton&quot;,125),
+  (205,&quot;9938 Neque. Ave&quot;,&quot;Bossuit&quot;,126),
+  (206,&quot;560-4590 Integer St.&quot;,&quot;Choa Chu Kang&quot;,127),
+  (207,&quot;Ap #956-467 Vulputate, Ave&quot;,&quot;Cork&quot;,128),
+  (208,&quot;P.O. Box 611, 2706 Taciti Av.&quot;,&quot;Bedok&quot;,129),
+  (209,&quot;278-6619 Est Avenue&quot;,&quot;Osogbo&quot;,130),
+  (210,&quot;Ap #270-3435 Posuere Avenue&quot;,&quot;Morkhoven&quot;,131);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (211,&quot;7873 Sodales Rd.&quot;,&quot;Irkutsk&quot;,132),
+  (212,&quot;386-9873 Quis, Rd.&quot;,&quot;Skardu&quot;,133),
+  (213,&quot;Ap #655-5685 Facilisis Avenue&quot;,&quot;Jilin&quot;,134),
+  (214,&quot;9706 A, Rd.&quot;,&quot;Manukau&quot;,135),
+  (215,&quot;P.O. Box 112, 3986 Sit Avenue&quot;,&quot;Gansu&quot;,136),
+  (216,&quot;Ap #379-8842 Natoque Rd.&quot;,&quot;Thái Nguyên&quot;,137),
+  (217,&quot;324-4615 Sollicitudin Avenue&quot;,&quot;Dublin&quot;,138),
+  (218,&quot;P.O. Box 722, 8681 Dolor Road&quot;,&quot;Jeongeup&quot;,139),
+  (219,&quot;7536 Nunc Road&quot;,&quot;Antipolo&quot;,140),
+  (220,&quot;Ap #454-6758 Dis Rd.&quot;,&quot;Pacasmayo&quot;,141);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (221,&quot;Ap #762-6017 Lacinia. St.&quot;,&quot;Sanquhar&quot;,142),
+  (222,&quot;387-7542 Turpis. Rd.&quot;,&quot;Bad Kreuznach&quot;,143),
+  (223,&quot;877-4361 Curabitur Rd.&quot;,&quot;Drohobych&quot;,144),
+  (224,&quot;665-4194 Magna. Avenue&quot;,&quot;Brin-Navolok&quot;,145),
+  (225,&quot;337-4037 Ut St.&quot;,&quot;Dollard-des-Ormeaux&quot;,146),
+  (226,&quot;446 Tellus Rd.&quot;,&quot;Cherkasy&quot;,147),
+  (227,&quot;283-2307 Est. Road&quot;,&quot;Haisyn&quot;,148),
+  (228,&quot;664-9479 Amet, Street&quot;,&quot;Dunedin&quot;,149),
+  (229,&quot;266-751 Nunc Rd.&quot;,&quot;Arequipa&quot;,150),
+  (230,&quot;Ap #714-3429 Ligula Street&quot;,&quot;Mondolfo&quot;,151);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (231,&quot;3159 Nulla Av.&quot;,&quot;Águas Lindas de Goiás&quot;,152),
+  (232,&quot;Ap #619-8292 Mauris, Rd.&quot;,&quot;Pamplona&quot;,153),
+  (233,&quot;150-8343 Non, Rd.&quot;,&quot;Altach&quot;,154),
+  (234,&quot;9173 Nullam Ave&quot;,&quot;Yorkton&quot;,155),
+  (235,&quot;P.O. Box 819, 993 Phasellus Ave&quot;,&quot;Tabaco&quot;,156),
+  (236,&quot;Ap #207-8238 Vivamus Rd.&quot;,&quot;Ulsan&quot;,157),
+  (237,&quot;423-9839 Ipsum. Avenue&quot;,&quot;Cork&quot;,158),
+  (238,&quot;213 Curabitur St.&quot;,&quot;Hagen&quot;,159),
+  (239,&quot;Ap #388-1949 Orci, Avenue&quot;,&quot;Wonju&quot;,160),
+  (240,&quot;P.O. Box 865, 4645 Sociis Road&quot;,&quot;Wanneroo&quot;,161);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (241,&quot;Ap #982-4714 Sem Avenue&quot;,&quot;Ciudad Apodaca&quot;,162),
+  (242,&quot;883-8944 Elementum Road&quot;,&quot;Changi&quot;,163),
+  (243,&quot;P.O. Box 430, 9152 Aliquam Av.&quot;,&quot;Schweinfurt&quot;,164),
+  (244,&quot;Ap #342-5442 Turpis. Av.&quot;,&quot;Cork&quot;,165),
+  (245,&quot;808-5760 Libero. Rd.&quot;,&quot;Punggol&quot;,166),
+  (246,&quot;757-4780 Orci St.&quot;,&quot;Galway&quot;,167),
+  (247,&quot;9448 Ipsum Avenue&quot;,&quot;Lodhran&quot;,168),
+  (248,&quot;373-2760 Amet Av.&quot;,&quot;Daejeon&quot;,169),
+  (249,&quot;Ap #538-1030 Sed Av.&quot;,&quot;Manokwari&quot;,170),
+  (250,&quot;476-6433 Lorem St.&quot;,&quot;Eastbourne&quot;,171);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (251,&quot;Ap #452-5864 Urna St.&quot;,&quot;Hải Phòng&quot;,172),
+  (252,&quot;Ap #382-556 Ac Rd.&quot;,&quot;Lamitan&quot;,173),
+  (253,&quot;175-1476 Et Ave&quot;,&quot;BiercŽe&quot;,174),
+  (254,&quot;522-7313 Metus. Road&quot;,&quot;Schleswig&quot;,175),
+  (255,&quot;Ap #799-9293 Quisque St.&quot;,&quot;Omaha&quot;,176),
+  (256,&quot;P.O. Box 720, 6322 Amet Ave&quot;,&quot;Anamur&quot;,177),
+  (257,&quot;Ap #541-7019 Pede St.&quot;,&quot;Bremen&quot;,178),
+  (258,&quot;P.O. Box 666, 886 Aliquet. St.&quot;,&quot;Tengah&quot;,179),
+  (259,&quot;4445 Malesuada Av.&quot;,&quot;Soledad de Graciano Sánchez&quot;,180),
+  (260,&quot;Ap #744-5260 Nec Rd.&quot;,&quot;Pepingen&quot;,181);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (261,&quot;P.O. Box 883, 7000 Nunc St.&quot;,&quot;Guadalajara&quot;,182),
+  (262,&quot;687-6119 Integer St.&quot;,&quot;Trujillo&quot;,183),
+  (263,&quot;Ap #797-9505 Mauris St.&quot;,&quot;Mataram&quot;,184),
+  (264,&quot;868-7278 Eu, Avenue&quot;,&quot;Pontarlier&quot;,185),
+  (265,&quot;737-8756 Nulla. St.&quot;,&quot;Jönköping&quot;,186),
+  (266,&quot;Ap #231-610 Taciti Ave&quot;,&quot;Bracknell&quot;,187),
+  (267,&quot;Ap #661-6640 Neque. Rd.&quot;,&quot;Béthune&quot;,188),
+  (268,&quot;386-6597 Laoreet St.&quot;,&quot;Guizhou&quot;,189),
+  (269,&quot;273-2219 Pede Rd.&quot;,&quot;Cambridge&quot;,190),
+  (270,&quot;8046 Sit Avenue&quot;,&quot;Großpetersdorf&quot;,191);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (271,&quot;Ap #756-3059 Primis St.&quot;,&quot;Huaral&quot;,192),
+  (272,&quot;Ap #844-3807 Mauris, Ave&quot;,&quot;Phủ Lý&quot;,193),
+  (273,&quot;162-4427 Neque. Road&quot;,&quot;San Juan del Río&quot;,194),
+  (274,&quot;P.O. Box 240, 6560 Dui. St.&quot;,&quot;Gignod&quot;,195),
+  (275,&quot;Ap #258-5467 A, St.&quot;,&quot;Londrina&quot;,196),
+  (276,&quot;P.O. Box 476, 3295 Etiam Avenue&quot;,&quot;Konotop&quot;,197),
+  (277,&quot;Ap #591-4642 Ut, Ave&quot;,&quot;Daman&quot;,198),
+  (278,&quot;7309 Lorem, Avenue&quot;,&quot;Mérida&quot;,199),
+  (279,&quot;5660 Sit Av.&quot;,&quot;Ivangorod&quot;,200),
+  (280,&quot;8362 Quis Avenue&quot;,&quot;Zaria&quot;,201);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (281,&quot;364-7645 Lorem, Rd.&quot;,&quot;Carcassonne&quot;,202),
+  (282,&quot;1782 Duis Rd.&quot;,&quot;Zutphen&quot;,203),
+  (283,&quot;8083 Pretium St.&quot;,&quot;Toledo&quot;,204),
+  (284,&quot;Ap #518-5119 Sit Ave&quot;,&quot;Limoges&quot;,205),
+  (285,&quot;Ap #144-6907 Eget Rd.&quot;,&quot;Bacabal&quot;,206),
+  (286,&quot;284-6463 Cras Road&quot;,&quot;Tlaquepaque&quot;,207),
+  (287,&quot;2698 Accumsan St.&quot;,&quot;Morrinsville&quot;,208),
+  (288,&quot;778-6916 Phasellus St.&quot;,&quot;Bellevue&quot;,209),
+  (289,&quot;Ap #880-1170 Eleifend Road&quot;,&quot;Chandigarh&quot;,210),
+  (290,&quot;7511 Ante Av.&quot;,&quot;Pangkalpinang&quot;,211);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (291,&quot;505-732 Enim. Ave&quot;,&quot;Inveraray&quot;,212),
+  (292,&quot;P.O. Box 338, 2683 Pellentesque St.&quot;,&quot;Jørpeland&quot;,213),
+  (293,&quot;298-2309 Iaculis, Rd.&quot;,&quot;Rustenburg&quot;,214),
+  (294,&quot;Ap #906-1781 Pellentesque St.&quot;,&quot;Irkutsk&quot;,215),
+  (295,&quot;P.O. Box 234, 2255 Nam Av.&quot;,&quot;Carmen&quot;,216),
+  (296,&quot;P.O. Box 818, 8967 Commodo St.&quot;,&quot;Charlottetown&quot;,217),
+  (297,&quot;P.O. Box 868, 1826 Velit Street&quot;,&quot;Aisén&quot;,218),
+  (298,&quot;130-1010 Morbi St.&quot;,&quot;Mozhaysk&quot;,219),
+  (299,&quot;793-7234 Ornare, Road&quot;,&quot;Vị Thanh&quot;,220),
+  (300,&quot;Ap #572-7835 Integer Street&quot;,&quot;Sagamu&quot;,221);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (301,&quot;735-4432 Ac St.&quot;,&quot;Amlwch&quot;,222),
+  (302,&quot;P.O. Box 886, 4392 Risus. St.&quot;,&quot;Ulloa (Barrial]&quot;,223),
+  (303,&quot;339-8827 Arcu. Street&quot;,&quot;Larvik&quot;,224),
+  (304,&quot;Ap #604-6828 Sodales. Av.&quot;,&quot;Kirkintilloch&quot;,225),
+  (305,&quot;Ap #977-5609 Praesent Avenue&quot;,&quot;Paya Lebar&quot;,226),
+  (306,&quot;755-6909 Odio. St.&quot;,&quot;Dublin&quot;,227),
+  (307,&quot;368-5015 Phasellus Av.&quot;,&quot;Redwater&quot;,228),
+  (308,&quot;350-7707 Phasellus St.&quot;,&quot;Elbląg&quot;,229),
+  (309,&quot;740-6564 Dui. Road&quot;,&quot;Hải Phòng&quot;,230),
+  (310,&quot;859-8341 Mattis Rd.&quot;,&quot;Aprelevka&quot;,231);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (311,&quot;174-7391 Elit. Road&quot;,&quot;Warszawa&quot;,232),
+  (312,&quot;407 Magna St.&quot;,&quot;Lozova&quot;,233),
+  (313,&quot;843-1504 Pellentesque Road&quot;,&quot;George&quot;,234),
+  (314,&quot;P.O. Box 935, 3124 Turpis Avenue&quot;,&quot;Ragogna&quot;,235),
+  (315,&quot;P.O. Box 154, 2380 Phasellus Avenue&quot;,&quot;Bajaur Agency&quot;,236),
+  (316,&quot;P.O. Box 335, 2255 Ante. Rd.&quot;,&quot;Birecik&quot;,237),
+  (317,&quot;Ap #697-779 Morbi Street&quot;,&quot;Ahmadnagar&quot;,238),
+  (318,&quot;Ap #230-5450 Interdum. Road&quot;,&quot;Gangtok&quot;,239),
+  (319,&quot;131-3563 Cursus Ave&quot;,&quot;Saratov&quot;,240),
+  (320,&quot;Ap #700-9902 Nulla Av.&quot;,&quot;Tehuacán&quot;,241);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (321,&quot;2459 At, Road&quot;,&quot;Bihar Sharif&quot;,242),
+  (322,&quot;801-4515 Dolor Rd.&quot;,&quot;Baguio&quot;,243),
+  (323,&quot;Ap #123-3098 Sed Avenue&quot;,&quot;Lustenau&quot;,244),
+  (324,&quot;Ap #521-8777 Sit Rd.&quot;,&quot;Kamianske&quot;,245),
+  (325,&quot;992-4159 Commodo Rd.&quot;,&quot;Rahimyar Khan&quot;,246),
+  (326,&quot;Ap #955-1374 Mauris Avenue&quot;,&quot;Saint-Médard-en-Jalles&quot;,247),
+  (327,&quot;612-7559 Feugiat St.&quot;,&quot;Dannevirke&quot;,248),
+  (328,&quot;Ap #923-1823 Volutpat. Ave&quot;,&quot;Kuşadası&quot;,249),
+  (329,&quot;7963 Suspendisse Av.&quot;,&quot;Port Harcourt&quot;,250),
+  (330,&quot;Ap #903-7579 Donec Avenue&quot;,&quot;Södertälje&quot;,251);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (331,&quot;Ap #231-6055 Amet, Avenue&quot;,&quot;Padre las Casas&quot;,252),
+  (332,&quot;Ap #928-8945 Amet Rd.&quot;,&quot;Hengelo&quot;,253),
+  (333,&quot;7881 Ac St.&quot;,&quot;Darwin&quot;,254),
+  (334,&quot;586-4590 Hendrerit St.&quot;,&quot;Guaymas&quot;,255),
+  (335,&quot;243-7540 Lorem, Rd.&quot;,&quot;Winchester&quot;,256),
+  (336,&quot;223-7385 Fringilla Street&quot;,&quot;Ormoc&quot;,257),
+  (337,&quot;3083 Risus. St.&quot;,&quot;Bydgoszcz&quot;,258),
+  (338,&quot;474-2962 Nunc Road&quot;,&quot;Elbląg&quot;,259),
+  (339,&quot;464 Quis Road&quot;,&quot;Oudergem&quot;,260),
+  (340,&quot;Ap #532-7340 Mauris Street&quot;,&quot;Saint-Quentin&quot;,261);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (341,&quot;348-2963 Duis Rd.&quot;,&quot;Innsbruck&quot;,262),
+  (342,&quot;118-5513 Dolor. Rd.&quot;,&quot;Wells&quot;,263),
+  (343,&quot;581-6577 Felis Street&quot;,&quot;Seshego&quot;,264),
+  (344,&quot;6547 Consequat Road&quot;,&quot;Tierra Amarilla&quot;,265),
+  (345,&quot;Ap #480-8542 Sapien Avenue&quot;,&quot;Stockerau&quot;,266),
+  (346,&quot;P.O. Box 287, 2324 Lorem. St.&quot;,&quot;Jeju&quot;,267),
+  (347,&quot;Ap #787-6749 Quam St.&quot;,&quot;Judenburg&quot;,268),
+  (348,&quot;205-2867 Elementum Ave&quot;,&quot;Camaçari&quot;,269),
+  (349,&quot;Ap #774-135 Dignissim Street&quot;,&quot;Sokoto&quot;,270),
+  (350,&quot;146-1691 Congue Ave&quot;,&quot;Metro&quot;,271);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (351,&quot;P.O. Box 627, 6198 Curabitur Av.&quot;,&quot;Bacabal&quot;,272),
+  (352,&quot;3569 Justo. St.&quot;,&quot;Cagliari&quot;,273),
+  (353,&quot;159-363 Consequat St.&quot;,&quot;Tampa&quot;,274),
+  (354,&quot;P.O. Box 947, 755 Odio Rd.&quot;,&quot;Imphal&quot;,275),
+  (355,&quot;127-9439 Mauris St.&quot;,&quot;Dingwall&quot;,276),
+  (356,&quot;785-1759 Felis. Rd.&quot;,&quot;Cork&quot;,277),
+  (357,&quot;5645 Aenean St.&quot;,&quot;Legnica&quot;,278),
+  (358,&quot;146-8453 Fusce Rd.&quot;,&quot;Beveren&quot;,279),
+  (359,&quot;Ap #875-2860 Vel, Rd.&quot;,&quot;Changi&quot;,280),
+  (360,&quot;3605 Molestie Av.&quot;,&quot;Acacías&quot;,281);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (361,&quot;724-3776 Laoreet Avenue&quot;,&quot;Rae Lakes&quot;,282),
+  (362,&quot;818-7159 Leo. St.&quot;,&quot;Diego de Almagro&quot;,283),
+  (363,&quot;Ap #202-7354 Ante. Av.&quot;,&quot;Knoxville&quot;,284),
+  (364,&quot;Ap #444-3645 Sed, Street&quot;,&quot;Chandigarh&quot;,285),
+  (365,&quot;608-9437 Amet Av.&quot;,&quot;Siedlce&quot;,286),
+  (366,&quot;Ap #283-7248 Accumsan Road&quot;,&quot;Stratford&quot;,287),
+  (367,&quot;3878 Donec St.&quot;,&quot;Jurong East&quot;,288),
+  (368,&quot;P.O. Box 664, 8984 Feugiat Rd.&quot;,&quot;Elbląg&quot;,289),
+  (369,&quot;5385 Vulputate Street&quot;,&quot;Rotello&quot;,290),
+  (370,&quot;Ap #623-4254 Sit Rd.&quot;,&quot;Chungju&quot;,291);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (371,&quot;P.O. Box 289, 8328 Dictum St.&quot;,&quot;Trollhättan&quot;,292),
+  (372,&quot;860-9310 Aliquam Rd.&quot;,&quot;Söderhamn&quot;,293),
+  (373,&quot;358-7204 Rutrum Ave&quot;,&quot;Pagadian&quot;,294),
+  (374,&quot;P.O. Box 440, 8897 Non St.&quot;,&quot;Cumaribo&quot;,295),
+  (375,&quot;P.O. Box 314, 9128 Metus. St.&quot;,&quot;Ila&quot;,296),
+  (376,&quot;988-2766 Donec St.&quot;,&quot;Cusco&quot;,297),
+  (377,&quot;445-8179 Scelerisque Ave&quot;,&quot;Belfast&quot;,298),
+  (378,&quot;7307 Parturient Av.&quot;,&quot;Outram&quot;,299),
+  (379,&quot;7498 Ipsum St.&quot;,&quot;Lebowakgomo&quot;,300),
+  (380,&quot;381-4923 Tellus Rd.&quot;,&quot;Ningxia&quot;,301);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (381,&quot;Ap #526-3520 Inceptos Rd.&quot;,&quot;Tejar&quot;,302),
+  (382,&quot;Ap #316-3599 Sociis Street&quot;,&quot;Cape Breton Island&quot;,303),
+  (383,&quot;Ap #912-1442 Scelerisque Street&quot;,&quot;Chandigarh&quot;,304),
+  (384,&quot;399-718 A Rd.&quot;,&quot;Whitehorse&quot;,305),
+  (385,&quot;P.O. Box 489, 4817 Ridiculus Rd.&quot;,&quot;Montague&quot;,306),
+  (386,&quot;293-5295 Dui, Rd.&quot;,&quot;Da Lat&quot;,307),
+  (387,&quot;Ap #923-3155 Rutrum Street&quot;,&quot;Oslo&quot;,308),
+  (388,&quot;791-4065 Ut St.&quot;,&quot;Mamuju&quot;,309),
+  (389,&quot;386-256 Tincidunt Av.&quot;,&quot;Soissons&quot;,310),
+  (390,&quot;P.O. Box 429, 8609 Penatibus St.&quot;,&quot;Randburg&quot;,311);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (391,&quot;3983 Ut Road&quot;,&quot;Oslo&quot;,312),
+  (392,&quot;124-5449 Fringilla Rd.&quot;,&quot;Dublin&quot;,313),
+  (393,&quot;P.O. Box 909, 7982 Sit Rd.&quot;,&quot;Ternopil&quot;,314),
+  (394,&quot;245-310 In, Rd.&quot;,&quot;New Plymouth&quot;,315),
+  (395,&quot;Ap #785-7066 Ridiculus Road&quot;,&quot;Baracaldo&quot;,316),
+  (396,&quot;441 Elit Av.&quot;,&quot;Guizhou&quot;,317),
+  (397,&quot;707-5264 Morbi Street&quot;,&quot;Kungälv&quot;,318),
+  (398,&quot;822-2032 Nullam Avenue&quot;,&quot;Allentown&quot;,319),
+  (399,&quot;Ap #760-8556 Ornare, Road&quot;,&quot;Queenstown&quot;,320),
+  (400,&quot;759-2665 Tristique Avenue&quot;,&quot;Pacasmayo&quot;,321);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (401,&quot;P.O. Box 736, 6663 Placerat St.&quot;,&quot;St. Petersburg&quot;,322),
+  (402,&quot;765-4400 Imperdiet Rd.&quot;,&quot;Pictou&quot;,323),
+  (403,&quot;2092 Aliquam St.&quot;,&quot;Yahyalı&quot;,324),
+  (404,&quot;P.O. Box 959, 9347 Ligula. Avenue&quot;,&quot;Dublin&quot;,325),
+  (405,&quot;247-8529 Adipiscing. Avenue&quot;,&quot;Sosnowiec&quot;,326),
+  (406,&quot;9798 Dui Av.&quot;,&quot;Dosquebradas&quot;,327),
+  (407,&quot;Ap #614-7709 Congue, Ave&quot;,&quot;General Lagos&quot;,328),
+  (408,&quot;989-5925 Ligula Avenue&quot;,&quot;Phan Thiết&quot;,329),
+  (409,&quot;Ap #163-8588 In St.&quot;,&quot;Henan&quot;,330),
+  (410,&quot;P.O. Box 217, 1479 Donec Street&quot;,&quot;Kalush&quot;,331);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (411,&quot;Ap #320-9111 Donec Ave&quot;,&quot;Rochor&quot;,332),
+  (412,&quot;P.O. Box 603, 3380 Id Ave&quot;,&quot;Malakand&quot;,333),
+  (413,&quot;341-7599 Natoque Rd.&quot;,&quot;Delhi&quot;,334),
+  (414,&quot;763-3206 Amet Road&quot;,&quot;Armadale&quot;,335),
+  (415,&quot;639-2384 Fringilla Avenue&quot;,&quot;Motueka&quot;,336),
+  (416,&quot;P.O. Box 400, 7491 Semper, Ave&quot;,&quot;Zeveneken&quot;,337),
+  (417,&quot;Ap #835-9555 Conubia Rd.&quot;,&quot;Enschede&quot;,338),
+  (418,&quot;979-694 Auctor Rd.&quot;,&quot;Chongqing&quot;,339),
+  (419,&quot;565-8097 Luctus Road&quot;,&quot;Soissons&quot;,340),
+  (420,&quot;Ap #513-4175 Integer Road&quot;,&quot;Bremerhaven&quot;,341);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (421,&quot;5289 Dapibus Rd.&quot;,&quot;Moss&quot;,342),
+  (422,&quot;Ap #467-8046 A, Avenue&quot;,&quot;Florencia&quot;,343),
+  (423,&quot;5315 Pharetra Av.&quot;,&quot;Rocca San Felice&quot;,344),
+  (424,&quot;P.O. Box 546, 642 Lacus. Rd.&quot;,&quot;Purnea&quot;,345),
+  (425,&quot;441-6678 In, Street&quot;,&quot;Ulloa (Barrial]&quot;,346),
+  (426,&quot;Ap #652-4681 Scelerisque Rd.&quot;,&quot;Hong Kong&quot;,347),
+  (427,&quot;Ap #714-4509 Ultrices St.&quot;,&quot;Nonsan&quot;,348),
+  (428,&quot;Ap #322-2864 Justo Av.&quot;,&quot;Ivangorod&quot;,349),
+  (429,&quot;4949 Dolor. Rd.&quot;,&quot;Zavitinsk&quot;,350),
+  (430,&quot;532-9774 Velit Road&quot;,&quot;Jiangsu&quot;,351);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (431,&quot;378-176 Facilisis Ave&quot;,&quot;San Vicente de Cañete&quot;,352),
+  (432,&quot;Ap #792-8185 Tempus Avenue&quot;,&quot;Jönköping&quot;,353),
+  (433,&quot;Ap #119-210 Adipiscing St.&quot;,&quot;Mexico City&quot;,354),
+  (434,&quot;Ap #496-9312 Egestas. Street&quot;,&quot;Stjørdalshalsen&quot;,355),
+  (435,&quot;Ap #407-142 Nunc Avenue&quot;,&quot;Tumba&quot;,356),
+  (436,&quot;Ap #371-8064 Proin Rd.&quot;,&quot;Goes&quot;,357),
+  (437,&quot;Ap #656-3398 Sollicitudin Rd.&quot;,&quot;Saint-Jean-Geest&quot;,358),
+  (438,&quot;Ap #481-2514 Odio Avenue&quot;,&quot;Sungei Kadut&quot;,359),
+  (439,&quot;P.O. Box 214, 2006 Ipsum Rd.&quot;,&quot;Haisyn&quot;,360),
+  (440,&quot;2710 Non Avenue&quot;,&quot;Yeosu&quot;,361);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`employee_id`)
+VALUES
+  (441,&quot;P.O. Box 360, 2315 Dui Avenue&quot;,&quot;Cork&quot;,362),
+  (442,&quot;8104 Est Road&quot;,&quot;Seogwipo&quot;,363),
+  (443,&quot;Ap #992-6631 Amet Street&quot;,&quot;Saint Paul&quot;,364),
+  (444,&quot;345-2236 In Road&quot;,&quot;Straits View&quot;,365),
+  (445,&quot;Ap #713-3383 Sed Avenue&quot;,&quot;Sarreguemines&quot;,366),
+  (446,&quot;709-4127 Nisi. Rd.&quot;,&quot;Allentown&quot;,367),
+  (447,&quot;Ap #963-5817 Imperdiet Rd.&quot;,&quot;Guangxi&quot;,368),
+  (448,&quot;386-5399 Fusce Street&quot;,&quot;Marabá&quot;,369),
+  (449,&quot;492-9580 Duis Ave&quot;,&quot;San Nicolás&quot;,370),
+  (450,&quot;750-5724 Consequat Rd.&quot;,&quot;Alajuela&quot;,371);
+</sql><sql name="direc_sucursal.sql">INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`branch_id`)
+VALUES
+  (451,&quot;895-1270 Magna. Street&quot;,&quot;Klerksdorp&quot;,19),
+  (452,&quot;Ap #558-4144 In Road&quot;,&quot;Baracaldo&quot;,20),
+  (453,&quot;P.O. Box 603, 9018 A, Ave&quot;,&quot;Sagamu&quot;,21),
+  (454,&quot;P.O. Box 455, 8506 A, St.&quot;,&quot;Los Sauces&quot;,22),
+  (455,&quot;6983 Sit Rd.&quot;,&quot;Yekaterinburg&quot;,23),
+  (456,&quot;9258 Metus St.&quot;,&quot;Moe&quot;,24),
+  (457,&quot;508-4090 Proin St.&quot;,&quot;Krugersdorp&quot;,25),
+  (458,&quot;2585 Neque. Rd.&quot;,&quot;Gyeongsan&quot;,26),
+  (459,&quot;Ap #306-4974 Sit Rd.&quot;,&quot;Palmerston&quot;,27),
+  (460,&quot;Ap #648-2289 Dictum Rd.&quot;,&quot;Alès&quot;,28);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`branch_id`)
+VALUES
+  (461,&quot;Ap #472-587 Risus St.&quot;,&quot;Tournefeuille&quot;,29),
+  (462,&quot;Ap #887-9134 Non, Rd.&quot;,&quot;Hougang&quot;,30),
+  (463,&quot;P.O. Box 364, 891 Magnis St.&quot;,&quot;Woodlands&quot;,31),
+  (464,&quot;644-9441 Mattis St.&quot;,&quot;Lambayeque&quot;,32),
+  (465,&quot;Ap #948-5101 Pellentesque, St.&quot;,&quot;Seogwipo&quot;,33),
+  (466,&quot;758-523 Pede St.&quot;,&quot;Masbate City&quot;,34),
+  (467,&quot;962-9221 Convallis Rd.&quot;,&quot;Koronadal&quot;,35),
+  (468,&quot;Ap #559-2019 Maecenas St.&quot;,&quot;Barranco Minas&quot;,36),
+  (469,&quot;219-7020 Amet, St.&quot;,&quot;Giyani&quot;,37),
+  (470,&quot;2257 Vitae, Avenue&quot;,&quot;Pagadian&quot;,38);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`branch_id`)
+VALUES
+  (471,&quot;8492 Laoreet Road&quot;,&quot;The Hague&quot;,39),
+  (472,&quot;P.O. Box 739, 7742 Pellentesque St.&quot;,&quot;Leticia&quot;,40),
+  (473,&quot;838-2959 Ac Avenue&quot;,&quot;Cajamarca&quot;,41),
+  (474,&quot;440-983 Amet Ave&quot;,&quot;Tacoma&quot;,42),
+  (475,&quot;Ap #967-4783 Aenean Road&quot;,&quot;San Pedro&quot;,43),
+  (476,&quot;Ap #572-3373 Auctor St.&quot;,&quot;Los Álamos&quot;,44),
+  (477,&quot;340-8752 Diam St.&quot;,&quot;Cambridge&quot;,45),
+  (478,&quot;Ap #309-4136 Non Av.&quot;,&quot;Vienna&quot;,46),
+  (479,&quot;396-6818 Neque. St.&quot;,&quot;Olathe&quot;,47),
+  (480,&quot;6080 Integer St.&quot;,&quot;Tân An&quot;,48);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`branch_id`)
+VALUES
+  (481,&quot;Ap #236-2685 Tincidunt, St.&quot;,&quot;Dublin&quot;,49),
+  (482,&quot;P.O. Box 497, 9994 Sed, Ave&quot;,&quot;Serang&quot;,50),
+  (483,&quot;Ap #106-7587 Massa. Road&quot;,&quot;Nässjö&quot;,51),
+  (484,&quot;521-5023 Consectetuer Avenue&quot;,&quot;Guizhou&quot;,52),
+  (485,&quot;832-1476 Cursus. St.&quot;,&quot;Santa Juana&quot;,53),
+  (486,&quot;Ap #875-9611 Vitae St.&quot;,&quot;Antalya&quot;,54),
+  (487,&quot;4947 Sit Rd.&quot;,&quot;Kingussie&quot;,55),
+  (488,&quot;9342 Dapibus St.&quot;,&quot;Cusco&quot;,56),
+  (489,&quot;493-8088 Nullam St.&quot;,&quot;Awka&quot;,57),
+  (490,&quot;P.O. Box 618, 2866 Diam. Road&quot;,&quot;Wells&quot;,58);
+INSERT INTO `direcciones` (`adress_id`,`adress_street`,`adress_city`,`branch_id`)
+VALUES
+  (491,&quot;364-4200 Metus. St.&quot;,&quot;Acquedolci&quot;,59),
+  (492,&quot;P.O. Box 325, 2566 Lacinia. Road&quot;,&quot;Nizhny&quot;,60),
+  (493,&quot;Ap #401-4877 Laoreet, Rd.&quot;,&quot;Chancay&quot;,61),
+  (494,&quot;P.O. Box 377, 3674 Diam Street&quot;,&quot;Lagos&quot;,62),
+  (495,&quot;338-2083 Mauris Avenue&quot;,&quot;San José de Alajuela&quot;,63),
+  (496,&quot;666-2891 Amet Rd.&quot;,&quot;Kukatpalle&quot;,64),
+  (497,&quot;Ap #742-438 Ipsum Ave&quot;,&quot;Roosendaal&quot;,65),
+  (498,&quot;P.O. Box 271, 1936 Cras St.&quot;,&quot;Finspång&quot;,66),
+  (499,&quot;P.O. Box 483, 6464 Ultrices. Avenue&quot;,&quot;Floridablanca&quot;,67),
+  (500,&quot;P.O. Box 933, 8708 Lacus. Rd.&quot;,&quot;Owerri&quot;,68);
+</sql><sql name="account_type.sql">INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (1,1,&quot;Gold&quot;),
+  (2,2,&quot;Black&quot;),
+  (3,3,&quot;Classic&quot;),
+  (4,4,&quot;Black&quot;),
+  (5,5,&quot;Gold&quot;),
+  (6,6,&quot;Gold&quot;),
+  (7,7,&quot;Black&quot;),
+  (8,8,&quot;Classic&quot;),
+  (9,9,&quot;Classic&quot;),
+  (10,10,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (11,11,&quot;Black&quot;),
+  (12,12,&quot;Gold&quot;),
+  (13,13,&quot;Black&quot;),
+  (14,14,&quot;Gold&quot;),
+  (15,15,&quot;Black&quot;),
+  (16,16,&quot;Black&quot;),
+  (17,17,&quot;Gold&quot;),
+  (18,18,&quot;Gold&quot;),
+  (19,19,&quot;Black&quot;),
+  (20,20,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (21,21,&quot;Classic&quot;),
+  (22,22,&quot;Gold&quot;),
+  (23,23,&quot;Gold&quot;),
+  (24,24,&quot;Black&quot;),
+  (25,25,&quot;Black&quot;),
+  (26,26,&quot;Black&quot;),
+  (27,27,&quot;Black&quot;),
+  (28,28,&quot;Classic&quot;),
+  (29,29,&quot;Gold&quot;),
+  (30,30,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (31,31,&quot;Black&quot;),
+  (32,32,&quot;Black&quot;),
+  (33,33,&quot;Black&quot;),
+  (34,34,&quot;Classic&quot;),
+  (35,35,&quot;Black&quot;),
+  (36,36,&quot;Classic&quot;),
+  (37,37,&quot;Classic&quot;),
+  (38,38,&quot;Black&quot;),
+  (39,39,&quot;Gold&quot;),
+  (40,40,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (41,41,&quot;Gold&quot;),
+  (42,42,&quot;Black&quot;),
+  (43,43,&quot;Black&quot;),
+  (44,44,&quot;Gold&quot;),
+  (45,45,&quot;Black&quot;),
+  (46,46,&quot;Gold&quot;),
+  (47,47,&quot;Classic&quot;),
+  (48,48,&quot;Gold&quot;),
+  (49,49,&quot;Gold&quot;),
+  (50,50,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (51,51,&quot;Black&quot;),
+  (52,52,&quot;Gold&quot;),
+  (53,53,&quot;Black&quot;),
+  (54,54,&quot;Gold&quot;),
+  (55,55,&quot;Black&quot;),
+  (56,56,&quot;Classic&quot;),
+  (57,57,&quot;Gold&quot;),
+  (58,58,&quot;Black&quot;),
+  (59,59,&quot;Black&quot;),
+  (60,60,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (61,61,&quot;Classic&quot;),
+  (62,62,&quot;Classic&quot;),
+  (63,63,&quot;Gold&quot;),
+  (64,64,&quot;Black&quot;),
+  (65,65,&quot;Classic&quot;),
+  (66,66,&quot;Classic&quot;),
+  (67,67,&quot;Classic&quot;),
+  (68,68,&quot;Classic&quot;),
+  (69,69,&quot;Classic&quot;),
+  (70,70,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (71,71,&quot;Black&quot;),
+  (72,72,&quot;Classic&quot;),
+  (73,73,&quot;Black&quot;),
+  (74,74,&quot;Classic&quot;),
+  (75,75,&quot;Gold&quot;),
+  (76,76,&quot;Gold&quot;),
+  (77,77,&quot;Black&quot;),
+  (78,78,&quot;Gold&quot;),
+  (79,79,&quot;Black&quot;),
+  (80,80,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (81,81,&quot;Classic&quot;),
+  (82,82,&quot;Black&quot;),
+  (83,83,&quot;Gold&quot;),
+  (84,84,&quot;Gold&quot;),
+  (85,85,&quot;Classic&quot;),
+  (86,86,&quot;Gold&quot;),
+  (87,87,&quot;Classic&quot;),
+  (88,88,&quot;Classic&quot;),
+  (89,89,&quot;Gold&quot;),
+  (90,90,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (91,91,&quot;Black&quot;),
+  (92,92,&quot;Classic&quot;),
+  (93,93,&quot;Gold&quot;),
+  (94,94,&quot;Classic&quot;),
+  (95,95,&quot;Gold&quot;),
+  (96,96,&quot;Black&quot;),
+  (97,97,&quot;Classic&quot;),
+  (98,98,&quot;Black&quot;),
+  (99,99,&quot;Black&quot;),
+  (100,100,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (101,101,&quot;Black&quot;),
+  (102,102,&quot;Gold&quot;),
+  (103,103,&quot;Gold&quot;),
+  (104,104,&quot;Gold&quot;),
+  (105,105,&quot;Gold&quot;),
+  (106,106,&quot;Gold&quot;),
+  (107,107,&quot;Black&quot;),
+  (108,108,&quot;Gold&quot;),
+  (109,109,&quot;Classic&quot;),
+  (110,110,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (111,111,&quot;Black&quot;),
+  (112,112,&quot;Gold&quot;),
+  (113,113,&quot;Black&quot;),
+  (114,114,&quot;Black&quot;),
+  (115,115,&quot;Classic&quot;),
+  (116,116,&quot;Classic&quot;),
+  (117,117,&quot;Black&quot;),
+  (118,118,&quot;Black&quot;),
+  (119,119,&quot;Black&quot;),
+  (120,120,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (121,121,&quot;Classic&quot;),
+  (122,122,&quot;Gold&quot;),
+  (123,123,&quot;Gold&quot;),
+  (124,124,&quot;Classic&quot;),
+  (125,125,&quot;Gold&quot;),
+  (126,126,&quot;Black&quot;),
+  (127,127,&quot;Gold&quot;),
+  (128,128,&quot;Gold&quot;),
+  (129,129,&quot;Gold&quot;),
+  (130,130,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (131,131,&quot;Gold&quot;),
+  (132,132,&quot;Gold&quot;),
+  (133,133,&quot;Classic&quot;),
+  (134,134,&quot;Black&quot;),
+  (135,135,&quot;Gold&quot;),
+  (136,136,&quot;Gold&quot;),
+  (137,137,&quot;Black&quot;),
+  (138,138,&quot;Classic&quot;),
+  (139,139,&quot;Black&quot;),
+  (140,140,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (141,141,&quot;Black&quot;),
+  (142,142,&quot;Gold&quot;),
+  (143,143,&quot;Gold&quot;),
+  (144,144,&quot;Black&quot;),
+  (145,145,&quot;Gold&quot;),
+  (146,146,&quot;Black&quot;),
+  (147,147,&quot;Black&quot;),
+  (148,148,&quot;Classic&quot;),
+  (149,149,&quot;Gold&quot;),
+  (150,150,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (151,151,&quot;Black&quot;),
+  (152,152,&quot;Gold&quot;),
+  (153,153,&quot;Classic&quot;),
+  (154,154,&quot;Gold&quot;),
+  (155,155,&quot;Gold&quot;),
+  (156,156,&quot;Black&quot;),
+  (157,157,&quot;Black&quot;),
+  (158,158,&quot;Gold&quot;),
+  (159,159,&quot;Classic&quot;),
+  (160,160,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (161,161,&quot;Classic&quot;),
+  (162,162,&quot;Classic&quot;),
+  (163,163,&quot;Classic&quot;),
+  (164,164,&quot;Gold&quot;),
+  (165,165,&quot;Gold&quot;),
+  (166,166,&quot;Classic&quot;),
+  (167,167,&quot;Gold&quot;),
+  (168,168,&quot;Black&quot;),
+  (169,169,&quot;Gold&quot;),
+  (170,170,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (171,171,&quot;Classic&quot;),
+  (172,172,&quot;Classic&quot;),
+  (173,173,&quot;Classic&quot;),
+  (174,174,&quot;Black&quot;),
+  (175,175,&quot;Classic&quot;),
+  (176,176,&quot;Black&quot;),
+  (177,177,&quot;Classic&quot;),
+  (178,178,&quot;Classic&quot;),
+  (179,179,&quot;Classic&quot;),
+  (180,180,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (181,181,&quot;Classic&quot;),
+  (182,182,&quot;Classic&quot;),
+  (183,183,&quot;Gold&quot;),
+  (184,184,&quot;Classic&quot;),
+  (185,185,&quot;Classic&quot;),
+  (186,186,&quot;Black&quot;),
+  (187,187,&quot;Black&quot;),
+  (188,188,&quot;Gold&quot;),
+  (189,189,&quot;Classic&quot;),
+  (190,190,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (191,191,&quot;Black&quot;),
+  (192,192,&quot;Classic&quot;),
+  (193,193,&quot;Black&quot;),
+  (194,194,&quot;Classic&quot;),
+  (195,195,&quot;Black&quot;),
+  (196,196,&quot;Classic&quot;),
+  (197,197,&quot;Gold&quot;),
+  (198,198,&quot;Classic&quot;),
+  (199,199,&quot;Classic&quot;),
+  (200,200,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (201,201,&quot;Black&quot;),
+  (202,202,&quot;Classic&quot;),
+  (203,203,&quot;Black&quot;),
+  (204,204,&quot;Black&quot;),
+  (205,205,&quot;Black&quot;),
+  (206,206,&quot;Black&quot;),
+  (207,207,&quot;Black&quot;),
+  (208,208,&quot;Classic&quot;),
+  (209,209,&quot;Gold&quot;),
+  (210,210,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (211,211,&quot;Classic&quot;),
+  (212,212,&quot;Classic&quot;),
+  (213,213,&quot;Black&quot;),
+  (214,214,&quot;Classic&quot;),
+  (215,215,&quot;Classic&quot;),
+  (216,216,&quot;Gold&quot;),
+  (217,217,&quot;Classic&quot;),
+  (218,218,&quot;Gold&quot;),
+  (219,219,&quot;Black&quot;),
+  (220,220,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (221,221,&quot;Classic&quot;),
+  (222,222,&quot;Gold&quot;),
+  (223,223,&quot;Black&quot;),
+  (224,224,&quot;Classic&quot;),
+  (225,225,&quot;Gold&quot;),
+  (226,226,&quot;Black&quot;),
+  (227,227,&quot;Gold&quot;),
+  (228,228,&quot;Gold&quot;),
+  (229,229,&quot;Gold&quot;),
+  (230,230,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (231,231,&quot;Classic&quot;),
+  (232,232,&quot;Black&quot;),
+  (233,233,&quot;Black&quot;),
+  (234,234,&quot;Gold&quot;),
+  (235,235,&quot;Classic&quot;),
+  (236,236,&quot;Gold&quot;),
+  (237,237,&quot;Classic&quot;),
+  (238,238,&quot;Black&quot;),
+  (239,239,&quot;Gold&quot;),
+  (240,240,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (241,241,&quot;Black&quot;),
+  (242,242,&quot;Classic&quot;),
+  (243,243,&quot;Black&quot;),
+  (244,244,&quot;Gold&quot;),
+  (245,245,&quot;Black&quot;),
+  (246,246,&quot;Black&quot;),
+  (247,247,&quot;Gold&quot;),
+  (248,248,&quot;Gold&quot;),
+  (249,249,&quot;Classic&quot;),
+  (250,250,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (251,251,&quot;Classic&quot;),
+  (252,252,&quot;Black&quot;),
+  (253,253,&quot;Gold&quot;),
+  (254,254,&quot;Black&quot;),
+  (255,255,&quot;Black&quot;),
+  (256,256,&quot;Classic&quot;),
+  (257,257,&quot;Black&quot;),
+  (258,258,&quot;Black&quot;),
+  (259,259,&quot;Black&quot;),
+  (260,260,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (261,261,&quot;Gold&quot;),
+  (262,262,&quot;Black&quot;),
+  (263,263,&quot;Classic&quot;),
+  (264,264,&quot;Black&quot;),
+  (265,265,&quot;Black&quot;),
+  (266,266,&quot;Classic&quot;),
+  (267,267,&quot;Black&quot;),
+  (268,268,&quot;Gold&quot;),
+  (269,269,&quot;Gold&quot;),
+  (270,270,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (271,271,&quot;Classic&quot;),
+  (272,272,&quot;Classic&quot;),
+  (273,273,&quot;Classic&quot;),
+  (274,274,&quot;Gold&quot;),
+  (275,275,&quot;Gold&quot;),
+  (276,276,&quot;Classic&quot;),
+  (277,277,&quot;Gold&quot;),
+  (278,278,&quot;Classic&quot;),
+  (279,279,&quot;Classic&quot;),
+  (280,280,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (281,281,&quot;Black&quot;),
+  (282,282,&quot;Gold&quot;),
+  (283,283,&quot;Gold&quot;),
+  (284,284,&quot;Gold&quot;),
+  (285,285,&quot;Classic&quot;),
+  (286,286,&quot;Classic&quot;),
+  (287,287,&quot;Gold&quot;),
+  (288,288,&quot;Black&quot;),
+  (289,289,&quot;Classic&quot;),
+  (290,290,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (291,291,&quot;Classic&quot;),
+  (292,292,&quot;Black&quot;),
+  (293,293,&quot;Gold&quot;),
+  (294,294,&quot;Black&quot;),
+  (295,295,&quot;Black&quot;),
+  (296,296,&quot;Classic&quot;),
+  (297,297,&quot;Gold&quot;),
+  (298,298,&quot;Black&quot;),
+  (299,299,&quot;Black&quot;),
+  (300,300,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (301,301,&quot;Black&quot;),
+  (302,302,&quot;Black&quot;),
+  (303,303,&quot;Classic&quot;),
+  (304,304,&quot;Gold&quot;),
+  (305,305,&quot;Gold&quot;),
+  (306,306,&quot;Classic&quot;),
+  (307,307,&quot;Classic&quot;),
+  (308,308,&quot;Classic&quot;),
+  (309,309,&quot;Black&quot;),
+  (310,310,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (311,311,&quot;Black&quot;),
+  (312,312,&quot;Black&quot;),
+  (313,313,&quot;Classic&quot;),
+  (314,314,&quot;Gold&quot;),
+  (315,315,&quot;Gold&quot;),
+  (316,316,&quot;Gold&quot;),
+  (317,317,&quot;Gold&quot;),
+  (318,318,&quot;Classic&quot;),
+  (319,319,&quot;Classic&quot;),
+  (320,320,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (321,321,&quot;Gold&quot;),
+  (322,322,&quot;Gold&quot;),
+  (323,323,&quot;Classic&quot;),
+  (324,324,&quot;Classic&quot;),
+  (325,325,&quot;Classic&quot;),
+  (326,326,&quot;Gold&quot;),
+  (327,327,&quot;Gold&quot;),
+  (328,328,&quot;Gold&quot;),
+  (329,329,&quot;Gold&quot;),
+  (330,330,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (331,331,&quot;Black&quot;),
+  (332,332,&quot;Black&quot;),
+  (333,333,&quot;Classic&quot;),
+  (334,334,&quot;Classic&quot;),
+  (335,335,&quot;Gold&quot;),
+  (336,336,&quot;Black&quot;),
+  (337,337,&quot;Gold&quot;),
+  (338,338,&quot;Gold&quot;),
+  (339,339,&quot;Black&quot;),
+  (340,340,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (341,341,&quot;Gold&quot;),
+  (342,342,&quot;Classic&quot;),
+  (343,343,&quot;Gold&quot;),
+  (344,344,&quot;Black&quot;),
+  (345,345,&quot;Gold&quot;),
+  (346,346,&quot;Black&quot;),
+  (347,347,&quot;Black&quot;),
+  (348,348,&quot;Classic&quot;),
+  (349,349,&quot;Black&quot;),
+  (350,350,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (351,351,&quot;Classic&quot;),
+  (352,352,&quot;Black&quot;),
+  (353,353,&quot;Classic&quot;),
+  (354,354,&quot;Classic&quot;),
+  (355,355,&quot;Classic&quot;),
+  (356,356,&quot;Black&quot;),
+  (357,357,&quot;Gold&quot;),
+  (358,358,&quot;Classic&quot;),
+  (359,359,&quot;Gold&quot;),
+  (360,360,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (361,361,&quot;Classic&quot;),
+  (362,362,&quot;Black&quot;),
+  (363,363,&quot;Classic&quot;),
+  (364,364,&quot;Black&quot;),
+  (365,365,&quot;Classic&quot;),
+  (366,366,&quot;Gold&quot;),
+  (367,367,&quot;Gold&quot;),
+  (368,368,&quot;Black&quot;),
+  (369,369,&quot;Classic&quot;),
+  (370,370,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (371,371,&quot;Classic&quot;),
+  (372,372,&quot;Black&quot;),
+  (373,373,&quot;Classic&quot;),
+  (374,374,&quot;Gold&quot;),
+  (375,375,&quot;Gold&quot;),
+  (376,376,&quot;Classic&quot;),
+  (377,377,&quot;Black&quot;),
+  (378,378,&quot;Black&quot;),
+  (379,379,&quot;Classic&quot;),
+  (380,380,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (381,381,&quot;Gold&quot;),
+  (382,382,&quot;Gold&quot;),
+  (383,383,&quot;Black&quot;),
+  (384,384,&quot;Gold&quot;),
+  (385,385,&quot;Classic&quot;),
+  (386,386,&quot;Classic&quot;),
+  (387,387,&quot;Black&quot;),
+  (388,388,&quot;Classic&quot;),
+  (389,389,&quot;Gold&quot;),
+  (390,390,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (391,391,&quot;Black&quot;),
+  (392,392,&quot;Black&quot;),
+  (393,393,&quot;Gold&quot;),
+  (394,394,&quot;Black&quot;),
+  (395,395,&quot;Classic&quot;),
+  (396,396,&quot;Classic&quot;),
+  (397,397,&quot;Gold&quot;),
+  (398,398,&quot;Classic&quot;),
+  (399,399,&quot;Black&quot;),
+  (400,400,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (401,401,&quot;Black&quot;),
+  (402,402,&quot;Black&quot;),
+  (403,403,&quot;Gold&quot;),
+  (404,404,&quot;Black&quot;),
+  (405,405,&quot;Gold&quot;),
+  (406,406,&quot;Black&quot;),
+  (407,407,&quot;Black&quot;),
+  (408,408,&quot;Gold&quot;),
+  (409,409,&quot;Gold&quot;),
+  (410,410,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (411,411,&quot;Gold&quot;),
+  (412,412,&quot;Gold&quot;),
+  (413,413,&quot;Gold&quot;),
+  (414,414,&quot;Classic&quot;),
+  (415,415,&quot;Black&quot;),
+  (416,416,&quot;Black&quot;),
+  (417,417,&quot;Black&quot;),
+  (418,418,&quot;Classic&quot;),
+  (419,419,&quot;Black&quot;),
+  (420,420,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (421,421,&quot;Black&quot;),
+  (422,422,&quot;Black&quot;),
+  (423,423,&quot;Black&quot;),
+  (424,424,&quot;Black&quot;),
+  (425,425,&quot;Black&quot;),
+  (426,426,&quot;Classic&quot;),
+  (427,427,&quot;Gold&quot;),
+  (428,428,&quot;Gold&quot;),
+  (429,429,&quot;Classic&quot;),
+  (430,430,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (431,431,&quot;Black&quot;),
+  (432,432,&quot;Gold&quot;),
+  (433,433,&quot;Classic&quot;),
+  (434,434,&quot;Gold&quot;),
+  (435,435,&quot;Black&quot;),
+  (436,436,&quot;Classic&quot;),
+  (437,437,&quot;Black&quot;),
+  (438,438,&quot;Classic&quot;),
+  (439,439,&quot;Classic&quot;),
+  (440,440,&quot;Gold&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (441,441,&quot;Classic&quot;),
+  (442,442,&quot;Classic&quot;),
+  (443,443,&quot;Gold&quot;),
+  (444,444,&quot;Black&quot;),
+  (445,445,&quot;Gold&quot;),
+  (446,446,&quot;Classic&quot;),
+  (447,447,&quot;Gold&quot;),
+  (448,448,&quot;Gold&quot;),
+  (449,449,&quot;Black&quot;),
+  (450,450,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (451,451,&quot;Classic&quot;),
+  (452,452,&quot;Black&quot;),
+  (453,453,&quot;Black&quot;),
+  (454,454,&quot;Gold&quot;),
+  (455,455,&quot;Classic&quot;),
+  (456,456,&quot;Gold&quot;),
+  (457,457,&quot;Black&quot;),
+  (458,458,&quot;Gold&quot;),
+  (459,459,&quot;Gold&quot;),
+  (460,460,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (461,461,&quot;Gold&quot;),
+  (462,462,&quot;Classic&quot;),
+  (463,463,&quot;Gold&quot;),
+  (464,464,&quot;Black&quot;),
+  (465,465,&quot;Black&quot;),
+  (466,466,&quot;Gold&quot;),
+  (467,467,&quot;Black&quot;),
+  (468,468,&quot;Classic&quot;),
+  (469,469,&quot;Black&quot;),
+  (470,470,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (471,471,&quot;Black&quot;),
+  (472,472,&quot;Classic&quot;),
+  (473,473,&quot;Classic&quot;),
+  (474,474,&quot;Classic&quot;),
+  (475,475,&quot;Classic&quot;),
+  (476,476,&quot;Classic&quot;),
+  (477,477,&quot;Gold&quot;),
+  (478,478,&quot;Black&quot;),
+  (479,479,&quot;Classic&quot;),
+  (480,480,&quot;Black&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (481,481,&quot;Gold&quot;),
+  (482,482,&quot;Black&quot;),
+  (483,483,&quot;Black&quot;),
+  (484,484,&quot;Black&quot;),
+  (485,485,&quot;Gold&quot;),
+  (486,486,&quot;Gold&quot;),
+  (487,487,&quot;Classic&quot;),
+  (488,488,&quot;Black&quot;),
+  (489,489,&quot;Classic&quot;),
+  (490,490,&quot;Classic&quot;);
+INSERT INTO `account_type` (`customer_id`,`account_type_id`,`account_tipo`)
+VALUES
+  (491,491,&quot;Black&quot;),
+  (492,492,&quot;Classic&quot;),
+  (493,493,&quot;Gold&quot;),
+  (494,494,&quot;Gold&quot;),
+  (495,495,&quot;Black&quot;),
+  (496,496,&quot;Classic&quot;),
+  (497,497,&quot;Classic&quot;),
+  (498,498,&quot;Classic&quot;),
+  (499,499,&quot;Black&quot;),
+  (500,500,&quot;Gold&quot;);
 </sql><current_tab id="0"/></tab_sql></sqlb_project>
