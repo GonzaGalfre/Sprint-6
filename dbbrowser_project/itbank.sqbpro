@@ -62,7 +62,11 @@ UPDATE empleado SET employee_hire_date = DATE(substr(employee_hire_date,7,4) || 
 
 	
 	
-	</sql><sql name="Segunda prob">/* CREACION DE LA VIEW */
+	</sql><sql name="Segunda prob">
+DROP VIEW segunda_problematica
+SELECT * FROM segunda_problematica
+
+/* CREACION DE LA VIEW */
 CREATE VIEW segunda_problematica
 AS
 SELECT customer_id, branch_id, customer_name, customer_surname, customer_DNI, cast(strftime(date() - dob) AS INT) AS customer_age
@@ -79,10 +83,6 @@ WHERE customer_name = 'Tyler' OR 'Anne'
 ORDER BY customer_age ASC;
 
 
-DROP VIEW segunda_problematica
-
-
-SELECT * FROM segunda_problematica
 
 INSERT INTO cliente(customer_name, customer_surname, customer_DNI, branch_id, dob) VALUES('Lois', 'Stout', '47730534', 80, '1984-07-07');
 INSERT INTO cliente(customer_name, customer_surname, customer_DNI, branch_id, dob) VALUES('Hall', 'Mcconnell', '52055464', 45, '1968-04-30');
@@ -104,7 +104,6 @@ loan_total = (SELECT MAX(loan_total) FROM prestamo);
 
 
 </sql><sql name="Tercera prob">/* TERCERA PROBLEMATICA */
-/* 21:34 */
 
 /*Seleccionar las cuentas con saldo negativo*/
 SELECT account_id, customer_id, balance FROM cuenta WHERE balance&lt;0;
@@ -1987,4 +1986,4 @@ VALUES
   (498,498,&quot;Classic&quot;),
   (499,499,&quot;Black&quot;),
   (500,500,&quot;Gold&quot;);
-</sql><current_tab id="2"/></tab_sql></sqlb_project>
+</sql><current_tab id="3"/></tab_sql></sqlb_project>
