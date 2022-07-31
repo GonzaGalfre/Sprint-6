@@ -2038,6 +2038,8 @@ CREATE TABLE movimientos(
 )
 
 /* Transaccion y update en la tabla movimientos */
+/* EJECUTAR ESTA TRANSACCION EN UNA PESTAÑA APARTE DENTRO DEL DBBROWSER PARA EVITAR UN ERROR */
+/*
 BEGIN TRANSACTION;
 UPDATE cuenta SET balance = balance - 100000 WHERE account_id = 200;
 UPDATE cuenta SET balance = balance + 100000 WHERE account_id = 400;
@@ -2046,6 +2048,6 @@ INSERT INTO movimientos(account_id, amount, transaction_type, created_at) VALUES
 INSERT INTO movimientos(account_id, amount, transaction_type, created_at) VALUES(400, +100000, 'transaccion', datetime('NOW')); 
 
 COMMIT;
-
+*/
 	
 	
