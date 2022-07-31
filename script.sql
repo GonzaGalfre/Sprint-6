@@ -4,20 +4,20 @@ CREATE TABLE client_type(
 	client_tier TEXT NOT NULL,
 	client_tier_id INT NOT NULL PRIMARY KEY,
 	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
-)
+);
 
 CREATE TABLE account_type(
 	customer_id INT NOT NULL,
 	account_type_id INT NOT NULL PRIMARY KEY,
 	account_tipo TEXT NOT NULL,
 	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id)
-)
+);
 
 /* Tabla de marcas de tarjetas */
 CREATE TABLE card_brand(
 	card_brand_description TEXT NOT NULL,
 	card_brand_id INTEGER NOT NULL PRIMARY KEY
-)
+);
 /* Se insertan los 3 tipos de tarjeta */
 INSERT INTO card_brand(card_brand_description, card_brand_id) VALUES('Visa', 1);
 INSERT INTO card_brand(card_brand_description, card_brand_id) VALUES('Mastercard', 2);
@@ -34,7 +34,7 @@ CREATE TABLE tarjeta(
 	card_brand_id INTEGER NOT NULL,
 	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
 	FOREIGN KEY(card_brand_id) REFERENCES card_brand(card_brand_id) ON DELETE CASCADE ON UPDATE CASCADE
-)
+);
 
 /* Tabla de direcciones */
 CREATE TABLE direcciones(
@@ -47,7 +47,7 @@ CREATE TABLE direcciones(
 	FOREIGN KEY(customer_id) REFERENCES cliente(customer_id) ON DELETE CASCADE ON UPDATE CASCADE
 	FOREIGN KEY(employee_id) REFERENCES empleado(employee_id) ON DELETE CASCADE ON UPDATE CASCADE
 	FOREIGN KEY(branch_id) REFERENCES sucursal(branch_id) ON DELETE CASCADE ON UPDATE CASCADE
-)
+);
 
 /* Modificacion del formato de guardado de la fecha */
 UPDATE empleado SET employee_hire_date = DATE(substr(employee_hire_date,7,4) || '-' || substr(employee_hire_date,4,2) || '-' || substr(employee_hire_date,1,2));
@@ -2009,7 +2009,7 @@ CREATE TABLE auditoria_cuenta(
 	new_type TEXT,
 	user_action TEXT,
 	created_at TEXT
-)
+);
 
 /* Creacion de trigger para registrar los cambios de la tabla cuenta */
 CREATE TRIGGER auditoria_cuenta_update AFTER UPDATE ON cuenta
@@ -2035,7 +2035,7 @@ CREATE TABLE movimientos(
 	transaction_type TEXT NOT NULL,
 	created_at TEXT NOT NULL,
 	FOREIGN KEY(account_id) REFERENCES cuenta(account_id) ON DELETE CASCADE ON UPDATE CASCADE
-)
+);
 
 /* Transaccion y update en la tabla movimientos */
 /* EJECUTAR ESTA TRANSACCION EN UNA PESTAÑA APARTE DENTRO DEL DBBROWSER PARA EVITAR UN ERROR */
