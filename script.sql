@@ -1962,7 +1962,90 @@ importes. Renombrar la columna como loan_total_accu*/
 SELECT sum(loan_total) AS loan_total_accu , loan_type FROM prestamo
 GROUP BY loan_type;
 
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+/* CUARTA PROBLEMATICA */
 
+/* 1 Listar la cantidad de clientes por nombre de sucursal ordenando de mayora menor */
+SELECT cliente.branch_id, sucursal.branch_name , count(ALL cliente.branch_id) AS client_amount
+FROM cliente INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id
+GROUP BY sucursal.branch_id ORDER BY client_amount DESC;
+
+/*2 Obtener la cantidad de empleados por cliente por sucursal en un número real */
+CREATE VIEW cantidad_clientes AS
+	SELECT sucursal.branch_name, sucursal.branch_id, count(cliente.customer_id) as client_amount
+	FROM cliente
+	INNER JOIN sucursal ON sucursal.branch_id = cliente.branch_id
+	GROUP BY cliente.branch_id;
+	
+CREATE VIEW cantidad_empleados_por_cliente AS
+	SELECT cantidad_clientes.branch_id, cantidad_clientes.branch_name, round((client_amount*1.0)/(count(empleado.employee_id)),2) AS employees_per_client
+	FROM cantidad_clientes
+	INNER JOIN empleado ON cantidad_clientes.branch_id = empleado.branch_id
+	GROUP BY empleado.branch_id;
+
+/*3 Obtener la cantidad de tarjetas de crédito por tipo por sucursal */ 
+SELECT branch_id, count(ALL cliente.customer_name) AS cards_amount FROM cliente
+GROUP BY branch_id;
+
+/* Promedio de creditos por sucursal */
+CREATE VIEW promedio_prestamo_por_sucursal AS
+	SELECT sucursal.branch_id, sucursal.branch_name, avg(prestamo.loan_total) AS branch_average_loan
+	FROM prestamo
+	INNER JOIN cliente ON cliente.customer_id = prestamo.customer_id
+	INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id
+	GROUP BY cliente.branch_id;
+
+/* Creacion de la tabla auditoria_cuenta */
+CREATE TABLE auditoria_cuenta(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	old_id INT,
+	new_id INT,
+	old_balance INT,
+	new_balance INT,
+	old_iban TEXT,
+	new_iban TEXT,
+	old_type TEXT,
+	new_type TEXT,
+	user_action TEXT,
+	created_at TEXT
+)
+
+/* Creacion de trigger para registrar los cambios de la tabla cuenta */
+CREATE TRIGGER auditoria_cuenta_update AFTER UPDATE ON cuenta
+WHEN old.balance <> new.balance OR old.iban <> new.iban
+BEGIN
+	INSERT INTO auditoria_cuenta(old_balance, new_balance, old_iban, new_iban, user_action, created_at)
+	VALUES(old.balance, new.balance, old.iban, new.iban, 'UPDATE', datetime('NOW'));
+END;
+
+/* Update de -100$ en 5 cuentas diferentes */
+/* Tiene dos 0's mas porque los ultimos dos numeros son los centavos */
+UPDATE cuenta SET balance = balance - 10000 WHERE account_id = 10;
+UPDATE cuenta SET balance = balance - 10000 WHERE account_id = 11;
+UPDATE cuenta SET balance = balance - 10000 WHERE account_id = 12;
+UPDATE cuenta SET balance = balance - 10000 WHERE account_id = 13;
+UPDATE cuenta SET balance = balance - 10000 WHERE account_id = 14;
+
+/* Creacion de la tabla movimientos */
+CREATE TABLE movimientos(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	account_id INT NOT NULL,
+	amount INT NOT NULL,
+	transaction_type TEXT NOT NULL,
+	created_at TEXT NOT NULL,
+	FOREIGN KEY(account_id) REFERENCES cuenta(account_id) ON DELETE CASCADE ON UPDATE CASCADE
+)
+
+/* Transaccion y update en la tabla movimientos */
+BEGIN TRANSACTION;
+UPDATE cuenta SET balance = balance - 100000 WHERE account_id = 200;
+UPDATE cuenta SET balance = balance + 100000 WHERE account_id = 400;
+
+INSERT INTO movimientos(account_id, amount, transaction_type, created_at) VALUES(200, -100000, 'transaccion', datetime('NOW')); 
+INSERT INTO movimientos(account_id, amount, transaction_type, created_at) VALUES(400, +100000, 'transaccion', datetime('NOW')); 
+
+COMMIT;
 
 	
 	

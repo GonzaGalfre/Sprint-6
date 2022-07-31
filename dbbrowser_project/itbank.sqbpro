@@ -167,7 +167,7 @@ GROUP BY loan_type;</sql><sql name="Cuarta prob">/* 1 Listar la cantidad de clie
 
 SELECT cliente.branch_id, sucursal.branch_name , count(ALL cliente.branch_id) AS client_amount
 FROM cliente INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id
-GROUP BY sucursal.branch_id ORDER BY Cantidad_clientes DESC;
+GROUP BY sucursal.branch_id ORDER BY client_amount DESC;
 
 /*2 Obtener la cantidad de empleados por cliente por sucursal en un número real */
 
@@ -190,7 +190,7 @@ DROP VIEW cuarta_problematica
 
 /*3 Obtener la cantidad de tarjetas de crédito por tipo por sucursal */ 
 
-SELECT branch_id, count(ALL cliente.customer_name) AS Cantidad_Tarjetas FROM cliente
+SELECT branch_id, count(ALL cliente.customer_name) AS cards_amount FROM cliente
 GROUP BY branch_id;
 
 
@@ -2047,7 +2047,7 @@ VALUES
   (498,498,&quot;Classic&quot;),
   (499,499,&quot;Black&quot;),
   (500,500,&quot;Gold&quot;);
-</sql><sql name="SQL 11">BEGIN TRANSACTION;
+</sql><sql name="transaccion">BEGIN TRANSACTION;
 UPDATE cuenta SET balance = balance - 100000 WHERE account_id = 200;
 UPDATE cuenta SET balance = balance + 100000 WHERE account_id = 400;
 
