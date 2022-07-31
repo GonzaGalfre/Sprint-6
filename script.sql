@@ -2038,7 +2038,7 @@ CREATE TABLE movimientos(
 );
 
 /* Transaccion y update en la tabla movimientos */
-/* EJECUTAR ESTA TRANSACCION EN UNA PESTAÑA APARTE DENTRO DEL DBBROWSER PARA EVITAR UN ERROR */
+/* ESTA TRANSACCION SE EJECUTÓ EN OTRA VENTANA DENTRO DEL DBBROWSER. Se muestra comentada para evitar un error, pero se puede ver su resultado dentro de la database */
 /*
 BEGIN TRANSACTION;
 UPDATE cuenta SET balance = balance - 100000 WHERE account_id = 200;
