@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3213"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,11:mainclient_type"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="account_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="126"/><column index="3" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="client_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="0"/></sort><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="110"/><column index="3" value="93"/><column index="4" value="120"/><column index="5" value="97"/><column index="6" value="98"/><column index="7" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones_ref" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="1"/></sort><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="p4" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Primera prob">/* Se crean las columnas nuevas */
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Gonza/Documents/GitHub/Sprint-6/database/itbank.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3213"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,12:mainaccount_type"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="account_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="126"/><column index="3" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="card_brand" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="172"/><column index="3" value="111"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="client_type" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="83"/><column index="2" value="102"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cliente" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="0"/></sort><column_widths><column index="1" value="97"/><column index="2" value="121"/><column index="3" value="142"/><column index="4" value="108"/><column index="5" value="73"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cuenta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="88"/><column index="2" value="97"/><column index="3" value="67"/><column index="4" value="233"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="80"/><column index="2" value="110"/><column index="3" value="93"/><column index="4" value="120"/><column index="5" value="97"/><column index="6" value="98"/><column index="7" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="direcciones_ref" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="empleado" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="6" mode="1"/></sort><column_widths><column index="1" value="98"/><column index="2" value="122"/><column index="3" value="143"/><column index="4" value="150"/><column index="5" value="109"/><column index="6" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="p4" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="130"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="prestamo" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="87"/><column index="3" value="82"/><column index="4" value="83"/><column index="5" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sucursal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="81"/><column index="2" value="119"/><column index="3" value="138"/><column index="4" value="141"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tarjeta" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="65"/><column index="2" value="97"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Primera prob">/* Se crean las columnas nuevas */
 
 DROP TABLE tarjeta;
 DROP TABLE card_brand;
@@ -62,24 +62,24 @@ UPDATE empleado SET employee_hire_date = DATE(substr(employee_hire_date,7,4) || 
 
 	
 	
-	</sql><sql name="Segunda prob">/* CREACION DE LA VIEW */
+	</sql><sql name="Segunda prob">/* CREACION DE LA VIEW */
 CREATE VIEW segunda_problematica
 AS
-SELECT customer_id, branch_id, customer_name, customer_surname, customer_DNI, cast(strftime('%Y.%m%d', 'now') - strftime('%Y.%m%d', dob) AS INT) AS customer_age
+SELECT customer_id, branch_id, customer_name, customer_surname, customer_DNI, cast(strftime(date() - dob) AS INT) AS customer_age
 FROM cliente
-
-/* SELECCION DE MAYORES DE 40 AÑOS ORDENADO POR DNI ASC */
-SELECT * FROM segunda_problematica
-WHERE customer_age &gt; 40
-ORDER BY customer_DNI ASC;
-
-/* MUESTRA LOS CLIENTES LLAMADOS ANNE O TYLER ORDENADOS POR EDAD ASC */
-SELECT * FROM segunda_problematica
-WHERE customer_name = 'Tyler' OR 'Anne'
-ORDER BY customer_age ASC;
-
 
-DROP VIEW segunda_problematica
+/* SELECCION DE MAYORES DE 40 AÑOS ORDENADO POR DNI ASC */
+SELECT * FROM segunda_problematica
+WHERE customer_age &gt; 40
+ORDER BY customer_DNI ASC;
+
+/* MUESTRA LOS CLIENTES LLAMADOS ANNE O TYLER ORDENADOS POR EDAD ASC */
+SELECT * FROM segunda_problematica
+WHERE customer_name = 'Tyler' OR 'Anne'
+ORDER BY customer_age ASC;
+
+
+DROP VIEW segunda_problematica
 
 
 SELECT * FROM segunda_problematica
@@ -103,7 +103,68 @@ WHERE
 loan_total = (SELECT MAX(loan_total) FROM prestamo);
 
 
-</sql><sql name="Cuarta prob">/* 1 Listar la cantidad de clientes por nombre de sucursal ordenando de mayora menor */
+</sql><sql name="Tercera prob">/* TERCERA PROBLEMATICA */
+/* 21:34 */
+
+/*Seleccionar las cuentas con saldo negativo*/
+SELECT account_id, customer_id, balance FROM cuenta WHERE balance&lt;0;
+
+/* Seleccionar el nombre, apellido y edad de los clientes que tengan en el 
+apellido la letra Z */
+SELECT customer_name, customer_surname, (date() - dob) AS customer_age
+FROM cliente 
+WHERE customer_surname LIKE '%z%';
+
+/*Seleccionar el nombre, apellido, edad y nombre de sucursal de las personas 
+cuyo nombre sea “Brendan” y el resultado ordenarlo por nombre de 
+sucursal*/
+SELECT customer_name, customer_surname, (date() - dob) AS customer_age,  branch_name
+FROM cliente , sucursal
+WHERE customer_name = 'Brendan' AND cliente.branch_id = sucursal.branch_id;
+
+/*Seleccionar de la tabla de préstamos, los préstamos con un importe mayor
+a $80.000 y los préstamos prendarios utilizando la unión de 
+tablas/consultas (recordar que en las bases de datos la moneda se guarda 
+como integer, en este caso con 2 centavos)*/
+SELECT * FROM prestamo WHERE loan_type = 'PRENDARIO'
+UNION
+SELECT * FROM prestamo WHERE loan_total &gt; 8000000;
+
+
+/*Seleccionar los prestamos cuyo importe sea mayor que el importe medio de 
+todos los prestamos*/
+
+SELECT loan_id , loan_total , loan_type 
+FROM prestamo INNER JOIN cliente ON cliente.customer_id = prestamo.loan_id
+WHERE loan_total &gt; (SELECT avg(ALL loan_total) FROM prestamo);
+
+
+
+/*Contar la cantidad de clientes menores a 50 años
+*/
+
+SELECT count(ALL customer_name) as Mayor50 FROM cliente 
+WHERE (date() - dob) &lt; 50;
+
+
+/*Seleccionar las primeras 5 cuentas con saldo mayor a 8.000$*/
+
+SELECT account_id , customer_id , balance , iban FROM cuenta WHERE balance &gt; 800000 ORDER BY account_id
+LIMIT 5;
+
+
+/*Seleccionar los préstamos que tengan fecha en abril, junio y agosto, 
+ordenándolos por importe*/
+
+SELECT * FROM prestamo WHERE (loan_date LIKE '%-06-%') OR (loan_date LIKE '%-08-%') OR (loan_date LIKE '%-04-%')
+ORDER BY loan_total;
+
+/*Obtener el importe total de los prestamos agrupados por tipo de préstamos. 
+Por cada tipo de préstamo de la tabla préstamo, calcular la suma de sus 
+importes. Renombrar la columna como loan_total_accu*/
+
+SELECT sum(loan_total) AS loan_total_accu , loan_type FROM prestamo
+GROUP BY loan_type;</sql><sql name="Cuarta prob">/* 1 Listar la cantidad de clientes por nombre de sucursal ordenando de mayora menor */
 
 SELECT cliente.branch_id, sucursal.branch_name , count(all cliente.branch_id) as Cantidad_clientes 
 FROM cliente INNER JOIN sucursal ON cliente.branch_id = sucursal.branch_id
@@ -1926,4 +1987,4 @@ VALUES
   (498,498,&quot;Classic&quot;),
   (499,499,&quot;Black&quot;),
   (500,500,&quot;Gold&quot;);
-</sql><current_tab id="1"/></tab_sql></sqlb_project>
+</sql><current_tab id="2"/></tab_sql></sqlb_project>
